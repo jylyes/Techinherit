@@ -1,0 +1,10 @@
+User-agent: GPTBot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: *
+Allow: /
+
+Sitemap: https://www.techinherit.com/sitemap.xml

@@ -1,0 +1,649 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Case Studies | Techinherit</title>
+    <meta name="description" content="Explore how Techinherit helps clients solve real challenges in consumer electronics, medical devices, and automotive parts manufacturing." />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <style>
+        .cases-hero {
+            height: 550px;
+            display: flex;
+            flex-direction: column;
+            padding: 100px 0 60px;
+            background: linear-gradient(to right, rgba(8,27,51,0.95), rgba(8,27,51,0.7)), url('img/工厂图.png') center / cover;
+        }
+
+        .cases-hero h1 {
+            font-size: 48px;
+            font-weight: 900;
+            color: #fff;
+            margin-bottom: 20px;
+            line-height: 1.2;
+            letter-spacing: 1px;
+            animation: heroFadeUp 0.8s ease both;
+        }
+
+        .cases-hero p {
+            font-size: 16px;
+            color: #d1d5db;
+            max-width: 600px;
+            line-height: 1.6;
+            animation: heroFadeUp 0.8s 0.2s ease both;
+        }
+
+        .cases-section {
+            padding: 50px 0;
+        }
+
+        .case-card {
+            display: flex;
+            gap: 30px;
+            background: #fff;
+            border: 1px solid #e5e7eb;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 30px;
+            transition: var(--transition);
+        }
+
+        .case-card:hover {
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+            border-color: var(--color-primary);
+        }
+
+        .case-card-img {
+            flex: 0 0 35%;
+            background: #f0f0f0;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 220px;
+            overflow: hidden;
+        }
+
+        .case-card-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .case-content {
+            flex: 1;
+            padding: 5px 0;
+        }
+
+        .case-tag {
+            color: var(--color-primary);
+            font-weight: 700;
+            font-size: 13px;
+            text-transform: uppercase;
+        }
+
+        .case-title {
+            font-size: 22px;
+            font-weight: 700;
+            margin: 4px 0;
+            color: #1e1e1e;
+        }
+
+        .case-subtitle {
+            font-size: 15px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .case-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 15px;
+        }
+
+        .case-col {
+            padding-right: 15px;
+            border-right: 1px solid #e5e7eb;
+        }
+
+        .case-col:last-child {
+            border-right: 0;
+        }
+
+        .case-col-head {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 12px;
+        }
+
+        .case-col-head .ic {
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            color: #fff;
+            flex-shrink: 0;
+        }
+
+        .ic-red {
+            background: #fde8e8;
+            color: #d92626 !important;
+        }
+
+        .ic-blue {
+            background: #e6f0fa;
+            color: var(--color-primary) !important;
+        }
+
+        .ic-green {
+            background: #e6f7e6;
+            color: #16a34a !important;
+        }
+
+        .case-col-head h4 {
+            font-size: 16px;
+            font-weight: 700;
+            color: #1e1e1e;
+        }
+
+        .case-col ul {
+            list-style: none;
+        }
+
+        .case-col ul li {
+            font-size: 14px;
+            color: #444;
+            margin-bottom: 5px;
+            display: flex;
+            align-items: baseline;
+            gap: 4px;
+        }
+
+        .case-col ul li i {
+            font-size: 10px;
+            color: var(--color-primary);
+        }
+
+        .case-col ul li b {
+            color: #000;
+        }
+
+        .cases-cta {
+            padding: 0 0 50px;
+        }
+
+        .cases-cta-box {
+            background: #0a1a30;
+            border-radius: 12px;
+            padding: 30px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #fff;
+        }
+
+        .cases-cta-left {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .cases-cta-icon {
+            font-size: 40px;
+            border: 2px solid #fff;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transform: rotate(-10deg);
+        }
+
+        .cases-cta-text h3 {
+            font-size: 22px;
+            font-weight: 700;
+        }
+
+        .cases-cta-text p {
+            font-size: 14px;
+            color: #b0bed0;
+        }
+
+        @media (max-width: 768px) {
+            .cases-hero {
+                height: 430px;
+                padding: 20px;
+            }
+            .cases-hero h1 {
+                font-size: 28px;
+            }
+            .case-card {
+                flex-direction: column;
+            }
+            .case-card-img {
+                height: 180px;
+            }
+            .case-grid {
+                grid-template-columns: 1fr;
+            }
+            .case-col {
+                border-right: 0;
+                border-bottom: 1px solid #e5e7eb;
+                padding-bottom: 10px;
+                margin-bottom: 10px;
+            }
+            .cases-cta-box {
+                flex-direction: column;
+                text-align: center;
+                gap: 15px;
+            }
+            .cases-cta-left {
+                flex-direction: column;
+            }
+        }
+    </style>
+    <!-- GEO / Hreflang -->
+    <meta name="geo.region" content="CN-44" />
+    <meta name="geo.placename" content="Dongguan, China" />
+    <link rel="alternate" href="https://www.techinherit.com/" hreflang="en" />
+    <link rel="alternate" href="https://www.techinherit.com/" hreflang="en-ZA" />
+    <link rel="alternate" href="https://www.techinherit.com/" hreflang="en-NG" />
+    <link rel="alternate" href="https://www.techinherit.com/" hreflang="en-AE" />
+    <link rel="alternate" href="https://www.techinherit.com/" hreflang="en-ID" />
+    <!-- Organization Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Techinherit",
+        "url": "https://www.techinherit.com",
+        "logo": "https://www.techinherit.com/img/logo.png",
+        "description": "One-stop plastic manufacturing solution provider.",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Dongguan",
+            "addressCountry": "CN"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+86-123-4567-8901",
+            "contactType": "sales"
+        },
+        "sameAs": [
+            "https://www.facebook.com/techinherit"
+        ]
+    }
+    </script>
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container">
+            <div class="header-inner">
+                <a href="index.html" class="logo-area" aria-label="Techinherit Home">
+                    <img src="img/logo.png" alt="Techinherit" class="logo-img" />
+                    <span class="logo-text">Techinherit</span>
+                </a>
+
+                <button class="hamburger-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                </button>
+
+                <nav class="nav-links" aria-label="Primary navigation" role="navigation">
+                    <a href="index.html" data-i18n="nav.home">Home</a>
+                    <a href="about-us.html" data-i18n="nav.about">About Us</a>
+
+                    <div class="nav-dropdown">
+                        <a href="#" class="dropdown-trigger">
+                            Services <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="product-design.html" data-i18n="nav.product-design">Product Design</a></li>
+                            <li><a href="raw-materials.html" data-i18n="nav.raw-materials">Plastic Raw Materials</a></li>
+                            <li><a href="mold-development.html" data-i18n="nav.mold">Mold Development</a></li>
+                            <li><a href="injection-molding.html" data-i18n="nav.injection">Injection Molding</a></li>
+                            <li><a href="quality-control.html" data-i18n="nav.quality">Quality Control</a></li>
+                            <li><a href="odm-oem.html">Assemble</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="nav-dropdown">
+                        <a href="#" class="dropdown-trigger">
+                            Capabilities <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="rd-strength.html">R&D Strength</a></li>
+                            <li><a href="production-equipment.html" data-i18n="nav.equipment">Production Equipment</a></li>
+                        </ul>
+                    </div>
+
+                    <a href="industries.html" data-i18n="nav.industries">Industries</a>
+
+                    <a href="case-studies.html" class="active" data-i18n="nav.cases">Case Studies</a>
+                    <a href="#footer" data-i18n="nav.contact">Contact Us</a>
+                    <a href="#footer" class="btn-header" data-i18n="nav.quote">Get a Quote</a>
+                    <button class="lang-toggle" id="langToggle" data-i18n="lang.switch" title="Switch language">中文</button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="cases-hero">
+            <div class="container">
+                <h1>Case Studies</h1>
+                <p>Real challenges. Practical solutions. Proven results.<br>Explore how we help clients achieve high-quality, reliable plastic parts and production success.</p>
+            </div>
+        </section>
+
+        <section class="cases-section">
+            <div class="container">
+
+                <div class="case-card">
+                    <div class="case-card-img">
+                        <img src="img/行业应用2.png" alt="Consumer electronics enclosure" loading="lazy" />
+                    </div>
+                    <div class="case-content">
+                        <div class="case-tag">CASE STUDY 01</div>
+                        <div class="case-title">Consumer Electronics Enclosure</div>
+                        <div class="case-subtitle">Improved part quality and production efficiency for a high-volume electronics enclosure.</div>
+                        <div class="case-grid">
+                            <div class="case-col">
+                                <div class="case-col-head">
+                                    <div class="ic ic-red"><i class="fa-regular fa-bell"></i></div>
+                                    <h4>The Challenge</h4>
+                                </div>
+                                <ul>
+                                    <li>Product deformation during mass production</li>
+                                    <li>&bull; Warping and sink marks</li>
+                                    <li>&bull; Inconsistent dimensions</li>
+                                </ul>
+                            </div>
+                            <div class="case-col">
+                                <div class="case-col-head">
+                                    <div class="ic ic-blue"><i class="fa-regular fa-lightbulb"></i></div>
+                                    <h4>Our Solution</h4>
+                                </div>
+                                <ul>
+                                    <li><i class="fas fa-check"></i> Material optimization</li>
+                                    <li><i class="fas fa-check"></i> Mold structure improvement</li>
+                                    <li><i class="fas fa-check"></i> Injection parameter adjustment</li>
+                                </ul>
+                            </div>
+                            <div class="case-col">
+                                <div class="case-col-head">
+                                    <div class="ic ic-green"><i class="fa-regular fa-circle-check"></i></div>
+                                    <h4>The Results</h4>
+                                </div>
+                                <ul>
+                                    <li><i class="fas fa-check"></i> <b>30%</b> defect reduction</li>
+                                    <li><i class="fas fa-check"></i> <b>Faster</b> cycle time</li>
+                                    <li><i class="fas fa-check"></i> <b>Stable</b> mass production</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="case-card">
+                    <div class="case-card-img">
+                        <img src="img/行业应用3.png" alt="Medical device components" loading="lazy" />
+                    </div>
+                    <div class="case-content">
+                        <div class="case-tag">CASE STUDY 02</div>
+                        <div class="case-title">Medical Device Components</div>
+                        <div class="case-subtitle">Delivered high-precision, clean, and reliable medical plastic parts that meet strict regulatory standards.</div>
+                        <div class="case-grid">
+                            <div class="case-col">
+                                <div class="case-col-head">
+                                    <div class="ic ic-red"><i class="fa-regular fa-bell"></i></div>
+                                    <h4>The Challenge</h4>
+                                </div>
+                                <ul>
+                                    <li>High cosmetic requirements and assembly issues</li>
+                                    <li>&bull; Visible weld lines</li>
+                                    <li>&bull; Tight tolerance control</li>
+                                </ul>
+                            </div>
+                            <div class="case-col">
+                                <div class="case-col-head">
+                                    <div class="ic ic-blue"><i class="fa-regular fa-lightbulb"></i></div>
+                                    <h4>Our Solution</h4>
+                                </div>
+                                <ul>
+                                    <li><i class="fas fa-check"></i> Mold flow analysis</li>
+                                    <li><i class="fas fa-check"></i> Gate position optimization</li>
+                                    <li><i class="fas fa-check"></i> Precision tooling &amp; process control</li>
+                                </ul>
+                            </div>
+                            <div class="case-col">
+                                <div class="case-col-head">
+                                    <div class="ic ic-green"><i class="fa-regular fa-circle-check"></i></div>
+                                    <h4>The Results</h4>
+                                </div>
+                                <ul>
+                                    <li><i class="fas fa-check"></i> <b>Zero</b> cosmetic defects</li>
+                                    <li><i class="fas fa-check"></i> <b>Improved</b> assembly fit</li>
+                                    <li><i class="fas fa-check"></i> <b>Passed</b> ISO 13485 audit</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="case-card">
+                    <div class="case-card-img">
+                        <img src="img/行业应用4.png" alt="Automotive interior parts" loading="lazy" />
+                    </div>
+                    <div class="case-content">
+                        <div class="case-tag">CASE STUDY 03</div>
+                        <div class="case-title">Automotive Interior Parts</div>
+                        <div class="case-subtitle">Enhanced part performance and production stability for automotive interior components.</div>
+                        <div class="case-grid">
+                            <div class="case-col">
+                                <div class="case-col-head">
+                                    <div class="ic ic-red"><i class="fa-regular fa-bell"></i></div>
+                                    <h4>The Challenge</h4>
+                                </div>
+                                <ul>
+                                    <li>Dimensional instability and long cycle time</li>
+                                    <li>&bull; High shrinkage variation</li>
+                                    <li>&bull; Long cooling time</li>
+                                </ul>
+                            </div>
+                            <div class="case-col">
+                                <div class="case-col-head">
+                                    <div class="ic ic-blue"><i class="fa-regular fa-lightbulb"></i></div>
+                                    <h4>Our Solution</h4>
+                                </div>
+                                <ul>
+                                    <li><i class="fas fa-check"></i> Material adjustment</li>
+                                    <li><i class="fas fa-check"></i> Mold cooling optimization</li>
+                                    <li><i class="fas fa-check"></i> Process parameter fine-tuning</li>
+                                </ul>
+                            </div>
+                            <div class="case-col">
+                                <div class="case-col-head">
+                                    <div class="ic ic-green"><i class="fa-regular fa-circle-check"></i></div>
+                                    <h4>The Results</h4>
+                                </div>
+                                <ul>
+                                    <li><i class="fas fa-check"></i> <b>25%</b> cycle time reduction</li>
+                                    <li><i class="fas fa-check"></i> <b>Consistent</b> dimensions</li>
+                                    <li><i class="fas fa-check"></i> <b>Long-term</b> production stability</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <section class="industry-quote-section section-padding">
+            <div class="container">
+                <div class="industry-quote-grid">
+                    <div class="industry-icons">
+                        <h3 data-i18n="home.cert.title">Certification</h3>
+                        <div class="industry-img-container">
+                            <div class="img-box"><img src="img/认证5.png" alt="ISO 9001" loading="lazy" /></div>
+                            <div class="img-box"><img src="img/认证6.png" alt="ISO 14001" loading="lazy" /></div>
+                            <div class="img-box"><img src="img/认证4.png" alt="Certification" loading="lazy" /></div>
+                            <div class="img-box"><img src="img/认证3.png" alt="Certification" loading="lazy" /></div>
+                        </div>
+                    </div>
+
+                    <div class="quote-form">
+                        <h3 data-i18n="home.quote.title">GET A FREE QUOTE</h3>
+                        <form action="/submit-quote" method="post" novalidate>
+                            <div class="quote-row">
+                                <input type="text" name="name" placeholder="Your Name *" required />
+                                <input type="email" name="email" placeholder="Email Address *" required />
+                            </div>
+                            <div class="quote-row">
+                                <input type="text" name="company" placeholder="Company Name" />
+                                <input type="tel" name="phone" placeholder="Phone Number *" required />
+                            </div>
+                            <select name="service" required>
+                                <option value="">Service Required *</option>
+                                <option value="design">Product Design</option>
+                                <option value="mold">Mold Development</option>
+                                <option value="injection">Injection Molding</option>
+                                <option value="full">Full Service</option>
+                            </select>
+                            <textarea name="message" placeholder="Your Message" rows="4"></textarea>
+                            <button type="submit" class="btn-primary">Send Inquiry</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer" id="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-brand">
+                        <img src="img/logo.png" alt="Techinherit" class="footer-logo-img" />
+                        <span class="footer-brand-text">Techinherit</span>
+                    </div>
+                    <p>We are dedicated to providing high-quality plastic products and services to customers worldwide.</p>
+                </div>
+
+                <div class="footer-col">
+                    <h4 data-i18n="footer.quick">QUICK LINKS</h4>
+                    <ul>
+                        <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+                        <li><a href="about-us.html" data-i18n="nav.about">About Us</a></li>
+                        <li><a href="product-design.html" data-i18n="nav.product-design">Product Design</a></li>
+                        <li><a href="#">Capabilities</a></li>
+                        <li><a href="case-studies.html" data-i18n="nav.cases">Case Studies</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 data-i18n="footer.services">SERVICES</h4>
+                    <ul>
+                        <li><a href="product-design.html" data-i18n="nav.product-design">Product Design</a></li>
+                        <li><a href="raw-materials.html" data-i18n="nav.raw-materials">Plastic Raw Materials</a></li>
+                        <li><a href="mold-development.html" data-i18n="nav.mold">Mold Development</a></li>
+                        <li><a href="injection-molding.html" data-i18n="nav.injection">Injection Molding</a></li>
+                        <li><a href="quality-control.html" data-i18n="nav.quality">Quality Control</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 data-i18n="footer.contact">CONTACT US</h4>
+                    <ul class="contact-list">
+                        <li><i class="fas fa-phone-alt" aria-hidden="true"></i> +86 123 4567 8901</li>
+                        <li><i class="fas fa-envelope" aria-hidden="true"></i> info@jicheng.com</li>
+                        <li><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Dongguan, China</li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 data-i18n="footer.follow">FOLLOW US</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/?locale=zh_CN" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright">
+                &copy; 2026 Techinherit. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/85257096596" target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Contact us on WhatsApp">
+        <i class="fab fa-whatsapp" aria-hidden="true"></i>
+    </a>
+
+    <a href="global-partnership.html" class="global-float" aria-label="Global cooperation">
+        <img src="img/全球合作.png" alt="Global cooperation" />
+    </a>
+
+    <script>
+        (function() {
+            var toggle = document.querySelector('.hamburger-toggle');
+            var nav = document.querySelector('.nav-links');
+
+            if (toggle && nav) {
+                toggle.addEventListener('click', function() {
+                    var expanded = this.getAttribute('aria-expanded') === 'true' ? false : true;
+                    nav.classList.toggle('is-open');
+                    this.setAttribute('aria-expanded', expanded);
+                });
+            }
+
+            document.querySelectorAll('.dropdown-trigger').forEach(function(trigger) {
+                trigger.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    var parent = this.closest('.nav-dropdown');
+                    if (parent) {
+                        parent.classList.toggle('is-open');
+                    }
+                });
+            });
+
+            document.addEventListener('click', function(e) {
+                document.querySelectorAll('.nav-dropdown.is-open').forEach(function(dropdown) {
+                    if (!dropdown.contains(e.target)) {
+                        dropdown.classList.remove('is-open');
+                    }
+                });
+            });
+
+            var header = document.querySelector('.site-header');
+            window.addEventListener('scroll', function() {
+                header.classList.toggle('scrolled', window.scrollY > 10);
+            });
+        })();
+    </script>
+
+    <script src="js/i18n.js"></script>
+</body>
+</html>

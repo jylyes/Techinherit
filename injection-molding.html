@@ -1,0 +1,819 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Injection Molding | Techinherit</title>
+    <meta name="description" content="Precision injection molding services with advanced equipment from 80T to 1000T. Tight tolerances, wide material range, and strict quality control for reliable plastic parts." />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <style>
+        .im-hero {
+            height: 550px;
+            display: flex;
+            flex-direction: column;
+            padding: 100px 0 60px;
+            background: linear-gradient(rgba(10, 30, 60, 0.9), rgba(10, 30, 60, 0.5)), url('img/注塑机.png') center / cover;
+        }
+
+        .im-hero h1 {
+            font-size: 48px;
+            font-weight: 900;
+            color: #fff;
+            margin-bottom: 20px;
+            line-height: 1.2;
+            animation: heroFadeUp 0.8s ease both;
+        }
+
+        .im-hero p {
+            font-size: 16px;
+            color: #d1d5db;
+            max-width: 600px;
+            margin-bottom: 30px;
+            line-height: 1.6;
+            animation: heroFadeUp 0.8s 0.2s ease both;
+        }
+
+        .im-hero-btns {
+            display: flex;
+            gap: 16px;
+            animation: heroFadeUp 0.8s 0.35s ease both;
+        }
+
+        .im-benefits {
+            padding: 40px 0;
+        }
+
+        .im-benefit-grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 20px;
+            text-align: center;
+        }
+
+        .im-benefit-item i {
+            font-size: 28px;
+            color: var(--color-primary);
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .im-benefit-item h4 {
+            font-size: 14px;
+            font-weight: 700;
+            margin-bottom: 4px;
+            color: #1e1e1e;
+        }
+
+        .im-benefit-item p {
+            font-size: 12px;
+            color: #666;
+        }
+
+        .im-section-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .im-tag {
+            color: var(--color-primary);
+            font-weight: 700;
+            font-size: 13px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            margin-bottom: 6px;
+        }
+
+        .im-tag::before {
+            content: '';
+            width: 16px;
+            height: 3px;
+            background: var(--color-primary);
+        }
+
+        .im-section-header h2 {
+            font-size: 28px;
+            font-weight: 700;
+            color: #1e1e1e;
+        }
+
+        .im-section-header p {
+            color: #666;
+            margin-top: 6px;
+        }
+
+        .im-process {
+            padding: 40px 0;
+        }
+
+        .im-process-steps {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .im-step {
+            background: #fff;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            overflow: hidden;
+            position: relative;
+            transition: var(--transition);
+        }
+
+        .im-step:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(33, 86, 169, 0.1);
+            border-color: var(--color-primary);
+        }
+
+        .im-step img {
+            width: 100%;
+            height: 140px;
+            object-fit: cover;
+            background-color: #e2e8f0;
+        }
+
+        .im-step-content {
+            padding: 15px;
+            position: relative;
+        }
+
+        .im-step .im-num {
+            position: absolute;
+            top: -12px;
+            left: 15px;
+            width: 28px;
+            height: 28px;
+            background: var(--color-primary);
+            color: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            font-weight: 700;
+            border: 2px solid #fff;
+        }
+
+        .im-step h4 {
+            font-size: 15px;
+            font-weight: 700;
+            margin-top: 8px;
+            margin-bottom: 4px;
+            color: #1e1e1e;
+        }
+
+        .im-step p {
+            font-size: 13px;
+            color: #666;
+            line-height: 1.4;
+        }
+
+        .im-cap {
+            padding: 40px 0 20px;
+        }
+
+        .im-cap-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .im-cap-img img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .im-cap-list {
+            background: #fff;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            padding: 20px 30px;
+        }
+
+        .im-cap-row {
+            display: flex;
+            padding: 12px 0;
+            border-bottom: 1px solid #e5e7eb;
+            font-size: 14px;
+        }
+
+        .im-cap-row:last-child {
+            border-bottom: 0;
+        }
+
+        .im-cap-row .im-label {
+            width: 180px;
+            font-weight: 700;
+            color: #1e1e1e;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .im-cap-row .im-label i {
+            color: var(--color-primary);
+            font-size: 18px;
+        }
+
+        .im-cap-row .im-value {
+            flex: 1;
+            color: #555;
+        }
+
+        .im-ind {
+            padding: 40px 0;
+            background: #f8f9fa;
+        }
+
+        .im-ind-grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 16px;
+            margin-top: 20px;
+        }
+
+        .im-ind-card {
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid #e5e7eb;
+            position: relative;
+            transition: var(--transition);
+        }
+
+        .im-ind-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(33, 86, 169, 0.1);
+            border-color: var(--color-primary);
+        }
+
+        .im-ind-card img {
+            width: 100%;
+            height: 120px;
+            object-fit: cover;
+        }
+
+        .im-ind-overlay {
+            padding: 12px 10px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .im-ind-overlay .im-ind-num {
+            width: 24px;
+            height: 24px;
+            background: var(--color-primary);
+            color: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 11px;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        .im-ind-overlay h4 {
+            font-size: 13px;
+            font-weight: 700;
+            color: #1e1e1e;
+        }
+
+        .im-cta {
+            padding: 0 0 40px;
+        }
+
+        .im-cta-box {
+            background: #0a1a30;
+            border-radius: 12px;
+            padding: 30px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #fff;
+        }
+
+        .im-cta-text h3 {
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        .im-cta-text p {
+            font-size: 14px;
+            color: #b0bed0;
+        }
+
+        .im-cta-btns {
+            display: flex;
+            gap: 15px;
+        }
+
+        @media (max-width: 1024px) {
+            .im-benefit-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            .im-process-steps {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .im-cap-grid {
+                grid-template-columns: 1fr;
+            }
+            .im-ind-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .im-hero {
+                height: 430px;
+            }
+            .im-hero h1 {
+                font-size: 28px;
+            }
+            .im-benefit-grid {
+                grid-template-columns: 1fr;
+            }
+            .im-process-steps {
+                grid-template-columns: 1fr;
+            }
+            .im-ind-grid {
+                grid-template-columns: 1fr;
+            }
+            .im-cap-row {
+                flex-direction: column;
+                gap: 4px;
+            }
+            .im-cta-box {
+                flex-direction: column;
+                text-align: center;
+                gap: 15px;
+            }
+            .im-cta-btns {
+                flex-direction: column;
+            }
+        }
+    </style>
+    <!-- GEO / Hreflang -->
+    <meta name="geo.region" content="CN-44" />
+    <meta name="geo.placename" content="Dongguan, China" />
+    <link rel="alternate" href="https://www.techinherit.com/" hreflang="en" />
+    <link rel="alternate" href="https://www.techinherit.com/" hreflang="en-ZA" />
+    <link rel="alternate" href="https://www.techinherit.com/" hreflang="en-NG" />
+    <link rel="alternate" href="https://www.techinherit.com/" hreflang="en-AE" />
+    <link rel="alternate" href="https://www.techinherit.com/" hreflang="en-ID" />
+    <!-- Organization Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Techinherit",
+        "url": "https://www.techinherit.com",
+        "logo": "https://www.techinherit.com/img/logo.png",
+        "description": "One-stop plastic manufacturing solution provider.",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Dongguan",
+            "addressCountry": "CN"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+86-123-4567-8901",
+            "contactType": "sales"
+        },
+        "sameAs": [
+            "https://www.facebook.com/techinherit"
+        ]
+    }
+    </script>
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container">
+            <div class="header-inner">
+                <a href="index.html" class="logo-area" aria-label="Techinherit Home">
+                    <img src="img/logo.png" alt="Techinherit" class="logo-img" />
+                    <span class="logo-text">Techinherit</span>
+                </a>
+
+                <button class="hamburger-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                </button>
+
+                <nav class="nav-links" aria-label="Primary navigation" role="navigation">
+                    <a href="index.html" data-i18n="nav.home">Home</a>
+                    <a href="about-us.html" data-i18n="nav.about">About Us</a>
+
+                    <div class="nav-dropdown active">
+                        <a href="#" class="dropdown-trigger">
+                            Services <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="product-design.html" data-i18n="nav.product-design">Product Design</a></li>
+                            <li><a href="raw-materials.html" data-i18n="nav.raw-materials">Plastic Raw Materials</a></li>
+                            <li><a href="mold-development.html" data-i18n="nav.mold">Mold Development</a></li>
+                            <li><a href="injection-molding.html" class="active" data-i18n="nav.injection">Injection Molding</a></li>
+                            <li><a href="quality-control.html" data-i18n="nav.quality">Quality Control</a></li>
+                            <li><a href="odm-oem.html">Assemble</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="nav-dropdown">
+                        <a href="#" class="dropdown-trigger">
+                            Capabilities <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="rd-strength.html">R&D Strength</a></li>
+                            <li><a href="production-equipment.html" data-i18n="nav.equipment">Production Equipment</a></li>
+                        </ul>
+                    </div>
+
+                    <a href="industries.html" data-i18n="nav.industries">Industries</a>
+                    <a href="case-studies.html" data-i18n="nav.cases">Case Studies</a>
+                    <a href="#footer" data-i18n="nav.contact">Contact Us</a>
+                    <a href="#footer" class="btn-header" data-i18n="nav.quote">Get a Quote</a>
+                    <button class="lang-toggle" id="langToggle" data-i18n="lang.switch" title="Switch language">中文</button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="im-hero">
+            <div class="container">
+                <h1>PRECISION INJECTION MOLDING<br>FOR HIGH-QUALITY PARTS</h1>
+                <p>We provide high-precision injection molding services with advanced equipment, skilled operators, and strict quality control to deliver reliable plastic parts that meet your exact requirements.</p>
+                <div class="im-hero-btns">
+                    <a href="#footer" class="btn-primary">Get a Free Quote</a>
+                    <a href="#footer" class="btn-outline-light">Contact Our Experts</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="im-benefits">
+            <div class="container im-benefit-grid">
+                <div class="im-benefit-item">
+                    <i class="fas fa-cubes"></i>
+                    <h4>Advanced Equipment</h4>
+                    <p>80T to 1000T high-precision injection molding machines</p>
+                </div>
+                <div class="im-benefit-item">
+                    <i class="fas fa-layer-group"></i>
+                    <h4>Wide Material Range</h4>
+                    <p>Engineering plastics, general purpose plastics &amp; more</p>
+                </div>
+                <div class="im-benefit-item">
+                    <i class="fas fa-bullseye"></i>
+                    <h4>High Precision</h4>
+                    <p>Tight tolerances and consistent quality</p>
+                </div>
+                <div class="im-benefit-item">
+                    <i class="fas fa-arrows-split-up-and-left"></i>
+                    <h4>Scalability</h4>
+                    <p>From prototype to mass production</p>
+                </div>
+                <div class="im-benefit-item">
+                    <i class="fas fa-clock"></i>
+                    <h4>Fast Turnaround</h4>
+                    <p>Efficient processes ensure on-time delivery</p>
+                </div>
+                <div class="im-benefit-item">
+                    <i class="fa-regular fa-circle-check"></i>
+                    <h4>Quality Assurance</h4>
+                    <p>Strict quality control at every production step</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="im-process">
+            <div class="container">
+                <div class="im-section-header">
+                    <div class="im-tag">OUR INJECTION MOLDING PROCESS</div>
+                    <h2>Efficient Process. Consistent Quality.</h2>
+                    <p>We follow a standardized injection molding process to ensure every part is produced with precision, reliability, and efficiency.</p>
+                </div>
+                <div class="im-process-steps">
+                    <div class="im-step">
+                        <img src="img/塑胶原料.png" alt="Material Preparation" loading="lazy" />
+                        <div class="im-step-content">
+                            <div class="im-num">01</div>
+                            <h4>Material Preparation</h4>
+                            <p>High-quality Plastic Raw Materials are dried and prepared to ensure optimal molding performance.</p>
+                        </div>
+                    </div>
+                    <div class="im-step">
+                        <img src="img/模具.png" alt="Mold Setup" loading="lazy" />
+                        <div class="im-step-content">
+                            <div class="im-num">02</div>
+                            <h4>Mold Setup</h4>
+                            <p>The mold is installed and precisely set up with optimized process parameters.</p>
+                        </div>
+                    </div>
+                    <div class="im-step">
+                        <img src="img/注塑机.png" alt="Injection" loading="lazy" />
+                        <div class="im-step-content">
+                            <div class="im-num">03</div>
+                            <h4>Injection Molding</h4>
+                            <p>Molten plastic is injected into the mold under high pressure and tightly controlled conditions.</p>
+                        </div>
+                    </div>
+                    <div class="im-step">
+                        <img src="img/注塑机.png" alt="Cooling" loading="lazy" />
+                        <div class="im-step-content">
+                            <div class="im-num">04</div>
+                            <h4>Cooling &amp; Solidification</h4>
+                            <p>Parts are cooled in the mold to solidify and ensure dimensional stability and consistency.</p>
+                        </div>
+                    </div>
+                    <div class="im-step">
+                        <img src="img/模具2.png" alt="Part Ejection" loading="lazy" />
+                        <div class="im-step-content">
+                            <div class="im-num">05</div>
+                            <h4>Part Ejection</h4>
+                            <p>Finished parts are ejected automatically to ensure efficiency and prevent damage.</p>
+                        </div>
+                    </div>
+                    <div class="im-step">
+                        <img src="img/质量.png" alt="Inspection" loading="lazy" />
+                        <div class="im-step-content">
+                            <div class="im-num">06</div>
+                            <h4>Inspection &amp; Packaging</h4>
+                            <p>Each part is inspected for quality and then packed carefully for delivery.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="im-cap">
+            <div class="container">
+                <div class="im-section-header">
+                    <div class="im-tag">OUR INJECTION MOLDING CAPABILITIES</div>
+                    <h2>Flexible Solutions for Your Production Needs</h2>
+                </div>
+                <div class="im-cap-grid">
+                    <div class="im-cap-img">
+                        <img src="img/设备展示.png" alt="Factory" loading="lazy" />
+                    </div>
+                    <div class="im-cap-list">
+                        <div class="im-cap-row">
+                            <div class="im-label"><i class="fas fa-industry"></i> Machine Tonnage</div>
+                            <div class="im-value">80T &ndash; 1000T</div>
+                        </div>
+                        <div class="im-cap-row">
+                            <div class="im-label"><i class="fas fa-weight-scale"></i> Shot Size</div>
+                            <div class="im-value">1g &ndash; 3000g</div>
+                        </div>
+                        <div class="im-cap-row">
+                            <div class="im-label"><i class="fas fa-cube"></i> Part Weight</div>
+                            <div class="im-value">0.1g &ndash; 2500g</div>
+                        </div>
+                        <div class="im-cap-row">
+                            <div class="im-label"><i class="fas fa-gear"></i> Clamping Force</div>
+                            <div class="im-value">Up to 1000 Tons</div>
+                        </div>
+                        <div class="im-cap-row">
+                            <div class="im-label"><i class="fas fa-cubes"></i> Tolerances</div>
+                            <div class="im-value">&plusmn;0.01 mm</div>
+                        </div>
+                        <div class="im-cap-row">
+                            <div class="im-label"><i class="fas fa-flask"></i> Materials</div>
+                            <div class="im-value">ABS, PP, PC, PA (Nylon), POM, PMMA, TPE, PBT, and more</div>
+                        </div>
+                        <div class="im-cap-row">
+                            <div class="im-label"><i class="fas fa-ruler"></i> Surface Finish</div>
+                            <div class="im-value">SPI A1-A3, VDI 12-36, Textured, Glossy, Matte</div>
+                        </div>
+                        <div class="im-cap-row">
+                            <div class="im-label"><i class="fas fa-arrows-spin"></i> Production Volume</div>
+                            <div class="im-value">Prototype / Low-Volume / High-Volume Production</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="im-ind">
+            <div class="container">
+                <div class="im-section-header">
+                    <div class="im-tag">INDUSTRIES WE SERVE</div>
+                    <h2>Trusted by Industries Worldwide</h2>
+                </div>
+                <div class="im-ind-grid">
+                    <div class="im-ind-card">
+                        <img src="img/汽车配件.png" alt="Automotive" loading="lazy" />
+                        <div class="im-ind-overlay">
+                            <div class="im-ind-num">01</div>
+                            <h4>Automotive</h4>
+                        </div>
+                    </div>
+                    <div class="im-ind-card">
+                        <img src="img/消费电子.png" alt="Consumer Electronics" loading="lazy" />
+                        <div class="im-ind-overlay">
+                            <div class="im-ind-num">02</div>
+                            <h4>Consumer Electronics</h4>
+                        </div>
+                    </div>
+                    <div class="im-ind-card">
+                        <img src="img/医疗设备.png" alt="Medical Devices" loading="lazy" />
+                        <div class="im-ind-overlay">
+                            <div class="im-ind-num">03</div>
+                            <h4>Medical Devices</h4>
+                        </div>
+                    </div>
+                    <div class="im-ind-card">
+                        <img src="img/工业设备.png" alt="Industrial Equipment" loading="lazy" />
+                        <div class="im-ind-overlay">
+                            <div class="im-ind-num">04</div>
+                            <h4>Industrial Equipment</h4>
+                        </div>
+                    </div>
+                    <div class="im-ind-card">
+                        <img src="img/智能家居.png" alt="Home Appliances" loading="lazy" />
+                        <div class="im-ind-overlay">
+                            <div class="im-ind-num">05</div>
+                            <h4>Home Appliances</h4>
+                        </div>
+                    </div>
+                    <div class="im-ind-card">
+                        <img src="img/注塑成型.png" alt="Telecommunications" loading="lazy" />
+                        <div class="im-ind-overlay">
+                            <div class="im-ind-num">06</div>
+                            <h4>Telecommunications</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="industry-quote-section section-padding">
+            <div class="container">
+                <div class="industry-quote-grid">
+                    <div class="industry-icons">
+                        <h3 data-i18n="home.cert.title">Certification</h3>
+                        <div class="industry-img-container">
+                            <div class="img-box"><img src="img/认证5.png" alt="ISO 9001" loading="lazy" /></div>
+                            <div class="img-box"><img src="img/认证6.png" alt="ISO 14001" loading="lazy" /></div>
+                            <div class="img-box"><img src="img/认证4.png" alt="Certification" loading="lazy" /></div>
+                            <div class="img-box"><img src="img/认证3.png" alt="Certification" loading="lazy" /></div>
+                        </div>
+                    </div>
+
+                    <div class="quote-form">
+                        <h3 data-i18n="home.quote.title">GET A FREE QUOTE</h3>
+                        <form action="/submit-quote" method="post" novalidate>
+                            <div class="quote-row">
+                                <input type="text" name="name" placeholder="Your Name *" required />
+                                <input type="email" name="email" placeholder="Email Address *" required />
+                            </div>
+                            <div class="quote-row">
+                                <input type="text" name="company" placeholder="Company Name" />
+                                <input type="tel" name="phone" placeholder="Phone Number *" required />
+                            </div>
+                            <select name="service" required>
+                                <option value="">Service Required *</option>
+                                <option value="design">Product Design</option>
+                                <option value="mold">Mold Development</option>
+                                <option value="injection">Injection Molding</option>
+                                <option value="full">Full Service</option>
+                            </select>
+                            <textarea name="message" placeholder="Your Message" rows="4"></textarea>
+                            <button type="submit" class="btn-primary">Send Inquiry</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer" id="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-brand">
+                        <img src="img/logo.png" alt="Techinherit" class="footer-logo-img" />
+                        <span class="footer-brand-text">Techinherit</span>
+                    </div>
+                    <p>We are dedicated to providing high-quality plastic products and services to customers worldwide.</p>
+                </div>
+
+                <div class="footer-col">
+                    <h4 data-i18n="footer.quick">QUICK LINKS</h4>
+                    <ul>
+                        <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+                        <li><a href="about-us.html" data-i18n="nav.about">About Us</a></li>
+                        <li><a href="product-design.html" data-i18n="nav.product-design">Product Design</a></li>
+                        <li><a href="#">Capabilities</a></li>
+                        <li><a href="case-studies.html" data-i18n="nav.cases">Case Studies</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 data-i18n="footer.services">SERVICES</h4>
+                    <ul>
+                        <li><a href="product-design.html" data-i18n="nav.product-design">Product Design</a></li>
+                        <li><a href="raw-materials.html" data-i18n="nav.raw-materials">Plastic Raw Materials</a></li>
+                        <li><a href="mold-development.html" data-i18n="nav.mold">Mold Development</a></li>
+                        <li><a href="injection-molding.html" data-i18n="nav.injection">Injection Molding</a></li>
+                        <li><a href="quality-control.html" data-i18n="nav.quality">Quality Control</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 data-i18n="footer.contact">CONTACT US</h4>
+                    <ul class="contact-list">
+                        <li><i class="fas fa-phone-alt" aria-hidden="true"></i> +86 123 4567 8901</li>
+                        <li><i class="fas fa-envelope" aria-hidden="true"></i> info@jicheng.com</li>
+                        <li><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Dongguan, China</li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 data-i18n="footer.follow">FOLLOW US</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/?locale=zh_CN" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright">
+                &copy; 2026 Techinherit. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/85257096596" target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Contact us on WhatsApp">
+        <i class="fab fa-whatsapp" aria-hidden="true"></i>
+    </a>
+
+    <a href="global-partnership.html" class="global-float" aria-label="Global cooperation">
+        <img src="img/全球合作.png" alt="Global cooperation" />
+    </a>
+
+    <script>
+        (function() {
+            var toggle = document.querySelector('.hamburger-toggle');
+            var nav = document.querySelector('.nav-links');
+
+            if (toggle && nav) {
+                toggle.addEventListener('click', function() {
+                    var expanded = this.getAttribute('aria-expanded') === 'true' ? false : true;
+                    nav.classList.toggle('is-open');
+                    this.setAttribute('aria-expanded', expanded);
+                });
+            }
+
+            document.querySelectorAll('.dropdown-trigger').forEach(function(trigger) {
+                trigger.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    var parent = this.closest('.nav-dropdown');
+                    if (parent) {
+                        parent.classList.toggle('is-open');
+                    }
+                });
+            });
+
+            document.addEventListener('click', function(e) {
+                document.querySelectorAll('.nav-dropdown.is-open').forEach(function(dropdown) {
+                    if (!dropdown.contains(e.target)) {
+                        dropdown.classList.remove('is-open');
+                    }
+                });
+            });
+
+            var header = document.querySelector('.site-header');
+            window.addEventListener('scroll', function() {
+                header.classList.toggle('scrolled', window.scrollY > 10);
+            });
+        })();
+    </script>
+
+    <script src="js/i18n.js"></script>
+</body>
+</html>

@@ -1,0 +1,622 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Industries We Serve | Techinherit</title>
+    <meta name="description" content="High-quality plastic assembly solutions tailored to meet the unique needs of your industry - office furniture, consumer electronics, medical devices, automotive, and industrial equipment." />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <style>
+        .industries-page-hero {
+            position: relative;
+            height: 550px;
+            background: linear-gradient(rgba(10, 26, 48, 0.9), rgba(10, 26, 48, 0.5)), url('img/工厂图.png') center / cover;
+            display: flex;
+            flex-direction: column;
+            padding: 100px 0 60px;
+        }
+
+        .industries-page-hero-content {
+            color: #fff;
+            max-width: 700px;
+        }
+
+        .industries-page-hero-content h1 {
+            font-size: 48px;
+            font-weight: 900;
+            margin-bottom: 20px;
+            line-height: 1.2;
+            letter-spacing: 1px;
+            animation: heroFadeUp 0.8s ease both;
+        }
+
+        .industries-page-hero-content p {
+            font-size: 16px;
+            font-weight: 300;
+            color: #d1d5db;
+            max-width: 600px;
+            line-height: 1.6;
+            animation: heroFadeUp 0.8s 0.2s ease both;
+        }
+
+        .industries-page-tag {
+            color: var(--color-primary);
+            font-weight: 700;
+            font-size: 13px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+
+        .industries-page-title {
+            font-size: 32px;
+            font-weight: 700;
+            color: #000;
+            margin-bottom: 10px;
+        }
+
+        .industries-page-desc {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 40px;
+        }
+
+        .industries-page-main {
+            padding: 60px 0;
+        }
+
+        .ip-cards-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .ip-cards-grid-bottom {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            max-width: 785px;
+            margin: 0 auto;
+        }
+
+        .ip-card {
+            background: #fff;
+            border: 1px solid #e5e7eb;
+            border-radius: 12px;
+            overflow: hidden;
+            padding: 20px;
+            transition: var(--transition);
+        }
+
+        .ip-card:hover {
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+            transform: translateY(-4px);
+        }
+
+        .ip-card-img-wrapper {
+            position: relative;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            overflow: hidden;
+            height: 200px;
+            background-color: #e2e8f0;
+        }
+
+        .ip-card-img-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .ip-card-img-wrapper .ip-card-icon {
+            position: absolute;
+            bottom: -5px;
+            left: 20px;
+            width: 50px;
+            height: 50px;
+            background-color: var(--color-primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 3px solid #fff;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .ip-card-icon i {
+            font-size: 22px;
+            color: #fff;
+        }
+
+        .ip-card h3 {
+            font-size: 18px;
+            font-weight: 700;
+            margin-top: 10px;
+            margin-bottom: 4px;
+            color: #000;
+        }
+
+        .ip-card .ip-subtitle {
+            font-size: 15px;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 12px;
+        }
+
+        .ip-card .ip-desc {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+
+        .ip-card ul {
+            list-style: none;
+            margin-bottom: 15px;
+        }
+
+        .ip-card ul li {
+            font-size: 14px;
+            color: #444;
+            margin-bottom: 6px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .ip-card ul li i {
+            color: var(--color-primary);
+            font-size: 12px;
+        }
+
+        .ip-learn-more {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--color-primary);
+            font-weight: 600;
+            font-size: 14px;
+            text-decoration: none;
+            border: 1px solid var(--color-primary);
+            padding: 6px 16px;
+            border-radius: 20px;
+            transition: 0.3s;
+        }
+
+        .ip-learn-more:hover {
+            background-color: var(--color-primary);
+            color: #fff;
+        }
+
+        .ip-learn-more i {
+            font-size: 12px;
+        }
+
+        .ip-cta {
+            padding: 20px 0 60px;
+        }
+
+        .ip-cta-box {
+            background-color: #0a1a30;
+            border-radius: 12px;
+            padding: 35px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #fff;
+        }
+
+        .ip-cta-left {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .ip-cta-icon {
+            font-size: 40px;
+            border: 2px solid #fff;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .ip-cta-text h3 {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        .ip-cta-text p {
+            font-size: 14px;
+            color: #b0bed0;
+        }
+
+        @media (max-width: 1024px) {
+            .ip-cards-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .ip-cards-grid-bottom {
+                grid-template-columns: 1fr 1fr;
+                max-width: 100%;
+            }
+            .ip-cta-box {
+                flex-direction: column;
+                text-align: center;
+                gap: 20px;
+            }
+            .ip-cta-left {
+                flex-direction: column;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .industries-page-hero {
+                height: 430px;
+            }
+            .industries-page-hero-content h1 {
+                font-size: 28px;
+            }
+            .industries-page-hero-content p {
+                font-size: 14px;
+            }
+            .ip-cards-grid {
+                grid-template-columns: 1fr;
+            }
+            .ip-cards-grid-bottom {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+    <!-- GEO / Hreflang -->
+    <meta name="geo.region" content="CN-44" />
+    <meta name="geo.placename" content="Dongguan, China" />
+    <link rel="alternate" href="https://www.techinherit.com/" hreflang="en" />
+    <link rel="alternate" href="https://www.techinherit.com/" hreflang="en-ZA" />
+    <link rel="alternate" href="https://www.techinherit.com/" hreflang="en-NG" />
+    <link rel="alternate" href="https://www.techinherit.com/" hreflang="en-AE" />
+    <link rel="alternate" href="https://www.techinherit.com/" hreflang="en-ID" />
+    <!-- Organization Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Techinherit",
+        "url": "https://www.techinherit.com",
+        "logo": "https://www.techinherit.com/img/logo.png",
+        "description": "One-stop plastic manufacturing solution provider.",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Dongguan",
+            "addressCountry": "CN"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+86-123-4567-8901",
+            "contactType": "sales"
+        },
+        "sameAs": [
+            "https://www.facebook.com/techinherit"
+        ]
+    }
+    </script>
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container">
+            <div class="header-inner">
+                <a href="index.html" class="logo-area" aria-label="Techinherit Home">
+                    <img src="img/logo.png" alt="Techinherit" class="logo-img" />
+                    <span class="logo-text">Techinherit</span>
+                </a>
+
+                <button class="hamburger-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                </button>
+
+                <nav class="nav-links" aria-label="Primary navigation" role="navigation">
+                    <a href="index.html" data-i18n="nav.home">Home</a>
+                    <a href="about-us.html" data-i18n="nav.about">About Us</a>
+
+                    <div class="nav-dropdown">
+                        <a href="#" class="dropdown-trigger">
+                            Services <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="product-design.html" data-i18n="nav.product-design">Product Design</a></li>
+                            <li><a href="raw-materials.html" data-i18n="nav.raw-materials">Plastic Raw Materials</a></li>
+                            <li><a href="mold-development.html" data-i18n="nav.mold">Mold Development</a></li>
+                            <li><a href="injection-molding.html" data-i18n="nav.injection">Injection Molding</a></li>
+                            <li><a href="quality-control.html" data-i18n="nav.quality">Quality Control</a></li>
+                            <li><a href="odm-oem.html">Assemble</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="nav-dropdown">
+                        <a href="#" class="dropdown-trigger">
+                            Capabilities <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="rd-strength.html">R&D Strength</a></li>
+                            <li><a href="production-equipment.html" data-i18n="nav.equipment">Production Equipment</a></li>
+                        </ul>
+                    </div>
+
+                    <a href="industries.html" class="active" data-i18n="nav.industries">Industries</a>
+                    <a href="case-studies.html" data-i18n="nav.cases">Case Studies</a>
+                    <a href="#footer" data-i18n="nav.contact">Contact Us</a>
+                    <a href="#footer" class="btn-header" data-i18n="nav.quote">Get a Quote</a>
+                    <button class="lang-toggle" id="langToggle" data-i18n="lang.switch" title="Switch language">中文</button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="industries-page-hero">
+            <div class="container">
+                <div class="industries-page-hero-content">
+                    <h1>Industries We Serve</h1>
+                    <p>High-quality plastic assembly solutions tailored to meet the unique needs of your industry.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="industries-page-main">
+            <div class="container">
+                <div class="industries-page-tag">INDUSTRY SOLUTIONS</div>
+                <div class="industries-page-title">Custom Plastic Assembly for Every Industry</div>
+                <div class="industries-page-desc">From design to delivery, we provide reliable assembly services and solutions that help your products perform better and reach the market faster.</div>
+
+                <div class="ip-cards-grid">
+                    <div class="ip-card">
+                        <div class="ip-card-img-wrapper">
+                            <img src="img/行业应用1.png" alt="Office Furniture" loading="lazy" />
+                            <div class="ip-card-icon"><i class="fas fa-chair"></i></div>
+                        </div>
+                        <h3>Office Furniture</h3>
+                        <div class="ip-subtitle">Ergonomic Chair Plastic Parts</div>
+                        <p class="ip-desc">We assemble durable and ergonomic plastic components for office chairs, including armrests, backrests, bases, and adjustment mechanisms.</p>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Precision assembly for comfort and safety</li>
+                            <li><i class="fas fa-check"></i> High-strength and long-lasting materials</li>
+                            <li><i class="fas fa-check"></i> Consistent quality for global brands</li>
+                        </ul>
+                        <a href="office-furniture.html" class="ip-learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+
+                    <div class="ip-card">
+                        <div class="ip-card-img-wrapper">
+                            <img src="img/行业应用2.png" alt="Consumer Electronics" loading="lazy" />
+                            <div class="ip-card-icon"><i class="fas fa-mobile-screen-button"></i></div>
+                        </div>
+                        <h3>Consumer Electronics</h3>
+                        <div class="ip-subtitle">Electronic Product Enclosures</div>
+                        <p class="ip-desc">We provide precision assembly for electronic enclosures and housing components to ensure functionality, durability, and aesthetic appeal.</p>
+                        <ul>
+                            <li><i class="fas fa-check"></i> High-precision fit and finish</li>
+                            <li><i class="fas fa-check"></i> ESD-safe assembly environment</li>
+                            <li><i class="fas fa-check"></i> Support for complex and delicate parts</li>
+                        </ul>
+                        <a href="consumer-electronics.html" class="ip-learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+
+                    <div class="ip-card">
+                        <div class="ip-card-img-wrapper">
+                            <img src="img/行业应用3.png" alt="Medical Devices" loading="lazy" />
+                            <div class="ip-card-icon"><i class="fas fa-heart-pulse"></i></div>
+                        </div>
+                        <h3>Medical Devices</h3>
+                        <div class="ip-subtitle">Medical Plastic Components</div>
+                        <p class="ip-desc">We assemble high-quality plastic parts for medical devices with strict adherence to cleanliness, safety, and regulatory standards.</p>
+                        <ul>
+                            <li><i class="fas fa-check"></i> ISO 13485 certified processes</li>
+                            <li><i class="fas fa-check"></i> Cleanroom assembly available</li>
+                            <li><i class="fas fa-check"></i> Traceability and full quality control</li>
+                        </ul>
+                        <a href="medical-devices.html" class="ip-learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="ip-cards-grid-bottom">
+                    <div class="ip-card">
+                        <div class="ip-card-img-wrapper">
+                            <img src="img/行业应用4.png" alt="Automotive" loading="lazy" />
+                            <div class="ip-card-icon"><i class="fas fa-car"></i></div>
+                        </div>
+                        <h3>Automotive</h3>
+                        <div class="ip-subtitle">Automotive Plastic Components</div>
+                        <p class="ip-desc">We deliver reliable assembly solutions for interior and exterior automotive plastic parts with high performance and consistency.</p>
+                        <ul>
+                            <li><i class="fas fa-check"></i> IATF 16949 quality management</li>
+                            <li><i class="fas fa-check"></i> High durability and impact resistance</li>
+                            <li><i class="fas fa-check"></i> On-time delivery for production lines</li>
+                        </ul>
+                        <a href="automotive-parts.html" class="ip-learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+
+                    <div class="ip-card">
+                        <div class="ip-card-img-wrapper">
+                            <img src="img/行业应用5.png" alt="Industrial Equipment" loading="lazy" />
+                            <div class="ip-card-icon"><i class="fas fa-gears"></i></div>
+                        </div>
+                        <h3>Industrial Equipment</h3>
+                        <div class="ip-subtitle">Industrial Plastic Parts</div>
+                        <p class="ip-desc">We assemble rugged and precise plastic components for industrial machinery and equipment built to withstand demanding environments.</p>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Robust and wear-resistant materials</li>
+                            <li><i class="fas fa-check"></i> Flexible production and customization</li>
+                            <li><i class="fas fa-check"></i> Cost-effective and scalable solutions</li>
+                        </ul>
+                        <a href="industrial-equipment.html" class="ip-learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="industry-quote-section section-padding">
+            <div class="container">
+                <div class="industry-quote-grid">
+                    <div class="industry-icons">
+                        <h3 data-i18n="home.cert.title">Certification</h3>
+                        <div class="industry-img-container">
+                            <div class="img-box"><img src="img/认证5.png" alt="ISO 9001" loading="lazy" /></div>
+                            <div class="img-box"><img src="img/认证6.png" alt="ISO 14001" loading="lazy" /></div>
+                            <div class="img-box"><img src="img/认证4.png" alt="Certification" loading="lazy" /></div>
+                            <div class="img-box"><img src="img/认证3.png" alt="Certification" loading="lazy" /></div>
+                        </div>
+                    </div>
+
+                    <div class="quote-form">
+                        <h3 data-i18n="home.quote.title">GET A FREE QUOTE</h3>
+                        <form action="/submit-quote" method="post" novalidate>
+                            <div class="quote-row">
+                                <input type="text" name="name" placeholder="Your Name *" required />
+                                <input type="email" name="email" placeholder="Email Address *" required />
+                            </div>
+                            <div class="quote-row">
+                                <input type="text" name="company" placeholder="Company Name" />
+                                <input type="tel" name="phone" placeholder="Phone Number *" required />
+                            </div>
+                            <select name="service" required>
+                                <option value="">Service Required *</option>
+                                <option value="design">Product Design</option>
+                                <option value="mold">Mold Development</option>
+                                <option value="injection">Injection Molding</option>
+                                <option value="full">Full Service</option>
+                            </select>
+                            <textarea name="message" placeholder="Your Message" rows="4"></textarea>
+                            <button type="submit" class="btn-primary">Send Inquiry</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer" id="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-brand">
+                        <img src="img/logo.png" alt="Techinherit" class="footer-logo-img" />
+                        <span class="footer-brand-text">Techinherit</span>
+                    </div>
+                    <p>We are dedicated to providing high-quality plastic products and services to customers worldwide.</p>
+                </div>
+
+                <div class="footer-col">
+                    <h4 data-i18n="footer.quick">QUICK LINKS</h4>
+                    <ul>
+                        <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+                        <li><a href="about-us.html" data-i18n="nav.about">About Us</a></li>
+                        <li><a href="product-design.html" data-i18n="nav.product-design">Product Design</a></li>
+                        <li><a href="#">Capabilities</a></li>
+                        <li><a href="case-studies.html" data-i18n="nav.cases">Case Studies</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 data-i18n="footer.services">SERVICES</h4>
+                    <ul>
+                        <li><a href="product-design.html" data-i18n="nav.product-design">Product Design</a></li>
+                        <li><a href="raw-materials.html" data-i18n="nav.raw-materials">Plastic Raw Materials</a></li>
+                        <li><a href="mold-development.html" data-i18n="nav.mold">Mold Development</a></li>
+                        <li><a href="injection-molding.html" data-i18n="nav.injection">Injection Molding</a></li>
+                        <li><a href="quality-control.html" data-i18n="nav.quality">Quality Control</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 data-i18n="footer.contact">CONTACT US</h4>
+                    <ul class="contact-list">
+                        <li><i class="fas fa-phone-alt" aria-hidden="true"></i> +86 123 4567 8901</li>
+                        <li><i class="fas fa-envelope" aria-hidden="true"></i> info@jicheng.com</li>
+                        <li><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Dongguan, China</li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 data-i18n="footer.follow">FOLLOW US</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/?locale=zh_CN" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright">
+                &copy; 2026 Techinherit. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/85257096596" target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Contact us on WhatsApp">
+        <i class="fab fa-whatsapp" aria-hidden="true"></i>
+    </a>
+
+    <a href="global-partnership.html" class="global-float" aria-label="Global cooperation">
+        <img src="img/全球合作.png" alt="Global cooperation" />
+    </a>
+
+    <script>
+        (function() {
+            var toggle = document.querySelector('.hamburger-toggle');
+            var nav = document.querySelector('.nav-links');
+
+            if (toggle && nav) {
+                toggle.addEventListener('click', function() {
+                    var expanded = this.getAttribute('aria-expanded') === 'true' ? false : true;
+                    nav.classList.toggle('is-open');
+                    this.setAttribute('aria-expanded', expanded);
+                });
+            }
+
+            document.querySelectorAll('.dropdown-trigger').forEach(function(trigger) {
+                trigger.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    var parent = this.closest('.nav-dropdown');
+                    if (parent) {
+                        parent.classList.toggle('is-open');
+                    }
+                });
+            });
+
+            document.addEventListener('click', function(e) {
+                document.querySelectorAll('.nav-dropdown.is-open').forEach(function(dropdown) {
+                    if (!dropdown.contains(e.target)) {
+                        dropdown.classList.remove('is-open');
+                    }
+                });
+            });
+
+            var header = document.querySelector('.site-header');
+            window.addEventListener('scroll', function() {
+                header.classList.toggle('scrolled', window.scrollY > 10);
+            });
+        })();
+    </script>
+
+    <script src="js/i18n.js"></script>
+</body>
+</html>

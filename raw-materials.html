@@ -1,0 +1,923 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plastic Raw Materials | Techinherit</title>
+    <meta name="description" content="High-quality plastic materials for every need - ABS, PC, PA, POM, PP, PE, PBT, PMMA. Premium quality sourced from trusted global suppliers with expert material selection guidance." />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <style>
+        .rm-hero {
+            height: 550px;
+            display: flex;
+            flex-direction: column;
+            padding: 100px 0 60px;
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url('img/塑料原料1.png') center / cover;
+        }
+
+        .rm-hero-content {
+            color: #fff;
+            max-width: 700px;
+        }
+
+        .rm-hero-content h1 {
+            font-size: 48px;
+            font-weight: 900;
+            margin-bottom: 20px;
+            line-height: 1.2;
+            animation: heroFadeUp 0.8s ease both;
+        }
+
+        .rm-hero-content p {
+            font-size: 16px;
+            margin-bottom: 30px;
+            color: #d1d5db;
+            max-width: 600px;
+            line-height: 1.6;
+            animation: heroFadeUp 0.8s 0.2s ease both;
+        }
+
+        .rm-hero-btns {
+            display: flex;
+            gap: 16px;
+            animation: heroFadeUp 0.8s 0.35s ease both;
+        }
+
+        .rm-benefits {
+            padding: 50px 0;
+        }
+
+        .rm-benefit-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            text-align: center;
+        }
+
+        .rm-benefit-item i {
+            font-size: 32px;
+            color: var(--color-primary);
+            margin-bottom: 12px;
+            display: block;
+        }
+
+        .rm-benefit-item h4 {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 6px;
+            color: #1e1e1e;
+        }
+
+        .rm-benefit-item p {
+            font-size: 13px;
+            color: #666;
+        }
+
+        .rm-portfolio {
+            padding: 0 0 50px;
+        }
+
+        .rm-portfolio-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .rm-tag {
+            color: var(--color-primary);
+            font-weight: 700;
+            font-size: 13px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            margin-bottom: 8px;
+        }
+
+        .rm-tag::before {
+            content: '';
+            width: 16px;
+            height: 3px;
+            background: var(--color-primary);
+        }
+
+        .rm-portfolio-header h2 {
+            font-size: 28px;
+            font-weight: 700;
+            color: #1e1e1e;
+        }
+
+        .rm-portfolio-header p {
+            color: #666;
+            margin-top: 10px;
+            max-width: 750px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .rm-main-grid {
+            display: grid;
+            grid-template-columns: 240px 1fr;
+            gap: 40px;
+        }
+
+        .rm-sidebar {
+            list-style: none;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .rm-sidebar li {
+            padding: 14px 20px;
+            font-size: 14px;
+            color: #333;
+            border-bottom: 1px solid #e5e7eb;
+            cursor: pointer;
+        }
+
+        .rm-sidebar li:last-child {
+            border-bottom: 0;
+        }
+
+        .rm-sidebar li.rm-active {
+            background: var(--color-primary);
+            color: #fff;
+        }
+
+        .rm-material-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .rm-mat-card {
+            background: #fff;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            padding: 16px;
+            text-align: left;
+            transition: var(--transition);
+        }
+
+        .rm-mat-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(33, 86, 169, 0.1);
+            border-color: var(--color-primary);
+        }
+
+        .rm-mat-card img {
+            width: 100%;
+            height: 130px;
+            object-fit: cover;
+            border-radius: 6px;
+            margin-bottom: 12px;
+            background-color: #e2e8f0;
+        }
+
+        .rm-mat-card h4 {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 4px;
+            color: #1e1e1e;
+        }
+
+        .rm-mat-card p {
+            font-size: 13px;
+            color: #666;
+            margin-bottom: 8px;
+            line-height: 1.4;
+            min-height: 40px;
+        }
+
+        .rm-mat-card a {
+            font-size: 13px;
+            color: var(--color-primary);
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .rm-mat-card a:hover {
+            text-decoration: underline;
+        }
+
+        .rm-comparison {
+            padding: 50px 0;
+            background: #fafbfc;
+            overflow: hidden;
+        }
+
+        .rm-comp-wrap {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 40px;
+        }
+
+        .rm-comp-table {
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            overflow: hidden;
+            max-width: 100%;
+            background: #fff;
+        }
+
+        .rm-comp-table table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .rm-comp-table th {
+            background: #f8f9fa;
+            padding: 14px;
+            font-size: 13px;
+            font-weight: 700;
+            text-align: left;
+            border-bottom: 1px solid #e5e7eb;
+            color: #1e1e1e;
+        }
+
+        .rm-comp-table td {
+            padding: 14px;
+            font-size: 13px;
+            border-bottom: 1px solid #f0f0f0;
+            word-break: break-word;
+        }
+
+        .rm-comp-table tr:last-child td {
+            border-bottom: 0;
+        }
+
+        .rm-rating-dots {
+            display: flex;
+            gap: 2px;
+        }
+
+        .rm-rating-dots span {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #e0e0e0;
+            display: block;
+        }
+
+        .rm-rating-dots span.rm-filled {
+            background: var(--color-primary);
+        }
+
+        .rm-legend {
+            display: flex;
+            gap: 20px;
+            margin-top: 12px;
+            font-size: 12px;
+            color: #666;
+        }
+
+        .rm-legend span {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .rm-legend span i {
+            font-size: 8px;
+        }
+
+        .rm-help-box {
+            background: #0a1a30;
+            border-radius: 8px;
+            padding: 30px;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .rm-help-box .rm-help-img {
+            border-radius: 6px;
+            overflow: hidden;
+        }
+
+        .rm-help-box .rm-help-img img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .rm-help-box h3 {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .rm-help-box p {
+            font-size: 14px;
+            color: #b0bed0;
+            margin-bottom: 20px;
+        }
+
+        .rm-why {
+            padding: 60px 0;
+        }
+
+        .rm-why h2 {
+            text-align: center;
+            font-size: 26px;
+            font-weight: 700;
+            color: #0a1a30;
+            margin-bottom: 40px;
+        }
+
+        .rm-why-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            text-align: center;
+        }
+
+        .rm-why-item .rm-icon-circle {
+            width: 56px;
+            height: 56px;
+            border: 2px solid var(--color-primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 12px;
+            font-size: 28px;
+            color: var(--color-primary);
+        }
+
+        .rm-why-item h4 {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 6px;
+            color: #1e1e1e;
+        }
+
+        .rm-why-item p {
+            font-size: 13px;
+            color: #666;
+        }
+
+        .rm-cta {
+            padding: 0 0 50px;
+        }
+
+        .rm-cta-box {
+            background: #0a1a30;
+            border-radius: 12px;
+            padding: 30px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #fff;
+        }
+
+        .rm-cta-box .rm-text h3 {
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        .rm-cta-box .rm-text p {
+            font-size: 14px;
+            color: #b0bed0;
+        }
+
+        .rm-cta-btns {
+            display: flex;
+            gap: 15px;
+        }
+
+        @media (max-width: 1024px) {
+            .rm-main-grid {
+                grid-template-columns: 1fr;
+            }
+            .rm-material-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            .rm-benefit-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .rm-why-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .rm-comp-wrap {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .rm-hero {
+                height: 430px;
+            }
+            .rm-hero-content h1 {
+                font-size: 28px;
+            }
+            .rm-hero-btns {
+                flex-direction: column;
+            }
+            .rm-main-grid {
+                grid-template-columns: 1fr;
+            }
+            .rm-material-grid {
+                grid-template-columns: 1fr;
+            }
+            .rm-benefit-grid {
+                grid-template-columns: 1fr;
+            }
+            .rm-why-grid {
+                grid-template-columns: 1fr;
+            }
+            .rm-comp-wrap {
+                grid-template-columns: 1fr;
+            }
+            .rm-help-box {
+                flex-direction: column;
+                text-align: center;
+            }
+            .rm-portfolio-header h2 {
+                font-size: 22px;
+            }
+            .rm-comp-table th,
+            .rm-comp-table td {
+                padding: 8px 6px;
+                font-size: 11px;
+            }
+            .rm-cta-box {
+                flex-direction: column;
+                text-align: center;
+                gap: 15px;
+            }
+            .rm-cta-btns {
+                flex-direction: column;
+            }
+        }
+    </style>
+    <!-- GEO / Hreflang -->
+    <meta name="geo.region" content="CN-44" />
+    <meta name="geo.placename" content="Dongguan, China" />
+    <link rel="alternate" href="https://www.techinherit.com/" hreflang="en" />
+    <link rel="alternate" href="https://www.techinherit.com/" hreflang="en-ZA" />
+    <link rel="alternate" href="https://www.techinherit.com/" hreflang="en-NG" />
+    <link rel="alternate" href="https://www.techinherit.com/" hreflang="en-AE" />
+    <link rel="alternate" href="https://www.techinherit.com/" hreflang="en-ID" />
+    <!-- Organization Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Techinherit",
+        "url": "https://www.techinherit.com",
+        "logo": "https://www.techinherit.com/img/logo.png",
+        "description": "One-stop plastic manufacturing solution provider.",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Dongguan",
+            "addressCountry": "CN"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+86-123-4567-8901",
+            "contactType": "sales"
+        },
+        "sameAs": [
+            "https://www.facebook.com/techinherit"
+        ]
+    }
+    </script>
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container">
+            <div class="header-inner">
+                <a href="index.html" class="logo-area" aria-label="Techinherit Home">
+                    <img src="img/logo.png" alt="Techinherit" class="logo-img" />
+                    <span class="logo-text">Techinherit</span>
+                </a>
+
+                <button class="hamburger-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                </button>
+
+                <nav class="nav-links" aria-label="Primary navigation" role="navigation">
+                    <a href="index.html" data-i18n="nav.home">Home</a>
+                    <a href="about-us.html" data-i18n="nav.about">About Us</a>
+
+                    <div class="nav-dropdown active">
+                        <a href="#" class="dropdown-trigger">
+                            Services <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="product-design.html" data-i18n="nav.product-design">Product Design</a></li>
+                            <li><a href="raw-materials.html" class="active" data-i18n="nav.raw-materials">Plastic Raw Materials</a></li>
+                            <li><a href="mold-development.html" data-i18n="nav.mold">Mold Development</a></li>
+                            <li><a href="injection-molding.html" data-i18n="nav.injection">Injection Molding</a></li>
+                            <li><a href="quality-control.html" data-i18n="nav.quality">Quality Control</a></li>
+                            <li><a href="odm-oem.html">Assemble</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="nav-dropdown">
+                        <a href="#" class="dropdown-trigger">
+                            Capabilities <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="rd-strength.html">R&D Strength</a></li>
+                            <li><a href="production-equipment.html" data-i18n="nav.equipment">Production Equipment</a></li>
+                        </ul>
+                    </div>
+
+                    <a href="industries.html" data-i18n="nav.industries">Industries</a>
+                    <a href="case-studies.html" data-i18n="nav.cases">Case Studies</a>
+                    <a href="#footer" data-i18n="nav.contact">Contact Us</a>
+                    <a href="#footer" class="btn-header" data-i18n="nav.quote">Get a Quote</a>
+                    <button class="lang-toggle" id="langToggle" data-i18n="lang.switch" title="Switch language">中文</button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="rm-hero">
+            <div class="container">
+                <div class="rm-hero-content">
+                    <h1>HIGH-QUALITY PLASTIC<br>MATERIALS FOR EVERY NEED</h1>
+                    <p>We work with a wide range of premium plastic materials to deliver durable, precise, and cost-effective solutions for your products.</p>
+                    <div class="rm-hero-btns">
+                        <a href="#footer" class="btn-primary">Request Material Advice</a>
+                        <a href="#footer" class="btn-outline-light">Get a Quote</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="rm-benefits">
+            <div class="container rm-benefit-grid">
+                <div class="rm-benefit-item">
+                    <i class="fas fa-shield-halved"></i>
+                    <h4>Premium Quality</h4>
+                    <p>Sourced from trusted global suppliers</p>
+                </div>
+                <div class="rm-benefit-item">
+                    <i class="fas fa-layer-group"></i>
+                    <h4>Wide Selection</h4>
+                    <p>Engineering plastics &amp; general purpose plastics</p>
+                </div>
+                <div class="rm-benefit-item">
+                    <i class="fa-regular fa-compass"></i>
+                    <h4>Custom Solutions</h4>
+                    <p>Material recommendations tailored to your application</p>
+                </div>
+                <div class="rm-benefit-item">
+                    <i class="fas fa-circle-check"></i>
+                    <h4>Quality Assurance</h4>
+                    <p>Strict material testing to ensure consistent performance</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="rm-portfolio">
+            <div class="container">
+                <div class="rm-portfolio-header">
+                    <div class="rm-tag">OUR MATERIALS</div>
+                    <h2>Comprehensive Material Portfolio</h2>
+                    <p>We provide a wide range of plastic materials to meet diverse performance, appearance, and cost requirements across industries.</p>
+                </div>
+                <div class="rm-main-grid">
+                    <ul class="rm-sidebar">
+                        <li class="rm-active">All Materials</li>
+                        <li>Engineering Plastics</li>
+                        <li>General Purpose Plastics</li>
+                        <li>High Performance Plastics</li>
+                        <li>Elastomers (TPE/TPU)</li>
+                        <li>Biodegradable Plastics</li>
+                    </ul>
+                    <div class="rm-material-grid">
+                        <div class="rm-mat-card">
+                            <img src="img/塑料原料2.png" alt="ABS" loading="lazy" />
+                            <h4>ABS</h4>
+                            <p>Good impact resistance, strength and rigidity. Easy to machine.</p>
+                            <a href="#">View Details &rarr;</a>
+                        </div>
+                        <div class="rm-mat-card">
+                            <img src="img/塑料原料3.png" alt="PC" loading="lazy" />
+                            <h4>PC</h4>
+                            <p>Excellent impact resistance, optical clarity and heat resistance.</p>
+                            <a href="#">View Details &rarr;</a>
+                        </div>
+                        <div class="rm-mat-card">
+                            <img src="img/塑料原料4.png" alt="PA Nylon" loading="lazy" />
+                            <h4>PA (Nylon)</h4>
+                            <p>High strength, wear resistance and chemical resistance.</p>
+                            <a href="#">View Details &rarr;</a>
+                        </div>
+                        <div class="rm-mat-card">
+                            <img src="img/塑料原料5.png" alt="POM" loading="lazy" />
+                            <h4>POM (Acetal)</h4>
+                            <p>High stiffness, low friction and excellent dimensional stability.</p>
+                            <a href="#">View Details &rarr;</a>
+                        </div>
+                        <div class="rm-mat-card">
+                            <img src="img/塑料原料6.png" alt="PP" loading="lazy" />
+                            <h4>PP</h4>
+                            <p>Lightweight, chemical resistant and excellent fatigue resistance.</p>
+                            <a href="#">View Details &rarr;</a>
+                        </div>
+                        <div class="rm-mat-card">
+                            <img src="img/塑料原料7.png" alt="PE" loading="lazy" />
+                            <h4>PE (HDPE/LDPE)</h4>
+                            <p>Good impact resistance, chemical resistance and low moisture absorption.</p>
+                            <a href="#">View Details &rarr;</a>
+                        </div>
+                        <div class="rm-mat-card">
+                            <img src="img/塑料原料8.png" alt="PBT" loading="lazy" />
+                            <h4>PBT</h4>
+                            <p>High strength, good electrical properties and dimensional stability.</p>
+                            <a href="#">View Details &rarr;</a>
+                        </div>
+                        <div class="rm-mat-card">
+                            <img src="img/塑料原料9.png" alt="PMMA" loading="lazy" />
+                            <h4>PMMA (Acrylic)</h4>
+                            <p>High transparency, weather resistance and excellent surface finish.</p>
+                            <a href="#">View Details &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="rm-comparison">
+            <div class="container rm-comp-wrap">
+                <div>
+                    <div class="rm-portfolio-header">
+                        <div class="rm-tag">MATERIAL COMPARISON</div>
+                        <h2 style="font-size:20px;">Find the Right Material for Your Application</h2>
+                    </div>
+                    <div class="rm-comp-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Material</th>
+                                    <th>Strength</th>
+                                    <th>Impact Resistance</th>
+                                    <th>Heat Resistance</th>
+                                    <th>Chemical Resistance</th>
+                                    <th>Applications</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><b>ABS</b></td>
+                                    <td><div class="rm-rating-dots"><span class="rm-filled"></span><span class="rm-filled"></span><span class="rm-filled"></span><span></span><span></span></div></td>
+                                    <td><div class="rm-rating-dots"><span class="rm-filled"></span><span class="rm-filled"></span><span class="rm-filled"></span><span></span><span></span></div></td>
+                                    <td><div class="rm-rating-dots"><span class="rm-filled"></span><span class="rm-filled"></span><span></span><span></span><span></span></div></td>
+                                    <td><div class="rm-rating-dots"><span class="rm-filled"></span><span class="rm-filled"></span><span></span><span></span><span></span></div></td>
+                                    <td>Enclosures, Housings, Consumer Products</td>
+                                </tr>
+                                <tr>
+                                    <td><b>PC</b></td>
+                                    <td><div class="rm-rating-dots"><span class="rm-filled"></span><span class="rm-filled"></span><span class="rm-filled"></span><span class="rm-filled"></span><span></span></div></td>
+                                    <td><div class="rm-rating-dots"><span class="rm-filled"></span><span class="rm-filled"></span><span class="rm-filled"></span><span class="rm-filled"></span><span></span></div></td>
+                                    <td><div class="rm-rating-dots"><span class="rm-filled"></span><span class="rm-filled"></span><span class="rm-filled"></span><span></span><span></span></div></td>
+                                    <td><div class="rm-rating-dots"><span class="rm-filled"></span><span class="rm-filled"></span><span></span><span></span><span></span></div></td>
+                                    <td>Optical Parts, Safety Equipment, Lenses</td>
+                                </tr>
+                                <tr>
+                                    <td><b>PA (Nylon)</b></td>
+                                    <td><div class="rm-rating-dots"><span class="rm-filled"></span><span class="rm-filled"></span><span class="rm-filled"></span><span class="rm-filled"></span><span></span></div></td>
+                                    <td><div class="rm-rating-dots"><span class="rm-filled"></span><span class="rm-filled"></span><span class="rm-filled"></span><span></span><span></span></div></td>
+                                    <td><div class="rm-rating-dots"><span class="rm-filled"></span><span class="rm-filled"></span><span></span><span></span><span></span></div></td>
+                                    <td><div class="rm-rating-dots"><span class="rm-filled"></span><span class="rm-filled"></span><span class="rm-filled"></span><span></span><span></span></div></td>
+                                    <td>Gears, Bearings, Automotive Parts</td>
+                                </tr>
+                                <tr>
+                                    <td><b>POM (Acetal)</b></td>
+                                    <td><div class="rm-rating-dots"><span class="rm-filled"></span><span class="rm-filled"></span><span class="rm-filled"></span><span class="rm-filled"></span><span></span></div></td>
+                                    <td><div class="rm-rating-dots"><span class="rm-filled"></span><span class="rm-filled"></span><span></span><span></span><span></span></div></td>
+                                    <td><div class="rm-rating-dots"><span class="rm-filled"></span><span class="rm-filled"></span><span class="rm-filled"></span><span></span><span></span></div></td>
+                                    <td><div class="rm-rating-dots"><span class="rm-filled"></span><span></span><span></span><span></span><span></span></div></td>
+                                    <td>Precision Parts, Connectors, Gears</td>
+                                </tr>
+                                <tr>
+                                    <td><b>PP</b></td>
+                                    <td><div class="rm-rating-dots"><span class="rm-filled"></span><span class="rm-filled"></span><span class="rm-filled"></span><span></span><span></span></div></td>
+                                    <td><div class="rm-rating-dots"><span class="rm-filled"></span><span class="rm-filled"></span><span></span><span></span><span></span></div></td>
+                                    <td><div class="rm-rating-dots"><span class="rm-filled"></span><span class="rm-filled"></span><span class="rm-filled"></span><span></span><span></span></div></td>
+                                    <td><div class="rm-rating-dots"><span class="rm-filled"></span><span class="rm-filled"></span><span class="rm-filled"></span><span></span><span></span></div></td>
+                                    <td>Containers, Living Hinges, Automotive Interiors</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="rm-legend">
+                        <span><i class="fas fa-circle"></i> Poor</span>
+                        <span><i class="fas fa-circle" style="color:#aaa;"></i> Fair</span>
+                        <span><i class="fas fa-circle" style="color:#777;"></i> Good</span>
+                        <span><i class="fas fa-circle" style="color:#444;"></i> Very Good</span>
+                        <span><i class="fas fa-circle" style="color:var(--color-primary);"></i> Excellent</span>
+                    </div>
+                </div>
+                <div class="rm-help-box">
+                    <div>
+                        <h3>Need Help Choosing?</h3>
+                        <p>Our engineers can recommend the best material based on your product design and performance requirements.</p>
+                        <a href="#footer" class="btn-outline-light">Contact Our Experts</a>
+                    </div>
+                    <div class="rm-help-img">
+                        <img src="img/塑料原料10.png" alt="Material engineering team" loading="lazy" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="rm-why">
+            <div class="container">
+                <h2>Why Choose Our Materials</h2>
+                <div class="rm-why-grid">
+                    <div class="rm-why-item">
+                        <div class="rm-icon-circle"><i class="fas fa-check"></i></div>
+                        <h4>Reliable Performance</h4>
+                        <p>Materials tested for durability and long-term reliability.</p>
+                    </div>
+                    <div class="rm-why-item">
+                        <div class="rm-icon-circle"><i class="fas fa-globe"></i></div>
+                        <h4>Global Sourcing</h4>
+                        <p>Partnered with world-class material suppliers.</p>
+                    </div>
+                    <div class="rm-why-item">
+                        <div class="rm-icon-circle"><i class="fas fa-dollar-sign"></i></div>
+                        <h4>Cost Efficiency</h4>
+                        <p>Optimized material solutions to reduce overall cost.</p>
+                    </div>
+                    <div class="rm-why-item">
+                        <div class="rm-icon-circle"><i class="fas fa-leaf"></i></div>
+                        <h4>Sustainability</h4>
+                        <p>Eco-friendly and recyclable material options available.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="industry-quote-section section-padding">
+            <div class="container">
+                <div class="industry-quote-grid">
+                    <div class="industry-icons">
+                        <h3 data-i18n="home.cert.title">Certification</h3>
+                        <div class="industry-img-container">
+                            <div class="img-box"><img src="img/认证5.png" alt="ISO 9001" loading="lazy" /></div>
+                            <div class="img-box"><img src="img/认证6.png" alt="ISO 14001" loading="lazy" /></div>
+                            <div class="img-box"><img src="img/认证4.png" alt="Certification" loading="lazy" /></div>
+                            <div class="img-box"><img src="img/认证3.png" alt="Certification" loading="lazy" /></div>
+                        </div>
+                    </div>
+
+                    <div class="quote-form">
+                        <h3 data-i18n="home.quote.title">GET A FREE QUOTE</h3>
+                        <form action="/submit-quote" method="post" novalidate>
+                            <div class="quote-row">
+                                <input type="text" name="name" placeholder="Your Name *" required />
+                                <input type="email" name="email" placeholder="Email Address *" required />
+                            </div>
+                            <div class="quote-row">
+                                <input type="text" name="company" placeholder="Company Name" />
+                                <input type="tel" name="phone" placeholder="Phone Number *" required />
+                            </div>
+                            <select name="service" required>
+                                <option value="">Service Required *</option>
+                                <option value="design">Product Design</option>
+                                <option value="mold">Mold Development</option>
+                                <option value="injection">Injection Molding</option>
+                                <option value="full">Full Service</option>
+                            </select>
+                            <textarea name="message" placeholder="Your Message" rows="4"></textarea>
+                            <button type="submit" class="btn-primary">Send Inquiry</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer" id="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-brand">
+                        <img src="img/logo.png" alt="Techinherit" class="footer-logo-img" />
+                        <span class="footer-brand-text">Techinherit</span>
+                    </div>
+                    <p>We are dedicated to providing high-quality plastic products and services to customers worldwide.</p>
+                </div>
+
+                <div class="footer-col">
+                    <h4 data-i18n="footer.quick">QUICK LINKS</h4>
+                    <ul>
+                        <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+                        <li><a href="about-us.html" data-i18n="nav.about">About Us</a></li>
+                        <li><a href="product-design.html" data-i18n="nav.product-design">Product Design</a></li>
+                        <li><a href="#">Capabilities</a></li>
+                        <li><a href="case-studies.html" data-i18n="nav.cases">Case Studies</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 data-i18n="footer.services">SERVICES</h4>
+                    <ul>
+                        <li><a href="product-design.html" data-i18n="nav.product-design">Product Design</a></li>
+                        <li><a href="raw-materials.html" data-i18n="nav.raw-materials">Plastic Raw Materials</a></li>
+                        <li><a href="mold-development.html" data-i18n="nav.mold">Mold Development</a></li>
+                        <li><a href="injection-molding.html" data-i18n="nav.injection">Injection Molding</a></li>
+                        <li><a href="quality-control.html" data-i18n="nav.quality">Quality Control</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 data-i18n="footer.contact">CONTACT US</h4>
+                    <ul class="contact-list">
+                        <li><i class="fas fa-phone-alt" aria-hidden="true"></i> +86 123 4567 8901</li>
+                        <li><i class="fas fa-envelope" aria-hidden="true"></i> info@jicheng.com</li>
+                        <li><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Dongguan, China</li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 data-i18n="footer.follow">FOLLOW US</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/?locale=zh_CN" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright">
+                &copy; 2026 Techinherit. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/85257096596" target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Contact us on WhatsApp">
+        <i class="fab fa-whatsapp" aria-hidden="true"></i>
+    </a>
+
+    <a href="global-partnership.html" class="global-float" aria-label="Global cooperation">
+        <img src="img/全球合作.png" alt="Global cooperation" />
+    </a>
+
+    <script>
+        (function() {
+            var toggle = document.querySelector('.hamburger-toggle');
+            var nav = document.querySelector('.nav-links');
+
+            if (toggle && nav) {
+                toggle.addEventListener('click', function() {
+                    var expanded = this.getAttribute('aria-expanded') === 'true' ? false : true;
+                    nav.classList.toggle('is-open');
+                    this.setAttribute('aria-expanded', expanded);
+                });
+            }
+
+            document.querySelectorAll('.dropdown-trigger').forEach(function(trigger) {
+                trigger.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    var parent = this.closest('.nav-dropdown');
+                    if (parent) {
+                        parent.classList.toggle('is-open');
+                    }
+                });
+            });
+
+            document.addEventListener('click', function(e) {
+                document.querySelectorAll('.nav-dropdown.is-open').forEach(function(dropdown) {
+                    if (!dropdown.contains(e.target)) {
+                        dropdown.classList.remove('is-open');
+                    }
+                });
+            });
+
+            var header = document.querySelector('.site-header');
+            window.addEventListener('scroll', function() {
+                header.classList.toggle('scrolled', window.scrollY > 10);
+            });
+        })();
+    </script>
+
+    <script src="js/i18n.js"></script>
+</body>
+</html>

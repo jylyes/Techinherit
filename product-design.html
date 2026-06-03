@@ -1,0 +1,809 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Design | Techinherit</title>
+    <meta name="description" content="Innovative product design solutions from concept to production - industrial design, mechanical design, DFM optimization, rapid prototyping with end-to-end support." />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <style>
+        .pd-hero {
+            height: 550px;
+            display: flex;
+            flex-direction: column;
+            padding: 100px 0 60px;
+            background: linear-gradient(rgba(10, 30, 60, 0.85), rgba(10, 30, 60, 0.5)), url('img/产品设计1.png') center / cover;
+        }
+
+        .pd-hero h1 {
+            font-size: 48px;
+            font-weight: 900;
+            color: #fff;
+            margin-bottom: 20px;
+            line-height: 1.2;
+            animation: heroFadeUp 0.8s ease both;
+        }
+
+        .pd-hero p {
+            font-size: 16px;
+            color: #d1d5db;
+            max-width: 600px;
+            margin-bottom: 30px;
+            line-height: 1.6;
+            animation: heroFadeUp 0.8s 0.2s ease both;
+        }
+
+        .pd-hero-btns {
+            display: flex;
+            gap: 16px;
+            animation: heroFadeUp 0.8s 0.35s ease both;
+        }
+
+        .pd-benefits {
+            padding: 40px 0;
+        }
+
+        .pd-benefit-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 20px;
+            text-align: center;
+        }
+
+        .pd-benefit-item i {
+            font-size: 28px;
+            color: var(--color-primary);
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .pd-benefit-item h4 {
+            font-size: 15px;
+            font-weight: 700;
+            margin-bottom: 4px;
+            color: #1e1e1e;
+        }
+
+        .pd-benefit-item p {
+            font-size: 13px;
+            color: #666;
+        }
+
+        .pd-section-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .pd-tag {
+            color: var(--color-primary);
+            font-weight: 700;
+            font-size: 13px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            margin-bottom: 6px;
+        }
+
+        .pd-tag::before {
+            content: '';
+            width: 16px;
+            height: 3px;
+            background: var(--color-primary);
+        }
+
+        .pd-section-header h2 {
+            font-size: 28px;
+            font-weight: 700;
+            color: #1e1e1e;
+        }
+
+        .pd-section-header p {
+            color: #666;
+            margin-top: 6px;
+        }
+
+        .pd-process {
+            padding: 40px 0;
+        }
+
+        .pd-process-steps {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .pd-step {
+            background: #fff;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: left;
+            transition: var(--transition);
+        }
+
+        .pd-step:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(33, 86, 169, 0.1);
+            border-color: var(--color-primary);
+        }
+
+        .pd-step img {
+            width: 100%;
+            height: 130px;
+            object-fit: cover;
+            border-radius: 6px;
+            margin-bottom: 12px;
+            background-color: #e2e8f0;
+        }
+
+        .pd-step .pd-num {
+            background: var(--color-primary);
+            color: #fff;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 13px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .pd-step h4 {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 4px;
+            color: #1e1e1e;
+        }
+
+        .pd-step p {
+            font-size: 13px;
+            color: #666;
+            line-height: 1.4;
+        }
+
+        .pd-cap {
+            padding: 40px 0;
+        }
+
+        .pd-cap-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .pd-cap-card {
+            background: #fff;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            padding: 16px;
+            transition: var(--transition);
+        }
+
+        .pd-cap-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(33, 86, 169, 0.1);
+            border-color: var(--color-primary);
+        }
+
+        .pd-cap-card img {
+            width: 100%;
+            height: 120px;
+            object-fit: contain;
+            border-radius: 6px;
+            margin-bottom: 12px;
+            background: #f9fafb;
+        }
+
+        .pd-cap-card h4 {
+            font-size: 15px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: #1e1e1e;
+        }
+
+        .pd-cap-card ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .pd-cap-card ul li {
+            font-size: 12px;
+            color: #555;
+            margin-bottom: 4px;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .pd-cap-card ul li i {
+            font-size: 8px;
+            color: var(--color-primary);
+        }
+
+        .pd-industries {
+            padding: 40px 0;
+            background: #f8f9fa;
+        }
+
+        .pd-ind-grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 16px;
+            margin-top: 20px;
+        }
+
+        .pd-ind-card {
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid #e5e7eb;
+            position: relative;
+            transition: var(--transition);
+        }
+
+        .pd-ind-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(33, 86, 169, 0.1);
+            border-color: var(--color-primary);
+        }
+
+        .pd-ind-card img {
+            width: 100%;
+            height: 130px;
+            object-fit: cover;
+        }
+
+        .pd-ind-overlay {
+            position: relative;
+            padding: 12px;
+            text-align: center;
+        }
+
+        .pd-ind-circle {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background: var(--color-primary);
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            font-weight: 700;
+            position: absolute;
+            top: -15px;
+            left: 10px;
+        }
+
+        .pd-ind-card h4 {
+            font-size: 14px;
+            font-weight: 700;
+            margin-top: 10px;
+            color: #1e1e1e;
+        }
+
+        .pd-cta {
+            padding: 0 0 40px;
+        }
+
+        .pd-cta-box {
+            background: #0a1a30;
+            border-radius: 12px;
+            padding: 30px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #fff;
+        }
+
+        .pd-cta-text h3 {
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        .pd-cta-text p {
+            font-size: 14px;
+            color: #b0bed0;
+        }
+
+        .pd-cta-btns {
+            display: flex;
+            gap: 15px;
+        }
+
+        @media (max-width: 1024px) {
+            .pd-benefit-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            .pd-cap-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            .pd-ind-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            .pd-process-steps {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .pd-hero {
+                height: 430px;
+            }
+            .pd-hero h1 {
+                font-size: 28px;
+            }
+            .pd-benefit-grid {
+                grid-template-columns: 1fr;
+            }
+            .pd-cap-grid {
+                grid-template-columns: 1fr;
+            }
+            .pd-ind-grid {
+                grid-template-columns: 1fr;
+            }
+            .pd-process-steps {
+                grid-template-columns: 1fr;
+            }
+            .pd-cta-box {
+                flex-direction: column;
+                text-align: center;
+                gap: 15px;
+            }
+            .pd-cta-btns {
+                flex-direction: column;
+            }
+        }
+    </style>
+    <!-- GEO / Hreflang -->
+    <meta name="geo.region" content="CN-44" />
+    <meta name="geo.placename" content="Dongguan, China" />
+    <link rel="alternate" href="https://www.techinherit.com/" hreflang="en" />
+    <link rel="alternate" href="https://www.techinherit.com/" hreflang="en-ZA" />
+    <link rel="alternate" href="https://www.techinherit.com/" hreflang="en-NG" />
+    <link rel="alternate" href="https://www.techinherit.com/" hreflang="en-AE" />
+    <link rel="alternate" href="https://www.techinherit.com/" hreflang="en-ID" />
+    <!-- Organization Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Techinherit",
+        "url": "https://www.techinherit.com",
+        "logo": "https://www.techinherit.com/img/logo.png",
+        "description": "One-stop plastic manufacturing solution provider.",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Dongguan",
+            "addressCountry": "CN"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+86-123-4567-8901",
+            "contactType": "sales"
+        },
+        "sameAs": [
+            "https://www.facebook.com/techinherit"
+        ]
+    }
+    </script>
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container">
+            <div class="header-inner">
+                <a href="index.html" class="logo-area" aria-label="Techinherit Home">
+                    <img src="img/logo.png" alt="Techinherit" class="logo-img" />
+                    <span class="logo-text">Techinherit</span>
+                </a>
+
+                <button class="hamburger-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                </button>
+
+                <nav class="nav-links" aria-label="Primary navigation" role="navigation">
+                    <a href="index.html" data-i18n="nav.home">Home</a>
+                    <a href="about-us.html" data-i18n="nav.about">About Us</a>
+
+                    <div class="nav-dropdown active">
+                        <a href="#" class="dropdown-trigger">
+                            Services <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="product-design.html" class="active" data-i18n="nav.product-design">Product Design</a></li>
+                            <li><a href="raw-materials.html" data-i18n="nav.raw-materials">Plastic Raw Materials</a></li>
+                            <li><a href="mold-development.html" data-i18n="nav.mold">Mold Development</a></li>
+                            <li><a href="injection-molding.html" data-i18n="nav.injection">Injection Molding</a></li>
+                            <li><a href="quality-control.html" data-i18n="nav.quality">Quality Control</a></li>
+                            <li><a href="odm-oem.html">Assemble</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="nav-dropdown">
+                        <a href="#" class="dropdown-trigger">
+                            Capabilities <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="rd-strength.html">R&D Strength</a></li>
+                            <li><a href="production-equipment.html" data-i18n="nav.equipment">Production Equipment</a></li>
+                        </ul>
+                    </div>
+
+                    <a href="industries.html" data-i18n="nav.industries">Industries</a>
+                    <a href="case-studies.html" data-i18n="nav.cases">Case Studies</a>
+                    <a href="#footer" data-i18n="nav.contact">Contact Us</a>
+                    <a href="#footer" class="btn-header" data-i18n="nav.quote">Get a Quote</a>
+                    <button class="lang-toggle" id="langToggle" data-i18n="lang.switch" title="Switch language">中文</button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="pd-hero">
+            <div class="container">
+                <h1>INNOVATIVE PRODUCT<br>DESIGN SOLUTIONS</h1>
+                <p>From concept to production, we turn your ideas into market-ready plastic products with innovative design, engineering expertise, and manufacturability in mind.</p>
+                <div class="pd-hero-btns">
+                    <a href="#footer" class="btn-primary">Get a Free Quote</a>
+                    <a href="#footer" class="btn-outline-light">Talk to Our Designers</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="pd-benefits">
+            <div class="container pd-benefit-grid">
+                <div class="pd-benefit-item">
+                    <i class="fa-regular fa-circle-user"></i>
+                    <h4>User-Centered Design</h4>
+                    <p>Focus on user experience and functionality</p>
+                </div>
+                <div class="pd-benefit-item">
+                    <i class="fas fa-layer-group"></i>
+                    <h4>DFM Expertise</h4>
+                    <p>Design for Manufacturability to reduce cost and lead time</p>
+                </div>
+                <div class="pd-benefit-item">
+                    <i class="fas fa-cubes"></i>
+                    <h4>Advanced Tools</h4>
+                    <p>Latest CAD, CAE and simulation tools for better validation</p>
+                </div>
+                <div class="pd-benefit-item">
+                    <i class="fa-regular fa-clock"></i>
+                    <h4>Rapid Iteration</h4>
+                    <p>Quick prototyping and testing to accelerate development</p>
+                </div>
+                <div class="pd-benefit-item">
+                    <i class="fa-regular fa-handshake"></i>
+                    <h4>End-to-End Support</h4>
+                    <p>Seamless handoff to mold development and production</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="pd-process">
+            <div class="container">
+                <div class="pd-section-header">
+                    <div class="pd-tag">OUR DESIGN PROCESS</div>
+                    <h2>From Idea to Production-Ready Product</h2>
+                    <p>A collaborative and iterative process to ensure your product succeeds in the market.</p>
+                </div>
+                <div class="pd-process-steps">
+                    <div class="pd-step">
+                        <div class="pd-num">01</div>
+                        <img src="img/产品设计2.png" alt="Discovery" loading="lazy" />
+                        <h4>1. Discovery &amp; Research</h4>
+                        <p>We understand your goals, target users, and market requirements to define the right direction.</p>
+                    </div>
+                    <div class="pd-step">
+                        <div class="pd-num">02</div>
+                        <img src="img/产品设计3.png" alt="Concept" loading="lazy" />
+                        <h4>2. Concept Design</h4>
+                        <p>Our designers create multiple concepts and refine the best ideas for your product.</p>
+                    </div>
+                    <div class="pd-step">
+                        <div class="pd-num">03</div>
+                        <img src="img/产品设计4.png" alt="3D Model" loading="lazy" />
+                        <h4>3. 3D Modeling</h4>
+                        <p>Detailed 3D CAD models are developed with accurate dimensions and tolerances.</p>
+                    </div>
+                    <div class="pd-step">
+                        <div class="pd-num">04</div>
+                        <img src="img/产品设计5.png" alt="Analysis" loading="lazy" />
+                        <h4>4. Engineering &amp; Analysis</h4>
+                        <p>We validate design performance with simulation for strength, flow, thermal and more.</p>
+                    </div>
+                    <div class="pd-step">
+                        <div class="pd-num">05</div>
+                        <img src="img/产品设计6.png" alt="Prototype" loading="lazy" />
+                        <h4>5. Prototyping &amp; Testing</h4>
+                        <p>Rapid prototypes are built and tested to verify form, fit and function.</p>
+                    </div>
+                    <div class="pd-step">
+                        <div class="pd-num">06</div>
+                        <img src="img/产品设计7.png" alt="Handoff" loading="lazy" />
+                        <h4>6. Production Handoff</h4>
+                        <p>We deliver production-ready files and support a smooth transition to manufacturing.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pd-cap">
+            <div class="container">
+                <div class="pd-section-header">
+                    <div class="pd-tag">OUR DESIGN CAPABILITIES</div>
+                    <h2>What We Offer</h2>
+                </div>
+                <div class="pd-cap-grid">
+                    <div class="pd-cap-card">
+                        <img src="img/产品设计8.png" alt="Industrial Design" loading="lazy" />
+                        <h4>Industrial Design</h4>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Product styling &amp; aesthetics</li>
+                            <li><i class="fas fa-check"></i> Ergonomic design</li>
+                            <li><i class="fas fa-check"></i> CMF (Color, Material, Finish)</li>
+                        </ul>
+                    </div>
+                    <div class="pd-cap-card">
+                        <img src="img/产品设计9.png" alt="Mechanical Design" loading="lazy" />
+                        <h4>Mechanical Design</h4>
+                        <ul>
+                            <li><i class="fas fa-check"></i> 3D CAD modeling</li>
+                            <li><i class="fas fa-check"></i> Assembly design</li>
+                            <li><i class="fas fa-check"></i> Detail drawing &amp; BOM</li>
+                        </ul>
+                    </div>
+                    <div class="pd-cap-card">
+                        <img src="img/产品设计10.png" alt="Engineering Analysis" loading="lazy" />
+                        <h4>Engineering Analysis</h4>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Structural analysis (FEA)</li>
+                            <li><i class="fas fa-check"></i> Mold flow analysis</li>
+                            <li><i class="fas fa-check"></i> Thermal &amp; warpage analysis</li>
+                        </ul>
+                    </div>
+                    <div class="pd-cap-card">
+                        <img src="img/产品设计11.png" alt="DFM Optimization" loading="lazy" />
+                        <h4>DFM Optimization</h4>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Wall thickness optimization</li>
+                            <li><i class="fas fa-check"></i> Draft &amp; rib design</li>
+                            <li><i class="fas fa-check"></i> Cost &amp; process optimization</li>
+                        </ul>
+                    </div>
+                    <div class="pd-cap-card">
+                        <img src="img/产品设计12.png" alt="Rapid Prototyping" loading="lazy" />
+                        <h4>Rapid Prototyping</h4>
+                        <ul>
+                            <li><i class="fas fa-check"></i> SLA / SLS / FDM / CNC</li>
+                            <li><i class="fas fa-check"></i> Functional testing</li>
+                            <li><i class="fas fa-check"></i> Design validation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pd-industries">
+            <div class="container">
+                <div class="pd-section-header">
+                    <div class="pd-tag">INDUSTRIES WE SERVE</div>
+                    <h2>Designing Solutions Across Industries</h2>
+                </div>
+                <div class="pd-ind-grid">
+                    <div class="pd-ind-card">
+                        <img src="img/消费电子.png" alt="Consumer Electronics" loading="lazy" />
+                        <div class="pd-ind-overlay">
+                            <div class="pd-ind-circle">01</div>
+                            <h4>Consumer Electronics</h4>
+                        </div>
+                    </div>
+                    <div class="pd-ind-card">
+                        <img src="img/汽车配件.png" alt="Automotive" loading="lazy" />
+                        <div class="pd-ind-overlay">
+                            <div class="pd-ind-circle">02</div>
+                            <h4>Automotive</h4>
+                        </div>
+                    </div>
+                    <div class="pd-ind-card">
+                        <img src="img/医疗设备.png" alt="Medical Devices" loading="lazy" />
+                        <div class="pd-ind-overlay">
+                            <div class="pd-ind-circle">03</div>
+                            <h4>Medical Devices</h4>
+                        </div>
+                    </div>
+                    <div class="pd-ind-card">
+                        <img src="img/工业设备.png" alt="Industrial Equipment" loading="lazy" />
+                        <div class="pd-ind-overlay">
+                            <div class="pd-ind-circle">04</div>
+                            <h4>Industrial Equipment</h4>
+                        </div>
+                    </div>
+                    <div class="pd-ind-card">
+                        <img src="img/智能家居.png" alt="Home Appliances" loading="lazy" />
+                        <div class="pd-ind-overlay">
+                            <div class="pd-ind-circle">05</div>
+                            <h4>Home Appliances</h4>
+                        </div>
+                    </div>
+                    <div class="pd-ind-card">
+                        <img src="img/产品设计13.png" alt="IoT &amp; Smart Devices" loading="lazy" />
+                        <div class="pd-ind-overlay">
+                            <div class="pd-ind-circle">06</div>
+                            <h4>IoT &amp; Smart Devices</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="industry-quote-section section-padding">
+            <div class="container">
+                <div class="industry-quote-grid">
+                    <div class="industry-icons">
+                        <h3 data-i18n="home.cert.title">Certification</h3>
+                        <div class="industry-img-container">
+                            <div class="img-box"><img src="img/认证5.png" alt="ISO 9001" loading="lazy" /></div>
+                            <div class="img-box"><img src="img/认证6.png" alt="ISO 14001" loading="lazy" /></div>
+                            <div class="img-box"><img src="img/认证4.png" alt="Certification" loading="lazy" /></div>
+                            <div class="img-box"><img src="img/认证3.png" alt="Certification" loading="lazy" /></div>
+                        </div>
+                    </div>
+
+                    <div class="quote-form">
+                        <h3 data-i18n="home.quote.title">GET A FREE QUOTE</h3>
+                        <form action="/submit-quote" method="post" novalidate>
+                            <div class="quote-row">
+                                <input type="text" name="name" placeholder="Your Name *" required />
+                                <input type="email" name="email" placeholder="Email Address *" required />
+                            </div>
+                            <div class="quote-row">
+                                <input type="text" name="company" placeholder="Company Name" />
+                                <input type="tel" name="phone" placeholder="Phone Number *" required />
+                            </div>
+                            <select name="service" required>
+                                <option value="">Service Required *</option>
+                                <option value="design">Product Design</option>
+                                <option value="mold">Mold Development</option>
+                                <option value="injection">Injection Molding</option>
+                                <option value="full">Full Service</option>
+                            </select>
+                            <textarea name="message" placeholder="Your Message" rows="4"></textarea>
+                            <button type="submit" class="btn-primary">Send Inquiry</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer" id="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-brand">
+                        <img src="img/logo.png" alt="Techinherit" class="footer-logo-img" />
+                        <span class="footer-brand-text">Techinherit</span>
+                    </div>
+                    <p>We are dedicated to providing high-quality plastic products and services to customers worldwide.</p>
+                </div>
+
+                <div class="footer-col">
+                    <h4 data-i18n="footer.quick">QUICK LINKS</h4>
+                    <ul>
+                        <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+                        <li><a href="about-us.html" data-i18n="nav.about">About Us</a></li>
+                        <li><a href="product-design.html" data-i18n="nav.product-design">Product Design</a></li>
+                        <li><a href="#">Capabilities</a></li>
+                        <li><a href="case-studies.html" data-i18n="nav.cases">Case Studies</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 data-i18n="footer.services">SERVICES</h4>
+                    <ul>
+                        <li><a href="product-design.html" data-i18n="nav.product-design">Product Design</a></li>
+                        <li><a href="raw-materials.html" data-i18n="nav.raw-materials">Plastic Raw Materials</a></li>
+                        <li><a href="mold-development.html" data-i18n="nav.mold">Mold Development</a></li>
+                        <li><a href="injection-molding.html" data-i18n="nav.injection">Injection Molding</a></li>
+                        <li><a href="quality-control.html" data-i18n="nav.quality">Quality Control</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 data-i18n="footer.contact">CONTACT US</h4>
+                    <ul class="contact-list">
+                        <li><i class="fas fa-phone-alt" aria-hidden="true"></i> +86 123 4567 8901</li>
+                        <li><i class="fas fa-envelope" aria-hidden="true"></i> info@jicheng.com</li>
+                        <li><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Dongguan, China</li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 data-i18n="footer.follow">FOLLOW US</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/?locale=zh_CN" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright">
+                &copy; 2026 Techinherit. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/85257096596" target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Contact us on WhatsApp">
+        <i class="fab fa-whatsapp" aria-hidden="true"></i>
+    </a>
+
+    <a href="global-partnership.html" class="global-float" aria-label="Global cooperation">
+        <img src="img/全球合作.png" alt="Global cooperation" />
+    </a>
+
+    <script>
+        (function() {
+            var toggle = document.querySelector('.hamburger-toggle');
+            var nav = document.querySelector('.nav-links');
+
+            if (toggle && nav) {
+                toggle.addEventListener('click', function() {
+                    var expanded = this.getAttribute('aria-expanded') === 'true' ? false : true;
+                    nav.classList.toggle('is-open');
+                    this.setAttribute('aria-expanded', expanded);
+                });
+            }
+
+            document.querySelectorAll('.dropdown-trigger').forEach(function(trigger) {
+                trigger.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    var parent = this.closest('.nav-dropdown');
+                    if (parent) {
+                        parent.classList.toggle('is-open');
+                    }
+                });
+            });
+
+            document.addEventListener('click', function(e) {
+                document.querySelectorAll('.nav-dropdown.is-open').forEach(function(dropdown) {
+                    if (!dropdown.contains(e.target)) {
+                        dropdown.classList.remove('is-open');
+                    }
+                });
+            });
+
+            var header = document.querySelector('.site-header');
+            window.addEventListener('scroll', function() {
+                header.classList.toggle('scrolled', window.scrollY > 10);
+            });
+        })();
+    </script>
+
+    <script src="js/i18n.js"></script>
+</body>
+</html>

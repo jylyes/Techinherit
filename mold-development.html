@@ -1,0 +1,807 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mold Development | Techinherit</title>
+    <meta name="description" content="Techinherit provides high-precision mold development - mold design, CNC machining, EDM processing, mold assembly, testing and maintenance for superior plastic parts." />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <style>
+        .md-hero {
+            height: 550px;
+            display: flex;
+            flex-direction: column;
+            padding: 100px 0 60px;
+            background: linear-gradient(rgba(10, 30, 60, 0.9), rgba(10, 30, 60, 0.5)), url('img/模具制造.png') center / cover;
+        }
+
+        .md-hero h1 {
+            font-size: 48px;
+            font-weight: 900;
+            color: #fff;
+            margin-bottom: 20px;
+            line-height: 1.2;
+            animation: heroFadeUp 0.8s ease both;
+        }
+
+        .md-hero p {
+            font-size: 16px;
+            color: #d1d5db;
+            max-width: 600px;
+            margin-bottom: 30px;
+            line-height: 1.6;
+            animation: heroFadeUp 0.8s 0.2s ease both;
+        }
+
+        .md-hero-btns {
+            display: flex;
+            gap: 16px;
+            animation: heroFadeUp 0.8s 0.35s ease both;
+        }
+
+        .md-benefits {
+            padding: 40px 0;
+        }
+
+        .md-benefit-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 20px;
+            text-align: center;
+        }
+
+        .md-benefit-item i {
+            font-size: 28px;
+            color: var(--color-primary);
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .md-benefit-item h4 {
+            font-size: 15px;
+            font-weight: 700;
+            margin-bottom: 4px;
+            color: #1e1e1e;
+        }
+
+        .md-benefit-item p {
+            font-size: 13px;
+            color: #666;
+        }
+
+        .md-services {
+            padding: 40px 0;
+        }
+
+        .md-section-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .md-tag {
+            color: var(--color-primary);
+            font-weight: 700;
+            font-size: 13px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            margin-bottom: 6px;
+        }
+
+        .md-tag::before {
+            content: '';
+            width: 16px;
+            height: 3px;
+            background: var(--color-primary);
+        }
+
+        .md-section-header h2 {
+            font-size: 28px;
+            font-weight: 700;
+            color: #1e1e1e;
+        }
+
+        .md-section-header p {
+            color: #666;
+            margin-top: 6px;
+        }
+
+        .md-service-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .md-service-card {
+            background: #fff;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            overflow: hidden;
+            padding: 16px;
+            transition: var(--transition);
+        }
+
+        .md-service-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(33, 86, 169, 0.1);
+            border-color: var(--color-primary);
+        }
+
+        .md-service-card img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 6px;
+            margin-bottom: 12px;
+            background-color: #e2e8f0;
+        }
+
+        .md-service-card h4 {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 4px;
+            color: #1e1e1e;
+        }
+
+        .md-service-card p {
+            font-size: 13px;
+            color: #666;
+            line-height: 1.4;
+        }
+
+        .md-process {
+            padding: 40px 0;
+            background: #f8f9fa;
+        }
+
+        .md-process-steps {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .md-pstep {
+            flex: 1;
+            text-align: center;
+            min-width: 100px;
+        }
+
+        .md-pstep .md-circle {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: var(--color-primary);
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            margin: 0 auto 12px;
+        }
+
+        .md-pstep h4 {
+            font-size: 14px;
+            font-weight: 700;
+            color: #1e1e1e;
+        }
+
+        .md-pstep p {
+            font-size: 12px;
+            color: #666;
+        }
+
+        .md-pstep .md-num {
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--color-primary);
+            margin-bottom: 5px;
+        }
+
+        .md-why {
+            padding: 40px 0;
+        }
+
+        .md-why-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .md-why-text h2 {
+            font-size: 26px;
+            font-weight: 700;
+            color: #1e1e1e;
+            margin-bottom: 15px;
+        }
+
+        .md-why-text ul {
+            list-style: none;
+            margin-top: 15px;
+        }
+
+        .md-why-text ul li {
+            font-size: 14px;
+            color: #444;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .md-why-text ul li i {
+            color: var(--color-primary);
+        }
+
+        .md-why-img img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .md-mold-types {
+            padding: 40px 0;
+        }
+
+        .md-mold-grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 12px;
+            margin-top: 20px;
+        }
+
+        .md-mold-card {
+            background: #fff;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            padding: 15px 10px;
+            text-align: center;
+            transition: var(--transition);
+        }
+
+        .md-mold-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(33, 86, 169, 0.1);
+            border-color: var(--color-primary);
+        }
+
+        .md-mold-card img {
+            width: 100%;
+            height: 90px;
+            object-fit: contain;
+            margin-bottom: 8px;
+        }
+
+        .md-mold-card h4 {
+            font-size: 13px;
+            font-weight: 700;
+            color: #1e1e1e;
+        }
+
+        .md-mold-card p {
+            font-size: 11px;
+            color: #666;
+        }
+
+        .md-cta {
+            padding: 0 0 40px;
+        }
+
+        .md-cta-box {
+            background: #0a1a30;
+            border-radius: 12px;
+            padding: 30px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #fff;
+        }
+
+        .md-cta-text h3 {
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        .md-cta-text p {
+            font-size: 14px;
+            color: #b0bed0;
+        }
+
+        .md-cta-btns {
+            display: flex;
+            gap: 15px;
+        }
+
+        @media (max-width: 1024px) {
+            .md-benefit-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            .md-service-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .md-mold-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            .md-process-steps {
+                justify-content: center;
+            }
+            .md-pstep {
+                flex: 0 0 30%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .md-hero {
+                height: 430px;
+            }
+            .md-hero h1 {
+                font-size: 28px;
+            }
+            .md-benefit-grid {
+                grid-template-columns: 1fr;
+            }
+            .md-service-grid {
+                grid-template-columns: 1fr;
+            }
+            .md-why-grid {
+                grid-template-columns: 1fr;
+            }
+            .md-mold-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .md-pstep {
+                flex: 0 0 45%;
+            }
+            .md-cta-box {
+                flex-direction: column;
+                text-align: center;
+                gap: 15px;
+            }
+            .md-cta-btns {
+                flex-direction: column;
+            }
+        }
+    </style>
+    <!-- GEO / Hreflang -->
+    <meta name="geo.region" content="CN-44" />
+    <meta name="geo.placename" content="Dongguan, China" />
+    <link rel="alternate" href="https://www.techinherit.com/" hreflang="en" />
+    <link rel="alternate" href="https://www.techinherit.com/" hreflang="en-ZA" />
+    <link rel="alternate" href="https://www.techinherit.com/" hreflang="en-NG" />
+    <link rel="alternate" href="https://www.techinherit.com/" hreflang="en-AE" />
+    <link rel="alternate" href="https://www.techinherit.com/" hreflang="en-ID" />
+    <!-- Organization Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Techinherit",
+        "url": "https://www.techinherit.com",
+        "logo": "https://www.techinherit.com/img/logo.png",
+        "description": "One-stop plastic manufacturing solution provider.",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Dongguan",
+            "addressCountry": "CN"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+86-123-4567-8901",
+            "contactType": "sales"
+        },
+        "sameAs": [
+            "https://www.facebook.com/techinherit"
+        ]
+    }
+    </script>
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container">
+            <div class="header-inner">
+                <a href="index.html" class="logo-area" aria-label="Techinherit Home">
+                    <img src="img/logo.png" alt="Techinherit" class="logo-img" />
+                    <span class="logo-text">Techinherit</span>
+                </a>
+
+                <button class="hamburger-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                </button>
+
+                <nav class="nav-links" aria-label="Primary navigation" role="navigation">
+                    <a href="index.html" data-i18n="nav.home">Home</a>
+                    <a href="about-us.html" data-i18n="nav.about">About Us</a>
+
+                    <div class="nav-dropdown active">
+                        <a href="#" class="dropdown-trigger">
+                            Services <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="product-design.html" data-i18n="nav.product-design">Product Design</a></li>
+                            <li><a href="raw-materials.html" data-i18n="nav.raw-materials">Plastic Raw Materials</a></li>
+                            <li><a href="mold-development.html" class="active" data-i18n="nav.mold">Mold Development</a></li>
+                            <li><a href="injection-molding.html" data-i18n="nav.injection">Injection Molding</a></li>
+                            <li><a href="quality-control.html" data-i18n="nav.quality">Quality Control</a></li>
+                            <li><a href="odm-oem.html">Assemble</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="nav-dropdown">
+                        <a href="#" class="dropdown-trigger">
+                            Capabilities <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="rd-strength.html">R&D Strength</a></li>
+                            <li><a href="production-equipment.html" data-i18n="nav.equipment">Production Equipment</a></li>
+                        </ul>
+                    </div>
+
+                    <a href="industries.html" data-i18n="nav.industries">Industries</a>
+                    <a href="case-studies.html" data-i18n="nav.cases">Case Studies</a>
+                    <a href="#footer" data-i18n="nav.contact">Contact Us</a>
+                    <a href="#footer" class="btn-header" data-i18n="nav.quote">Get a Quote</a>
+                    <button class="lang-toggle" id="langToggle" data-i18n="lang.switch" title="Switch language">中文</button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="md-hero">
+            <div class="container">
+                <h1>HIGH-PRECISION<br>MOLD DEVELOPMENT</h1>
+                <p>Precision Molds. Superior Parts.<br>From concept to completion, we provide high-precision mold design and manufacturing solutions that ensure part quality, consistency, and cost-efficiency.</p>
+                <div class="md-hero-btns">
+                    <a href="#footer" class="btn-primary">Get a Free Quote</a>
+                    <a href="#footer" class="btn-outline-light">Contact Our Experts</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="md-benefits">
+            <div class="container md-benefit-grid">
+                <div class="md-benefit-item">
+                    <i class="fas fa-microchip"></i>
+                    <h4>Advanced Technology</h4>
+                    <p>High-precision CNC and EDM equipment</p>
+                </div>
+                <div class="md-benefit-item">
+                    <i class="fas fa-user"></i>
+                    <h4>Experienced Team</h4>
+                    <p>Skilled mold engineers with rich industry experience</p>
+                </div>
+                <div class="md-benefit-item">
+                    <i class="fas fa-file-lines"></i>
+                    <h4>High Quality</h4>
+                    <p>Strict quality control to ensure mold performance</p>
+                </div>
+                <div class="md-benefit-item">
+                    <i class="fas fa-clock"></i>
+                    <h4>Fast Turnaround</h4>
+                    <p>Efficient project management for on-time delivery</p>
+                </div>
+                <div class="md-benefit-item">
+                    <i class="fas fa-globe"></i>
+                    <h4>Global Support</h4>
+                    <p>Supporting clients worldwide</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="md-services">
+            <div class="container">
+                <div class="md-section-header">
+                    <div class="md-tag">OUR MOLD DEVELOPMENT SERVICES</div>
+                    <h2>Complete Mold Solutions Under One Roof</h2>
+                    <p>We manage every stage of the mold development process to deliver high-quality molds that meet your exact requirements.</p>
+                </div>
+                <div class="md-service-grid">
+                    <div class="md-service-card">
+                        <img src="img/模具制造2.png" alt="Mold Design" loading="lazy" />
+                        <h4>Mold Design</h4>
+                        <p>DFM analysis, 3D modeling and mold flow simulation to optimize design for manufacturability.</p>
+                    </div>
+                    <div class="md-service-card">
+                        <img src="img/模具制造.png" alt="CNC Machining" loading="lazy" />
+                        <h4>CNC Machining</h4>
+                        <p>High-precision machining using advanced CNC equipment.</p>
+                    </div>
+                    <div class="md-service-card">
+                        <img src="img/模具制造4.png" alt="EDM Processing" loading="lazy" />
+                        <h4>EDM Processing</h4>
+                        <p>Wire EDM and sinker EDM for complex geometries and high-precision details.</p>
+                    </div>
+                    <div class="md-service-card">
+                        <img src="img/模具制造.png" alt="Mold Assembly" loading="lazy" />
+                        <h4>Mold Assembly</h4>
+                        <p>Expert assembly to ensure mold accuracy, functionality, and durability.</p>
+                    </div>
+                    <div class="md-service-card">
+                        <img src="img/模具制造.png" alt="Mold Testing" loading="lazy" />
+                        <h4>Mold Testing</h4>
+                        <p>Trial runs and part validation to ensure the mold meets all specifications.</p>
+                    </div>
+                    <div class="md-service-card">
+                        <img src="img/模具制造.png" alt="Mold Maintenance" loading="lazy" />
+                        <h4>Mold Maintenance</h4>
+                        <p>Regular maintenance and support to extend mold life and performance.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="md-process">
+            <div class="container">
+                <div class="md-section-header">
+                    <div class="md-tag">OUR PROCESS</div>
+                    <h2>Our Mold Development Process</h2>
+                </div>
+                <div class="md-process-steps">
+                    <div class="md-pstep">
+                        <div class="md-num">1</div>
+                        <div class="md-circle"><i class="fa-regular fa-comments"></i></div>
+                        <h4>Project Review</h4>
+                        <p>Understand your requirements and part specifications.</p>
+                    </div>
+                    <div class="md-pstep">
+                        <div class="md-num">2</div>
+                        <div class="md-circle"><i class="fa-regular fa-file-pdf"></i></div>
+                        <h4>Mold Design</h4>
+                        <p>Create DFM report, 3D design and mold flow analysis.</p>
+                    </div>
+                    <div class="md-pstep">
+                        <div class="md-num">3</div>
+                        <div class="md-circle"><i class="fas fa-gear"></i></div>
+                        <h4>Manufacturing</h4>
+                        <p>Precision machining and EDM processing.</p>
+                    </div>
+                    <div class="md-pstep">
+                        <div class="md-num">4</div>
+                        <div class="md-circle"><i class="fa-regular fa-handshake"></i></div>
+                        <h4>Assembly</h4>
+                        <p>Professional assembly and internal inspection.</p>
+                    </div>
+                    <div class="md-pstep">
+                        <div class="md-num">5</div>
+                        <div class="md-circle"><i class="fa-regular fa-clipboard"></i></div>
+                        <h4>Testing &amp; Validation</h4>
+                        <p>Mold trial, sample inspection and approval.</p>
+                    </div>
+                    <div class="md-pstep">
+                        <div class="md-num">6</div>
+                        <div class="md-circle"><i class="fa-regular fa-box"></i></div>
+                        <h4>Delivery</h4>
+                        <p>Mold delivery and ongoing after-sales support.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="md-why">
+            <div class="container md-why-grid">
+                <div class="md-why-text">
+                    <h2>Your Trusted Mold Development Partner</h2>
+                    <p>We combine advanced technology, skilled engineers, and strict quality control to deliver molds that exceed expectations.</p>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Advanced equipment for high precision</li>
+                        <li><i class="fas fa-check-circle"></i> Experienced mold design and manufacturing team</li>
+                        <li><i class="fas fa-check-circle"></i> Strict quality control throughout the process</li>
+                        <li><i class="fas fa-check-circle"></i> On-time delivery and responsive support</li>
+                        <li><i class="fas fa-check-circle"></i> Cost-effective solutions tailored to your needs</li>
+                    </ul>
+                </div>
+                <div class="md-why-img">
+                    <img src="img/模具制造.png" alt="Mold Development" loading="lazy" />
+                </div>
+            </div>
+        </section>
+
+        <section class="md-mold-types">
+            <div class="container">
+                <div class="md-section-header">
+                    <div class="md-tag">MOLD TYPES WE BUILD</div>
+                    <h2>We Build Molds for a Wide Range of Applications</h2>
+                </div>
+                <div class="md-mold-grid">
+                    <div class="md-mold-card">
+                        <img src="img/模具制造8.png" alt="Single Cavity Mold" loading="lazy" />
+                        <h4>Single Cavity Mold</h4>
+                        <p>For low volume and prototyping.</p>
+                    </div>
+                    <div class="md-mold-card">
+                        <img src="img/模具制造10.png" alt="Multi-Cavity Mold" loading="lazy" />
+                        <h4>Multi-Cavity Mold</h4>
+                        <p>For high volume production needs.</p>
+                    </div>
+                    <div class="md-mold-card">
+                        <img src="img/模具制造11.png" alt="Family Mold" loading="lazy" />
+                        <h4>Family Mold</h4>
+                        <p>For producing multiple parts in one cycle.</p>
+                    </div>
+                    <div class="md-mold-card">
+                        <img src="img/模具制造12.png" alt="Insert Mold" loading="lazy" />
+                        <h4>Insert Mold</h4>
+                        <p>For molding around metal inserts.</p>
+                    </div>
+                    <div class="md-mold-card">
+                        <img src="img/模具制造13.png" alt="Overmold" loading="lazy" />
+                        <h4>Overmold / 2K Mold</h4>
+                        <p>For multi-material or multi-color parts.</p>
+                    </div>
+                    <div class="md-mold-card">
+                        <img src="img/模具制造14.png" alt="Rapid Prototype Mold" loading="lazy" />
+                        <h4>Rapid Prototype Mold</h4>
+                        <p>For quick design verification and testing.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="industry-quote-section section-padding">
+            <div class="container">
+                <div class="industry-quote-grid">
+                    <div class="industry-icons">
+                        <h3 data-i18n="home.cert.title">Certification</h3>
+                        <div class="industry-img-container">
+                            <div class="img-box"><img src="img/认证5.png" alt="ISO 9001" loading="lazy" /></div>
+                            <div class="img-box"><img src="img/认证6.png" alt="ISO 14001" loading="lazy" /></div>
+                            <div class="img-box"><img src="img/认证4.png" alt="Certification" loading="lazy" /></div>
+                            <div class="img-box"><img src="img/认证3.png" alt="Certification" loading="lazy" /></div>
+                        </div>
+                    </div>
+
+                    <div class="quote-form">
+                        <h3 data-i18n="home.quote.title">GET A FREE QUOTE</h3>
+                        <form action="/submit-quote" method="post" novalidate>
+                            <div class="quote-row">
+                                <input type="text" name="name" placeholder="Your Name *" required />
+                                <input type="email" name="email" placeholder="Email Address *" required />
+                            </div>
+                            <div class="quote-row">
+                                <input type="text" name="company" placeholder="Company Name" />
+                                <input type="tel" name="phone" placeholder="Phone Number *" required />
+                            </div>
+                            <select name="service" required>
+                                <option value="">Service Required *</option>
+                                <option value="design">Product Design</option>
+                                <option value="mold">Mold Development</option>
+                                <option value="injection">Injection Molding</option>
+                                <option value="full">Full Service</option>
+                            </select>
+                            <textarea name="message" placeholder="Your Message" rows="4"></textarea>
+                            <button type="submit" class="btn-primary">Send Inquiry</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer" id="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-brand">
+                        <img src="img/logo.png" alt="Techinherit" class="footer-logo-img" />
+                        <span class="footer-brand-text">Techinherit</span>
+                    </div>
+                    <p>We are dedicated to providing high-quality plastic products and services to customers worldwide.</p>
+                </div>
+
+                <div class="footer-col">
+                    <h4 data-i18n="footer.quick">QUICK LINKS</h4>
+                    <ul>
+                        <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+                        <li><a href="about-us.html" data-i18n="nav.about">About Us</a></li>
+                        <li><a href="product-design.html" data-i18n="nav.product-design">Product Design</a></li>
+                        <li><a href="#">Capabilities</a></li>
+                        <li><a href="case-studies.html" data-i18n="nav.cases">Case Studies</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 data-i18n="footer.services">SERVICES</h4>
+                    <ul>
+                        <li><a href="product-design.html" data-i18n="nav.product-design">Product Design</a></li>
+                        <li><a href="raw-materials.html" data-i18n="nav.raw-materials">Plastic Raw Materials</a></li>
+                        <li><a href="mold-development.html" data-i18n="nav.mold">Mold Development</a></li>
+                        <li><a href="injection-molding.html" data-i18n="nav.injection">Injection Molding</a></li>
+                        <li><a href="quality-control.html" data-i18n="nav.quality">Quality Control</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 data-i18n="footer.contact">CONTACT US</h4>
+                    <ul class="contact-list">
+                        <li><i class="fas fa-phone-alt" aria-hidden="true"></i> +86 123 4567 8901</li>
+                        <li><i class="fas fa-envelope" aria-hidden="true"></i> info@jicheng.com</li>
+                        <li><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Dongguan, China</li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 data-i18n="footer.follow">FOLLOW US</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/?locale=zh_CN" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright">
+                &copy; 2026 Techinherit. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/85257096596" target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Contact us on WhatsApp">
+        <i class="fab fa-whatsapp" aria-hidden="true"></i>
+    </a>
+
+    <a href="global-partnership.html" class="global-float" aria-label="Global cooperation">
+        <img src="img/全球合作.png" alt="Global cooperation" />
+    </a>
+
+    <script>
+        (function() {
+            var toggle = document.querySelector('.hamburger-toggle');
+            var nav = document.querySelector('.nav-links');
+
+            if (toggle && nav) {
+                toggle.addEventListener('click', function() {
+                    var expanded = this.getAttribute('aria-expanded') === 'true' ? false : true;
+                    nav.classList.toggle('is-open');
+                    this.setAttribute('aria-expanded', expanded);
+                });
+            }
+
+            document.querySelectorAll('.dropdown-trigger').forEach(function(trigger) {
+                trigger.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    var parent = this.closest('.nav-dropdown');
+                    if (parent) {
+                        parent.classList.toggle('is-open');
+                    }
+                });
+            });
+
+            document.addEventListener('click', function(e) {
+                document.querySelectorAll('.nav-dropdown.is-open').forEach(function(dropdown) {
+                    if (!dropdown.contains(e.target)) {
+                        dropdown.classList.remove('is-open');
+                    }
+                });
+            });
+
+            var header = document.querySelector('.site-header');
+            window.addEventListener('scroll', function() {
+                header.classList.toggle('scrolled', window.scrollY > 10);
+            });
+        })();
+    </script>
+
+    <script src="js/i18n.js"></script>
+</body>
+</html>

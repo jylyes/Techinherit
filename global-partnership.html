@@ -1,0 +1,642 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Become Our Global Partner | Techinherit</title>
+    <meta name="description" content="Join Techinherit's global distribution network and grow your business with a reliable plastic manufacturing partner." />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <style>
+        .partner-hero {
+            position: relative;
+            height: 550px;
+            background: linear-gradient(to right, rgba(10, 26, 48, 0.92), rgba(10, 26, 48, 0.6)), url('img/全球合作.png') center / cover;
+            display: flex;
+            flex-direction: column;
+            padding: 100px 0 60px;
+            margin-bottom: 40px;
+        }
+
+        .partner-hero-content {
+            color: #fff;
+            max-width: 700px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        .partner-hero-content h1 {
+            font-size: 48px;
+            font-weight: 900;
+            margin-bottom: 20px;
+            line-height: 1.2;
+            letter-spacing: 0.5px;
+            animation: heroFadeUp 0.8s ease both;
+        }
+
+        .partner-hero-content p {
+            font-size: 16px;
+            font-weight: 300;
+            color: #d1d5db;
+            max-width: 600px;
+            line-height: 1.6;
+            animation: heroFadeUp 0.8s 0.2s ease both;
+        }
+
+        .partner-features {
+            padding-bottom: 40px;
+        }
+
+        .partner-features-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+        }
+
+        .partner-feature-card {
+            background: #fff;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            padding: 30px 20px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+            transition: var(--transition);
+        }
+
+        .partner-feature-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(33, 86, 169, 0.1);
+            border-color: var(--color-primary);
+        }
+
+        .partner-feature-icon {
+            width: 60px;
+            height: 60px;
+            background-color: var(--color-primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 15px;
+        }
+
+        .partner-feature-icon i {
+            font-size: 28px;
+            color: #fff;
+        }
+
+        .partner-feature-card h3 {
+            font-size: 17px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: #1e1e1e;
+        }
+
+        .partner-feature-card p {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .partner-main {
+            padding: 20px 0 50px;
+        }
+
+        .partner-main-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 50px;
+            align-items: start;
+        }
+
+        .partner-left-col h2 {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 25px;
+            color: #1e1e1e;
+        }
+
+        .partner-target-list {
+            list-style: none;
+            margin-bottom: 30px;
+        }
+
+        .partner-target-list li {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 14px;
+            font-size: 15px;
+            font-weight: 500;
+            color: #333;
+            border-bottom: 1px solid #f5f5f5;
+            padding-bottom: 14px;
+        }
+
+        .partner-target-list li:last-child {
+            border-bottom: none;
+        }
+
+        .partner-target-list li .partner-check-icon {
+            flex-shrink: 0;
+            width: 28px;
+            height: 28px;
+            background-color: var(--color-primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 14px;
+        }
+
+        .partner-product-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            object-fit: cover;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+
+        .partner-right-col h2 {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 25px;
+            color: #1e1e1e;
+        }
+
+        .partner-form-container {
+            background: #fff;
+            border-radius: 8px;
+        }
+
+        .partner-form-row {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 16px;
+        }
+
+        .partner-form-group {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .partner-form-group label {
+            font-size: 13px;
+            font-weight: 700;
+            color: #1e1e1e;
+        }
+
+        .partner-form-group label span {
+            color: #d32f2f;
+        }
+
+        .partner-form-group input,
+        .partner-form-group select,
+        .partner-form-group textarea {
+            width: 100%;
+            padding: 12px 14px;
+            border: 1px solid #e0e0e0;
+            border-radius: 6px;
+            font-size: 14px;
+            background-color: #fff;
+            color: #333;
+            transition: 0.2s;
+            font-family: inherit;
+        }
+
+        .partner-form-group input:focus,
+        .partner-form-group select:focus,
+        .partner-form-group textarea:focus {
+            outline: none;
+            border-color: var(--color-primary);
+            box-shadow: 0 0 0 3px rgba(33, 86, 169, 0.1);
+        }
+
+        .partner-form-group input::placeholder,
+        .partner-form-group textarea::placeholder {
+            color: #aaa;
+        }
+
+        .partner-form-group select {
+            appearance: none;
+            background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23666' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+            background-repeat: no-repeat;
+            background-position: right 12px center;
+            background-size: 14px;
+            cursor: pointer;
+        }
+
+        .partner-form-group textarea {
+            min-height: 90px;
+            resize: vertical;
+        }
+
+        .partner-btn-submit {
+            width: 100%;
+            padding: 14px;
+            background-color: var(--color-primary);
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: 700;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: 0.3s;
+        }
+
+        .partner-btn-submit:hover {
+            background-color: var(--color-primary-dark);
+        }
+
+        @media (max-width: 1024px) {
+            .partner-features-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .partner-main-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .partner-hero {
+                height: 430px;
+            }
+            .partner-hero-content h1 {
+                font-size: 28px;
+            }
+            .partner-features-grid {
+                grid-template-columns: 1fr;
+            }
+            .partner-form-row {
+                flex-direction: column;
+                gap: 12px;
+            }
+        }
+    </style>
+    <!-- GEO / Hreflang -->
+    <meta name="geo.region" content="CN-44" />
+    <meta name="geo.placename" content="Dongguan, China" />
+    <link rel="alternate" href="https://www.techinherit.com/" hreflang="en" />
+    <link rel="alternate" href="https://www.techinherit.com/" hreflang="en-ZA" />
+    <link rel="alternate" href="https://www.techinherit.com/" hreflang="en-NG" />
+    <link rel="alternate" href="https://www.techinherit.com/" hreflang="en-AE" />
+    <link rel="alternate" href="https://www.techinherit.com/" hreflang="en-ID" />
+    <!-- Organization Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Techinherit",
+        "url": "https://www.techinherit.com",
+        "logo": "https://www.techinherit.com/img/logo.png",
+        "description": "One-stop plastic manufacturing solution provider.",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Dongguan",
+            "addressCountry": "CN"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+86-123-4567-8901",
+            "contactType": "sales"
+        },
+        "sameAs": [
+            "https://www.facebook.com/techinherit"
+        ]
+    }
+    </script>
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container">
+            <div class="header-inner">
+                <a href="index.html" class="logo-area" aria-label="Techinherit Home">
+                    <img src="img/logo.png" alt="Techinherit" class="logo-img" />
+                    <span class="logo-text">Techinherit</span>
+                </a>
+
+                <button class="hamburger-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                </button>
+
+                <nav class="nav-links" aria-label="Primary navigation" role="navigation">
+                    <a href="index.html" data-i18n="nav.home">Home</a>
+                    <a href="about-us.html" data-i18n="nav.about">About Us</a>
+
+                    <div class="nav-dropdown">
+                        <a href="#" class="dropdown-trigger">
+                            Services <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="product-design.html" data-i18n="nav.product-design">Product Design</a></li>
+                            <li><a href="raw-materials.html" data-i18n="nav.raw-materials">Plastic Raw Materials</a></li>
+                            <li><a href="mold-development.html" data-i18n="nav.mold">Mold Development</a></li>
+                            <li><a href="injection-molding.html" data-i18n="nav.injection">Injection Molding</a></li>
+                            <li><a href="quality-control.html" data-i18n="nav.quality">Quality Control</a></li>
+                            <li><a href="odm-oem.html">Assemble</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="nav-dropdown">
+                        <a href="#" class="dropdown-trigger">
+                            Capabilities <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="rd-strength.html">R&D Strength</a></li>
+                            <li><a href="production-equipment.html" data-i18n="nav.equipment">Production Equipment</a></li>
+                        </ul>
+                    </div>
+
+                    <a href="industries.html" data-i18n="nav.industries">Industries</a>
+                    <a href="case-studies.html" data-i18n="nav.cases">Case Studies</a>
+                    <a href="#footer" data-i18n="nav.contact">Contact Us</a>
+                    <a href="#footer" class="btn-header" data-i18n="nav.quote">Get a Quote</a>
+                    <button class="lang-toggle" id="langToggle" data-i18n="lang.switch" title="Switch language">中文</button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="partner-hero">
+            <div class="partner-hero-content">
+                <h1>Become Our<br>Global Partner</h1>
+                <p>Join our global distribution network and grow your business with a reliable plastic manufacturing partner.</p>
+            </div>
+        </section>
+
+        <section class="partner-features">
+            <div class="container">
+                <div class="partner-features-grid">
+                    <div class="partner-feature-card">
+                        <div class="partner-feature-icon"><i class="fas fa-globe"></i></div>
+                        <h3>Exclusive Market Opportunities</h3>
+                        <p>Expand your local market with high-quality plastic manufacturing solutions.</p>
+                    </div>
+                    <div class="partner-feature-card">
+                        <div class="partner-feature-icon"><i class="fas fa-dollar-sign"></i></div>
+                        <h3>Competitive Factory Pricing</h3>
+                        <p>Direct factory support with attractive profit margins.</p>
+                    </div>
+                    <div class="partner-feature-card">
+                        <div class="partner-feature-icon"><i class="fas fa-gear"></i></div>
+                        <h3>Engineering &amp; Technical Support</h3>
+                        <p>Professional product development and manufacturing assistance.</p>
+                    </div>
+                    <div class="partner-feature-card">
+                        <div class="partner-feature-icon"><i class="fas fa-handshake"></i></div>
+                        <h3>Long-Term Business Partnership</h3>
+                        <p>Stable supply chain and sustainable growth opportunities.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="partner-main">
+            <div class="container partner-main-grid">
+
+                <div class="partner-left-col">
+                    <h2>Who We Are Looking For</h2>
+                    <ul class="partner-target-list">
+                        <li><span class="partner-check-icon"><i class="fas fa-check"></i></span> Plastic Product Distributors</li>
+                        <li><span class="partner-check-icon"><i class="fas fa-check"></i></span> Industrial Equipment Suppliers</li>
+                        <li><span class="partner-check-icon"><i class="fas fa-check"></i></span> Office Furniture Brands</li>
+                        <li><span class="partner-check-icon"><i class="fas fa-check"></i></span> Medical Device Companies</li>
+                        <li><span class="partner-check-icon"><i class="fas fa-check"></i></span> Electronics Manufacturers</li>
+                        <li><span class="partner-check-icon"><i class="fas fa-check"></i></span> Trading Companies</li>
+                    </ul>
+                    <div class="partner-product-image">
+                        <img src="img/模具.png" alt="Plastic Manufacturing Parts" loading="lazy" />
+                    </div>
+                </div>
+
+                <div class="partner-right-col">
+                    <h2>Apply for Partnership</h2>
+                    <div class="partner-form-container">
+                        <form action="/submit-partner" method="post" novalidate>
+                            <div class="partner-form-row">
+                                <div class="partner-form-group">
+                                    <label>Full Name<span>*</span></label>
+                                    <input type="text" name="fullname" placeholder="Enter your full name" required />
+                                </div>
+                                <div class="partner-form-group">
+                                    <label>Company Name<span>*</span></label>
+                                    <input type="text" name="company" placeholder="Enter your company name" required />
+                                </div>
+                            </div>
+                            <div class="partner-form-row">
+                                <div class="partner-form-group">
+                                    <label>Country / Region<span>*</span></label>
+                                    <select name="country" required>
+                                        <option value="">Select your country / region</option>
+                                    </select>
+                                </div>
+                                <div class="partner-form-group">
+                                    <label>Business Type<span>*</span></label>
+                                    <select name="business_type" required>
+                                        <option value="">Select your business type</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="partner-form-row">
+                                <div class="partner-form-group">
+                                    <label>Annual Sales Volume<span>*</span></label>
+                                    <select name="sales_volume" required>
+                                        <option value="">Select annual sales volume</option>
+                                    </select>
+                                </div>
+                                <div class="partner-form-group">
+                                    <label>Website</label>
+                                    <input type="text" name="website" placeholder="https://yourwebsite.com" />
+                                </div>
+                            </div>
+                            <div class="partner-form-row">
+                                <div class="partner-form-group">
+                                    <label>Email<span>*</span></label>
+                                    <input type="email" name="email" placeholder="Enter your email" required />
+                                </div>
+                                <div class="partner-form-group">
+                                    <label>WhatsApp<span>*</span></label>
+                                    <input type="text" name="whatsapp" placeholder="Enter your WhatsApp" required />
+                                </div>
+                            </div>
+                            <div class="partner-form-group" style="margin-bottom:15px">
+                                <label>Message</label>
+                                <textarea name="message" placeholder="Tell us about your business and partnership goals..."></textarea>
+                            </div>
+                            <button type="submit" class="partner-btn-submit">Apply Now</button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <section class="industry-quote-section section-padding">
+            <div class="container">
+                <div class="industry-quote-grid">
+                    <div class="industry-icons">
+                        <h3 data-i18n="home.cert.title">Certification</h3>
+                        <div class="industry-img-container">
+                            <div class="img-box"><img src="img/认证5.png" alt="ISO 9001" loading="lazy" /></div>
+                            <div class="img-box"><img src="img/认证6.png" alt="ISO 14001" loading="lazy" /></div>
+                            <div class="img-box"><img src="img/认证4.png" alt="Certification" loading="lazy" /></div>
+                            <div class="img-box"><img src="img/认证3.png" alt="Certification" loading="lazy" /></div>
+                        </div>
+                    </div>
+
+                    <div class="quote-form">
+                        <h3 data-i18n="home.quote.title">GET A FREE QUOTE</h3>
+                        <form action="/submit-quote" method="post" novalidate>
+                            <div class="quote-row">
+                                <input type="text" name="name" placeholder="Your Name *" required />
+                                <input type="email" name="email" placeholder="Email Address *" required />
+                            </div>
+                            <div class="quote-row">
+                                <input type="text" name="company" placeholder="Company Name" />
+                                <input type="tel" name="phone" placeholder="Phone Number *" required />
+                            </div>
+                            <select name="service" required>
+                                <option value="">Service Required *</option>
+                                <option value="design">Product Design</option>
+                                <option value="mold">Mold Development</option>
+                                <option value="injection">Injection Molding</option>
+                                <option value="full">Full Service</option>
+                            </select>
+                            <textarea name="message" placeholder="Your Message" rows="4"></textarea>
+                            <button type="submit" class="btn-primary">Send Inquiry</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer" id="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-brand">
+                        <img src="img/logo.png" alt="Techinherit" class="footer-logo-img" />
+                        <span class="footer-brand-text">Techinherit</span>
+                    </div>
+                    <p>We are dedicated to providing high-quality plastic products and services to customers worldwide.</p>
+                </div>
+
+                <div class="footer-col">
+                    <h4 data-i18n="footer.quick">QUICK LINKS</h4>
+                    <ul>
+                        <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+                        <li><a href="about-us.html" data-i18n="nav.about">About Us</a></li>
+                        <li><a href="product-design.html" data-i18n="nav.product-design">Product Design</a></li>
+                        <li><a href="#">Capabilities</a></li>
+                        <li><a href="case-studies.html" data-i18n="nav.cases">Case Studies</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 data-i18n="footer.services">SERVICES</h4>
+                    <ul>
+                        <li><a href="product-design.html" data-i18n="nav.product-design">Product Design</a></li>
+                        <li><a href="raw-materials.html" data-i18n="nav.raw-materials">Plastic Raw Materials</a></li>
+                        <li><a href="mold-development.html" data-i18n="nav.mold">Mold Development</a></li>
+                        <li><a href="injection-molding.html" data-i18n="nav.injection">Injection Molding</a></li>
+                        <li><a href="quality-control.html" data-i18n="nav.quality">Quality Control</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 data-i18n="footer.contact">CONTACT US</h4>
+                    <ul class="contact-list">
+                        <li><i class="fas fa-phone-alt" aria-hidden="true"></i> +86 123 4567 8901</li>
+                        <li><i class="fas fa-envelope" aria-hidden="true"></i> info@jicheng.com</li>
+                        <li><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Dongguan, China</li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 data-i18n="footer.follow">FOLLOW US</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/?locale=zh_CN" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright">
+                &copy; 2026 Techinherit. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/85257096596" target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Contact us on WhatsApp">
+        <i class="fab fa-whatsapp" aria-hidden="true"></i>
+    </a>
+
+    <a href="global-partnership.html" class="global-float" aria-label="Global cooperation">
+        <img src="img/全球合作.png" alt="Global cooperation" />
+    </a>
+
+    <script>
+        (function() {
+            var toggle = document.querySelector('.hamburger-toggle');
+            var nav = document.querySelector('.nav-links');
+
+            if (toggle && nav) {
+                toggle.addEventListener('click', function() {
+                    var expanded = this.getAttribute('aria-expanded') === 'true' ? false : true;
+                    nav.classList.toggle('is-open');
+                    this.setAttribute('aria-expanded', expanded);
+                });
+            }
+
+            document.querySelectorAll('.dropdown-trigger').forEach(function(trigger) {
+                trigger.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    var parent = this.closest('.nav-dropdown');
+                    if (parent) {
+                        parent.classList.toggle('is-open');
+                    }
+                });
+            });
+
+            document.addEventListener('click', function(e) {
+                document.querySelectorAll('.nav-dropdown.is-open').forEach(function(dropdown) {
+                    if (!dropdown.contains(e.target)) {
+                        dropdown.classList.remove('is-open');
+                    }
+                });
+            });
+
+            var header = document.querySelector('.site-header');
+            window.addEventListener('scroll', function() {
+                header.classList.toggle('scrolled', window.scrollY > 10);
+            });
+        })();
+    </script>
+
+    <script src="js/i18n.js"></script>
+</body>
+</html>
