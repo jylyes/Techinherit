@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Consumer Electronics Structural Parts: 5 Success Cases | Techinherit</title>
+    <meta name="description" content="Consumer electronics structural parts - 5 success cases covering materials, molds and injection molding processes" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <style>
+        .ce-header{background:#0b1f3b;color:#fff;padding:70px 0 60px;text-align:center}
+        .ce-header h1{font-size:40px;font-weight:700;margin-bottom:12px}
+        .ce-header h1 span{color:#f0c040;font-weight:900}
+        .ce-header p{font-size:18px;color:#b0c4de;margin-top:6px}
+
+        .ce-stats{display:flex;justify-content:center;gap:40px;max-width:1100px;margin:0 auto;padding:0 0 10px}
+        .ce-stat-item{display:flex;flex-direction:column;align-items:center;text-align:center;flex:1}
+        .ce-stat-item i{font-size:34px;color:#1a56db;margin-bottom:6px}
+        .ce-stat-item h4{font-size:18px;font-weight:700;color:#0b1f3b}
+        .ce-stat-item p{font-size:13px;color:#666;margin-top:4px;max-width:200px}
+
+        .ce-card{background:#f0f6ff;border-radius:14px;padding:20px 28px 14px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,0.04);border:1px solid #e5e7eb;display:flex;gap:24px;transition:var(--transition)}
+        .ce-card:hover{box-shadow:0 8px 25px rgba(0,0,0,0.08);border-color:var(--color-primary)}
+
+        .ce-card-left{flex:0 0 500px;border-right:1px solid #eef0f2;padding-right:24px}
+        .ce-card-left .num{font-size:26px;font-weight:900;color:#1a56db;line-height:1}
+        .ce-card-left .num small{font-size:13px;font-weight:400;color:#999}
+        .ce-card-left h3{font-size:17px;font-weight:700;margin:6px 0 8px;color:#0b1f3b}
+        .ce-card-left .sub{font-size:13px;color:#1a56db;font-weight:600;margin-bottom:4px}
+        .ce-card-left .desc{font-size:13px;color:#555;line-height:1.5}
+
+        .ce-card-mid{flex:1;display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px}
+        .ce-card-mid .item{text-align:center;border-right:1px solid #f0f0f0;padding:0 14px}
+        .ce-card-mid .item:last-child{border-right:0}
+        .ce-card-mid .img-box{height:100px;display:flex;align-items:center;justify-content:center;margin-bottom:8px}
+        .ce-card-mid .img-box img{max-height:100%;max-width:100%;object-fit:contain}
+        .ce-card-mid .item h5{font-size:15px;font-weight:700;color:#0b1f3b;margin-bottom:6px}
+        .ce-card-mid .item ul{list-style:none;padding:0;text-align:left}
+        .ce-card-mid .item ul li{font-size:13px;color:#555;margin-bottom:4px;display:flex;align-items:baseline;gap:4px}
+        .ce-card-mid .item ul li i{color:#1a56db;font-size:10px}
+
+        .ce-card-right{flex:0 0 200px;border-left:1px solid #eef0f2;padding-left:24px}
+        .ce-card-right h5{font-size:15px;font-weight:700;color:#0b1f3b;margin-bottom:12px;text-align:center}
+        .ce-card-right .res-item{display:flex;align-items:center;gap:10px;margin-bottom:12px;font-size:15px;color:#333}
+        .ce-card-right .res-item i{color:#1a56db;font-size:20px;width:28px;text-align:center}
+        .ce-card-right .res-item .val{font-weight:700;color:#1a56db;font-size:18px}
+
+        .ce-bottom{padding:30px 0;background:#fff}
+        .ce-bottom-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:40px}
+        .ce-col h4{font-size:17px;font-weight:700;color:#0b1f3b;margin-bottom:14px}
+        .ce-col ul{list-style:none}
+        .ce-col ul li{font-size:14px;color:#555;margin-bottom:8px;display:flex;align-items:center;gap:8px}
+        .ce-col ul li i{color:#1a56db;font-size:16px}
+        .ce-icon-box{display:flex;gap:24px;flex-wrap:wrap}
+        .ce-icon-box .ic{display:flex;flex-direction:column;align-items:center;text-align:center;width:90px}
+        .ce-icon-box .ic i{font-size:32px;color:#1a56db;margin-bottom:8px}
+        .ce-icon-box .ic span{font-size:13px;color:#333;font-weight:600}
+        .ce-cta{background:#0b1f3b;color:#fff;border-radius:10px;padding:28px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center}
+        .ce-cta h4{font-size:18px;font-weight:700;margin-bottom:8px;color:#fff}
+        .ce-cta p{font-size:14px;color:#b0c4de}
+
+        @media(max-width:1024px){
+            .ce-stats{flex-wrap:wrap}.ce-stat-item{flex:0 0 30%}.ce-card{flex-direction:column}
+            .ce-card-left{border-right:0;border-bottom:1px solid #eef0f2;padding-bottom:18px;flex:auto}
+            .ce-card-right{border-left:0;border-top:1px solid #eef0f2;padding-top:18px;padding-left:0;flex:auto;display:flex;flex-wrap:wrap;gap:15px;justify-content:center}
+            .ce-card-right .res-item{margin-bottom:0}
+            .ce-bottom-grid{grid-template-columns:1fr 1fr}
+            .ce-card-mid{grid-template-columns:1fr 1fr}
+            .ce-card-mid .item:last-child{border-right:1px solid #f0f0f0}
+        }
+        @media(max-width:768px){
+            .ce-header h1{font-size:28px}.ce-stat-item{flex:0 0 45%}
+            .ce-card-mid{grid-template-columns:1fr}.ce-card-mid .item{border-right:0!important;border-bottom:1px solid #f0f0f0;padding:12px 0}
+            .ce-card-mid .item:last-child{border-bottom:0}.ce-bottom-grid{grid-template-columns:1fr}
+            .ce-card-right{flex-direction:column;align-items:center}
+        }
+    
+        .ce-card-left {
+            display: flex;
+            flex-direction: row;
+            gap: 16px;
+            align-items: stretch;
+        }
+        .ce-card-text {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .ce-card-img {
+            width: 220px;
+            flex-shrink: 0;
+            display: flex;
+            flex-direction: column;
+            align-self: stretch;
+        }
+        .ce-card-img .img-placeholder {
+            width: 100%;
+            aspect-ratio: 9 / 16;
+            max-height: 320px;
+            background: #fff;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ccc;
+            font-size: 14px;
+            border: 1px dashed #ddd;
+            overflow: hidden;
+        }
+
+    </style>
+</head>
+<body>
+
+<header class="site-header">
+    <div class="container">
+        <div class="header-inner">
+            <a href="index.html" class="logo-area" aria-label="Techinherit Home">
+                <img src="img/logo.webp" alt="Techinherit" class="logo-img" />
+                <span class="logo-text">Techinherit</span>
+            </a>
+
+            <button class="hamburger-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+            </button>
+
+            <nav class="nav-links" aria-label="Primary navigation" role="navigation">
+                <a href="index.html" data-i18n="nav.home">Home</a>
+                <a href="about-us.html" data-i18n="nav.about">About Us</a>
+
+                <div class="nav-dropdown">
+                    <a href="#" class="dropdown-trigger">
+                        Services <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="product-design.html" data-i18n="nav.product-design">Product Design</a></li>
+                        <li><a href="raw-materials.html" data-i18n="nav.raw-materials">Plastic Raw Materials</a></li>
+                        <li><a href="mold-development.html" data-i18n="nav.mold">Mold Development</a></li>
+                        <li><a href="injection-molding.html" data-i18n="nav.injection">Injection Molding</a></li>
+                        <li><a href="quality-control.html" data-i18n="nav.quality">Quality Control</a></li>
+                        <li><a href="odm-oem.html">Assemble</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav-dropdown">
+                    <a href="#" class="dropdown-trigger">
+                        Capabilities <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="rd-strength.html">R&D Strength</a></li>
+                        <li><a href="production-equipment.html" data-i18n="nav.equipment">Production Equipment</a></li>
+                    </ul>
+                </div>
+
+                <a href="case-studies.html" data-i18n="nav.cases">Industry Cases</a>
+                <a href="news.html">News</a>
+                <a href="#footer" data-i18n="nav.contact">Contact Us</a>
+                <a href="global-partnership.html">Join Us</a>
+                <a href="#footer" class="btn-header" data-i18n="nav.quote">Get a Quote</a>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<main>
+
+    <section class="ce-header">
+        <div class="container">
+            <h1>Consumer Electronics Structural Parts: <span>5</span> Success Cases</h1>
+            <p>From Materials &middot; Molds &middot; Injection Molding &middot; Process — Achieving Lightweight &amp; High Quality for Consumer Electronics</p>
+        </div>
+    </section>
+
+    <section class="section-padding" style="background:#fff;">
+        <div class="container">
+            <div class="ce-stats">
+                <div class="ce-stat-item"><i class="fa-regular fa-gem"></i><h4>Material Engineering</h4><p>Premium materials selected to meet appearance and performance requirements</p></div>
+                <div class="ce-stat-item"><i class="fa-solid fa-cogs"></i><h4>Mold Technology</h4><p>High-precision mold design ensuring structural and appearance consistency</p></div>
+                <div class="ce-stat-item"><i class="fa-solid fa-industry"></i><h4>Injection Molding</h4><p>Precision injection molding with process optimization for stable mass production</p></div>
+                <div class="ce-stat-item"><i class="fa-regular fa-circle-check"></i><h4>Quality Assurance</h4><p>Full-process quality control, passing multiple reliability tests</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding" style="background:#f8fafc;">
+        <div class="container">
+
+            <div class="ce-card">
+                <div class="ce-card-left">
+                    <div class="ce-card-text">
+                    <div class="num">01 <small>/ 05</small></div>
+                    <h3>Laptop Bottom Case</h3>
+                    <div class="sub">Lightweight, High Strength, Superior Heat Dissipation</div>
+                    <div class="desc">The laptop bottom case requires high strength, lightweight design, excellent heat dissipation while meeting appearance quality standards.</div>                    </div>
+                    <div class="ce-card-img">                        <div class="img-placeholder" style="overflow:hidden;padding:0;border:none;background:transparent;"><img src="img/ce-case-1.webp" alt="Laptop Bottom Case" style="width:100%;height:100%;object-fit:contain;border-radius:6px;" /></div>                    </div>                </div>
+
+                <div class="ce-card-mid">
+                    <div class="item"><div class="img-box"><img src="img/pcabsgf30.webp" alt="Material"></div><h5>Material</h5><ul><li><i class="fa-solid fa-circle"></i> PC+ABS GF30%</li><li><i class="fa-solid fa-circle"></i> High strength, high rigidity</li><li><i class="fa-solid fa-circle"></i> High heat deflection temp</li><li><i class="fa-solid fa-circle"></i> Good dimensional stability</li><li><i class="fa-solid fa-circle"></i> UL94 V-0 compliant</li></ul></div>
+                    <div class="item"><div class="img-box"><img src="img/mold-1.webp" alt="Mold"></div><h5>Mold</h5><ul><li><i class="fa-solid fa-circle"></i> High-precision large mold</li><li><i class="fa-solid fa-circle"></i> Mold size: 780x580mm</li><li><i class="fa-solid fa-circle"></i> Precision: &plusmn;0.03mm</li><li><i class="fa-solid fa-circle"></i> Hot runner design</li><li><i class="fa-solid fa-circle"></i> Mold life: &ge;800K cycles</li></ul></div>
+                    <div class="item"><div class="img-box"><img src="img/injection-machine-1.webp" alt="Injection"></div><h5>Injection</h5><ul><li><i class="fa-solid fa-circle"></i> Efficient precision injection</li><li><i class="fa-solid fa-circle"></i> Machine: 450T</li><li><i class="fa-solid fa-circle"></i> Mold temp: 80-100&deg;C</li><li><i class="fa-solid fa-circle"></i> Injection pressure: 1200bar</li><li><i class="fa-solid fa-circle"></i> Cycle time: 35-45s</li></ul></div>
+                </div>
+                <div class="ce-card-right">
+                    <h5>Key Results</h5>
+                    <div class="res-item"><i class="fa-solid fa-weight-scale"></i><span>Weight Reduction <span class="val">18%</span></span></div>
+                    <div class="res-item"><i class="fa-solid fa-ruler"></i><span>Dimensional Accuracy <span class="val">&plusmn;0.08mm</span></span></div>
+                    <div class="res-item"><i class="fa-solid fa-bolt"></i><span>Warpage Control <span class="val">&plusmn;0.3mm</span></span></div>
+                    <div class="res-item"><i class="fa-regular fa-star"></i><span>Surface Quality <span class="val">Grade A</span></span></div>
+                </div>
+            </div>
+
+            <div class="ce-card">
+                <div class="ce-card-left">
+                    <div class="ce-card-text">
+                    <div class="num">02 <small>/ 05</small></div>
+                    <h3>TWS Earbuds Charging Case</h3>
+                    <div class="sub">High Gloss, Compact, Comfortable Feel</div>
+                    <div class="desc">The charging case demands high gloss, scratch resistance, precise dimensions, comfortable feel, and lightweight design.</div>                    </div>
+                    <div class="ce-card-img">                        <div class="img-placeholder" style="overflow:hidden;padding:0;border:none;background:transparent;"><img src="img/ce-case-2.webp" alt="TWS Earbuds Charging Case" style="width:100%;height:100%;object-fit:contain;border-radius:6px;" /></div>                    </div>                </div>
+
+                <div class="ce-card-mid">
+                    <div class="item"><div class="img-box"><img src="img/pc.webp" alt="Material"></div><h5>Material</h5><ul><li><i class="fa-solid fa-circle"></i> PC+ABS</li><li><i class="fa-solid fa-circle"></i> High gloss, high flow</li><li><i class="fa-solid fa-circle"></i> Impact &amp; scratch resistant</li><li><i class="fa-solid fa-circle"></i> Dimensional stability</li><li><i class="fa-solid fa-circle"></i> RoHS/REACH compliant</li></ul></div>
+                    <div class="item"><div class="img-box"><img src="img/mold-2.webp" alt="Mold"></div><h5>Mold</h5><ul><li><i class="fa-solid fa-circle"></i> Precision multi-cavity mold</li><li><i class="fa-solid fa-circle"></i> Cavities: 1x4</li><li><i class="fa-solid fa-circle"></i> Precision: &plusmn;0.02mm</li><li><i class="fa-solid fa-circle"></i> Mirror polish: A2</li><li><i class="fa-solid fa-circle"></i> Mold life: &ge;1M cycles</li></ul></div>
+                    <div class="item"><div class="img-box"><img src="img/injection-machine-2.webp" alt="Injection"></div><h5>Injection</h5><ul><li><i class="fa-solid fa-circle"></i> High-gloss mark-free molding</li><li><i class="fa-solid fa-circle"></i> Machine: 120T</li><li><i class="fa-solid fa-circle"></i> Mold temp: 60-80&deg;C</li><li><i class="fa-solid fa-circle"></i> Injection pressure: 800bar</li><li><i class="fa-solid fa-circle"></i> Cycle time: 18-22s</li></ul></div>
+                </div>
+                <div class="ce-card-right">
+                    <h5>Key Results</h5>
+                    <div class="res-item"><i class="fa-regular fa-star"></i><span>Surface Gloss <span class="val">&gt;90GU</span></span></div>
+                    <div class="res-item"><i class="fa-solid fa-ruler"></i><span>Dimensional Accuracy <span class="val">&plusmn;0.05mm</span></span></div>
+                    <div class="res-item"><i class="fa-solid fa-bolt"></i><span>Scratch Resistance <span class="val">&gt;1000x</span></span></div>
+                    <div class="res-item"><i class="fa-solid fa-check-circle"></i><span>Customer Satisfaction <span class="val">98.5%</span></span></div>
+                </div>
+            </div>
+
+            <div class="ce-card">
+                <div class="ce-card-left">
+                    <div class="ce-card-text">
+                    <div class="num">03 <small>/ 05</small></div>
+                    <h3>Phone Middle Frame</h3>
+                    <div class="sub">High Strength, Precision, Slim</div>
+                    <div class="desc">The phone middle frame requires high strength, high dimensional precision, slim profile while meeting 5G signal performance requirements.</div>                    </div>
+                    <div class="ce-card-img">                        <div class="img-placeholder" style="overflow:hidden;padding:0;border:none;background:transparent;"><img src="img/ce-case-3.webp" alt="Phone Middle Frame" style="width:100%;height:100%;object-fit:contain;border-radius:6px;" /></div>                    </div>                </div>
+
+                <div class="ce-card-mid">
+                    <div class="item"><div class="img-box"><img src="img/pa6GF30.webp" alt="Material"></div><h5>Material</h5><ul><li><i class="fa-solid fa-circle"></i> PA6+GF30%</li><li><i class="fa-solid fa-circle"></i> High strength, high rigidity</li><li><i class="fa-solid fa-circle"></i> Excellent heat resistance</li><li><i class="fa-solid fa-circle"></i> Good dimensional stability</li><li><i class="fa-solid fa-circle"></i> Excellent signal penetration</li></ul></div>
+                    <div class="item"><div class="img-box"><img src="img/mold-1.webp" alt="Mold"></div><h5>Mold</h5><ul><li><i class="fa-solid fa-circle"></i> Precision long-life mold</li><li><i class="fa-solid fa-circle"></i> Precision: &plusmn;0.02mm</li><li><i class="fa-solid fa-circle"></i> Insert design, multi-slide</li><li><i class="fa-solid fa-circle"></i> Hot runner system</li><li><i class="fa-solid fa-circle"></i> Mold life: &ge;800K cycles</li></ul></div>
+                    <div class="item"><div class="img-box"><img src="img/injection-machine-1.webp" alt="Injection"></div><h5>Injection</h5><ul><li><i class="fa-solid fa-circle"></i> Low-stress precision injection</li><li><i class="fa-solid fa-circle"></i> Machine: 120T</li><li><i class="fa-solid fa-circle"></i> Mold temp: 80-100&deg;C</li><li><i class="fa-solid fa-circle"></i> Injection pressure: 900bar</li><li><i class="fa-solid fa-circle"></i> Cycle time: 25-30s</li></ul></div>
+                </div>
+                <div class="ce-card-right">
+                    <h5>Key Results</h5>
+                    <div class="res-item"><i class="fa-solid fa-ruler"></i><span>Precision <span class="val">&plusmn;0.02mm</span></span></div>
+                    <div class="res-item"><i class="fa-solid fa-weight-scale"></i><span>Flatness <span class="val">&le;0.05mm</span></span></div>
+                    <div class="res-item"><i class="fa-solid fa-bolt"></i><span>Bending Strength <span class="val">&gt;180MPa</span></span></div>
+                    <div class="res-item"><i class="fa-solid fa-wifi"></i><span>5G Performance <span class="val">Excellent</span></span></div>
+                </div>
+            </div>
+
+            <div class="ce-card">
+                <div class="ce-card-left">
+                    <div class="ce-card-text">
+                    <div class="num">04 <small>/ 05</small></div>
+                    <h3>Smartwatch Case</h3>
+                    <div class="sub">Lightweight, High Strength, Corrosion Resistant</div>
+                    <div class="desc">The smartwatch case requires lightweight design, high strength, sweat corrosion resistance, and excellent surface finish.</div>                    </div>
+                    <div class="ce-card-img">                        <div class="img-placeholder" style="overflow:hidden;padding:0;border:none;background:transparent;"><img src="img/ce-case-4.webp" alt="Smartwatch Case" style="width:100%;height:100%;object-fit:contain;border-radius:6px;" /></div>                    </div>                </div>
+
+                <div class="ce-card-mid">
+                    <div class="item"><div class="img-box"><img src="img/ppsgf40.webp" alt="Material"></div><h5>Material</h5><ul><li><i class="fa-solid fa-circle"></i> PPS+GF40%</li><li><i class="fa-solid fa-circle"></i> High precision, high temp</li><li><i class="fa-solid fa-circle"></i> Excellent chemical resistance</li><li><i class="fa-solid fa-circle"></i> Dimensional stability</li><li><i class="fa-solid fa-circle"></i> Low moisture absorption</li></ul></div>
+                    <div class="item"><div class="img-box"><img src="img/mold-3.webp" alt="Mold"></div><h5>Mold</h5><ul><li><i class="fa-solid fa-circle"></i> High-precision mold</li><li><i class="fa-solid fa-circle"></i> Precision: &plusmn;0.02mm</li><li><i class="fa-solid fa-circle"></i> Fine polished finish</li><li><i class="fa-solid fa-circle"></i> Mold steel: S136</li><li><i class="fa-solid fa-circle"></i> Mold life: &ge;600K cycles</li></ul></div>
+                    <div class="item"><div class="img-box"><img src="img/injection-machine-2.webp" alt="Injection"></div><h5>Injection</h5><ul><li><i class="fa-solid fa-circle"></i> High-temp precision injection</li><li><i class="fa-solid fa-circle"></i> Machine: 120T</li><li><i class="fa-solid fa-circle"></i> Mold temp: 140-160&deg;C</li><li><i class="fa-solid fa-circle"></i> Injection pressure: 1200bar</li><li><i class="fa-solid fa-circle"></i> Cycle time: 35-40s</li></ul></div>
+                </div>
+                <div class="ce-card-right">
+                    <h5>Key Results</h5>
+                    <div class="res-item"><i class="fa-solid fa-weight-scale"></i><span>Weight Reduction <span class="val">15%</span></span></div>
+                    <div class="res-item"><i class="fa-solid fa-bolt"></i><span>Sweat Corrosion <span class="val">&gt;1000h</span></span></div>
+                    <div class="res-item"><i class="fa-solid fa-ruler"></i><span>Precision <span class="val">&plusmn;0.03mm</span></span></div>
+                    <div class="res-item"><i class="fa-solid fa-check-circle"></i><span>Surface Quality <span class="val">Excellent</span></span></div>
+                </div>
+            </div>
+
+            <div class="ce-card">
+                <div class="ce-card-left">
+                    <div class="ce-card-text">
+                    <div class="num">05 <small>/ 05</small></div>
+                    <h3>Tablet Stand Bracket</h3>
+                    <div class="sub">High Toughness, Adjustable, Fatigue Resistant</div>
+                    <div class="desc">The bracket requires high toughness, fatigue resistance, adjustability, drop resistance, and stable reliable structure.</div>                    </div>
+                    <div class="ce-card-img">                        <div class="img-placeholder" style="overflow:hidden;padding:0;border:none;background:transparent;"><img src="img/ce-case-5.webp" alt="Tablet Stand Bracket" style="width:100%;height:100%;object-fit:contain;border-radius:6px;" /></div>                    </div>                </div>
+
+                <div class="ce-card-mid">
+                    <div class="item"><div class="img-box"><img src="img/pc.webp" alt="Material"></div><h5>Material</h5><ul><li><i class="fa-solid fa-circle"></i> PC+GF20%</li><li><i class="fa-solid fa-circle"></i> High rigidity, high impact</li><li><i class="fa-solid fa-circle"></i> Excellent fatigue resistance</li><li><i class="fa-solid fa-circle"></i> Eco-friendly flame retardant</li></ul></div>
+                    <div class="item"><div class="img-box"><img src="img/mold-1.webp" alt="Mold"></div><h5>Mold</h5><ul><li><i class="fa-solid fa-circle"></i> Complex structure mold</li><li><i class="fa-solid fa-circle"></i> Multi-slide, angled lifter</li><li><i class="fa-solid fa-circle"></i> Precision: &plusmn;0.03mm</li><li><i class="fa-solid fa-circle"></i> Mold steel: P20+H13</li><li><i class="fa-solid fa-circle"></i> Mold life: &ge;500K cycles</li></ul></div>
+                    <div class="item"><div class="img-box"><img src="img/injection-machine-1.webp" alt="Injection"></div><h5>Injection</h5><ul><li><i class="fa-solid fa-circle"></i> Stable efficient injection</li><li><i class="fa-solid fa-circle"></i> Machine: 280T</li><li><i class="fa-solid fa-circle"></i> Mold temp: 90-120&deg;C</li><li><i class="fa-solid fa-circle"></i> Injection pressure: 1400bar</li><li><i class="fa-solid fa-circle"></i> Cycle time: 28-35s</li></ul></div>
+                </div>
+                <div class="ce-card-right">
+                    <h5>Key Results</h5>
+                    <div class="res-item"><i class="fa-solid fa-bolt"></i><span>Impact Resistance <span class="val">&gt;5000x</span></span></div>
+                    <div class="res-item"><i class="fa-solid fa-ruler"></i><span>Adjustment Precision <span class="val">&plusmn;0.15mm</span></span></div>
+                    <div class="res-item"><i class="fa-solid fa-weight-scale"></i><span>Dimensional Precision <span class="val">&plusmn;0.05mm</span></span></div>
+                    <div class="res-item"><i class="fa-solid fa-check-circle"></i><span>Customer Satisfaction <span class="val">99%</span></span></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="ce-bottom">
+        <div class="container">
+            <div class="ce-bottom-grid">
+                <div class="ce-col">
+                    <h4>Our Advantages</h4>
+                    <div class="ce-icon-box">
+                        <div class="ic"><i class="fa-regular fa-file-lines"></i><span>Optimized Material Selection</span></div>
+                        <div class="ic"><i class="fa-solid fa-cogs"></i><span>Mold Development</span></div>
+                        <div class="ic"><i class="fa-solid fa-gear"></i><span>Injection Molding</span></div>
+                        <div class="ic"><i class="fa-regular fa-circle-check"></i><span>Quality Control</span></div>
+                        <div class="ic"><i class="fa-solid fa-truck-fast"></i><span>Fast Delivery</span></div>
+                    </div>
+                </div>
+                <div class="ce-col">
+                    <h4>Application Value</h4>
+                    <ul>
+                        <li><i class="fa-solid fa-bullseye"></i> Enhance Product Competitiveness</li>
+                        <li><i class="fa-solid fa-bolt"></i> Optimize Structure &amp; Performance</li>
+                        <li><i class="fa-solid fa-clock"></i> Shorten Development Cycles</li>
+                        <li><i class="fa-solid fa-shield-halved"></i> Ensure Batch Quality</li>
+                    </ul>
+                </div>
+                <div class="ce-cta">
+                    <h4>Professional &middot; Focused &middot; Reliable</h4>
+                    <p>Providing high-quality structural component one-stop solutions for the consumer electronics industry</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer class="site-footer" id="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <div class="footer-brand">
+                    <img src="img/logo.webp" alt="Techinherit" class="footer-logo-img" />
+                    <span class="footer-brand-text">Techinherit</span>
+                </div>
+                <p>We are dedicated to providing high-quality plastic products and services to customers worldwide.</p>
+            </div>
+
+            <div class="footer-col">
+                <h4 data-i18n="footer.quick">QUICK LINKS</h4>
+                <ul>
+                    <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+                    <li><a href="about-us.html" data-i18n="nav.about">About Us</a></li>
+                    <li><a href="product-design.html" data-i18n="nav.product-design">Product Design</a></li>
+                    <li><a href="#">Capabilities</a></li>
+                    <li><a href="case-studies.html" data-i18n="nav.cases">Industry Cases</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 data-i18n="footer.services">SERVICES</h4>
+                <ul>
+                    <li><a href="product-design.html" data-i18n="nav.product-design">Product Design</a></li>
+                    <li><a href="raw-materials.html" data-i18n="nav.raw-materials">Plastic Raw Materials</a></li>
+                    <li><a href="mold-development.html" data-i18n="nav.mold">Mold Development</a></li>
+                    <li><a href="injection-molding.html" data-i18n="nav.injection">Injection Molding</a></li>
+                    <li><a href="quality-control.html" data-i18n="nav.quality">Quality Control</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 data-i18n="footer.contact">CONTACT US</h4>
+                <ul class="contact-list">
+                    <li><i class="fas fa-phone-alt" aria-hidden="true"></i> +86 123 4567 8901</li>
+                    <li><i class="fas fa-envelope" aria-hidden="true"></i> info@jicheng.com</li>
+                    <li><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Dongguan, China</li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 data-i18n="footer.follow">FOLLOW US</h4>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/?locale=zh_CN" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            &copy; 2026 Techinherit. All Rights Reserved.
+        </div>
+    </div>
+</footer>
+
+<a href="https://wa.me/85257096596" target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Contact us on WhatsApp">
+    <i class="fab fa-whatsapp" aria-hidden="true"></i>
+</a>
+
+<a href="global-partnership.html" class="global-float" aria-label="Global cooperation">
+    <img src="img/global-cooperation.webp" alt="Global cooperation" />
+</a>
+
+<script>
+    (function() {
+        var toggle = document.querySelector('.hamburger-toggle');
+        var nav = document.querySelector('.nav-links');
+        if (toggle && nav) {
+            toggle.addEventListener('click', function() {
+                var expanded = this.getAttribute('aria-expanded') === 'true' ? false : true;
+                nav.classList.toggle('is-open');
+                this.setAttribute('aria-expanded', expanded);
+            });
+        }
+
+            // Close mobile nav when clicking outside
+            document.addEventListener('click', function(e) {
+                if (window.innerWidth <= 992) {
+                    var nav = document.querySelector('.nav-links');
+                    var toggle = document.querySelector('.hamburger-toggle');
+                    if (nav && nav.classList.contains('is-open') && toggle) {
+                        if (!nav.contains(e.target) && !toggle.contains(e.target)) {
+                            nav.classList.remove('is-open');
+                            toggle.setAttribute('aria-expanded', 'false');
+                        }
+                    }
+                }
+            });
+
+        document.querySelectorAll('.dropdown-trigger').forEach(function(trigger) {
+            trigger.addEventListener('click', function(e) {
+                e.preventDefault();
+                var parent = this.closest('.nav-dropdown');
+                if (parent) {
+                    parent.classList.toggle('is-open');
+                }
+            });
+        });
+
+        document.addEventListener('click', function(e) {
+            document.querySelectorAll('.nav-dropdown.is-open').forEach(function(dropdown) {
+                if (!dropdown.contains(e.target)) {
+                    dropdown.classList.remove('is-open');
+                }
+            });
+        });
+
+            // Hover dropdown (desktop only)
+            if (window.innerWidth > 992) {
+                document.querySelectorAll('.nav-dropdown').forEach(function(dropdown) {
+                    var hoverTimer;
+                    dropdown.addEventListener('mouseenter', function() {
+                        clearTimeout(hoverTimer);
+                        this.classList.add('is-open');
+                    });
+                    dropdown.addEventListener('mouseleave', function() {
+                        var self = this;
+                        hoverTimer = setTimeout(function() {
+                            self.classList.remove('is-open');
+                        }, 200);
+                    });
+                });
+            }
+
+            var header = document.querySelector('.site-header');
+            if (header) {
+                window.addEventListener('scroll', function() {
+                    header.classList.toggle('scrolled', window.scrollY > 10);
+                });
+            }
+    })();
+</script>
+
+</body>
+</html>

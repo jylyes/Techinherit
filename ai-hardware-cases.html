@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Hardware Plastic Parts: 5 Success Cases | Techinherit</title>
+    <meta name="description" content="Consumer electronics structural parts - 5 success cases covering materials, molds and injection molding processes" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <style>
+        .ce-header{background:#0b1f3b;color:#fff;padding:70px 0 60px;text-align:center}
+        .ce-header h1{font-size:40px;font-weight:700;margin-bottom:12px}
+        .ce-header h1 span{color:#f0c040;font-weight:900}
+        .ce-header p{font-size:18px;color:#b0c4de;margin-top:6px}
+
+        .ce-stats{display:flex;justify-content:center;gap:40px;max-width:1100px;margin:0 auto;padding:0 0 10px}
+        .ce-stat-item{display:flex;flex-direction:column;align-items:center;text-align:center;flex:1}
+        .ce-stat-item i{font-size:34px;color:#1a56db;margin-bottom:6px}
+        .ce-stat-item h4{font-size:18px;font-weight:700;color:#0b1f3b}
+        .ce-stat-item p{font-size:13px;color:#666;margin-top:4px;max-width:200px}
+
+        .ce-card{background:#f0f6ff;border-radius:14px;padding:20px 28px 14px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,0.04);border:1px solid #e5e7eb;display:flex;gap:24px;transition:var(--transition)}
+        .ce-card:hover{box-shadow:0 8px 25px rgba(0,0,0,0.08);border-color:var(--color-primary)}
+
+        .ce-card-left{flex:0 0 500px;border-right:1px solid #eef0f2;padding-right:24px}
+        .ce-card-left .num{font-size:26px;font-weight:900;color:#1a56db;line-height:1}
+        .ce-card-left .num small{font-size:13px;font-weight:400;color:#999}
+        .ce-card-left h3{font-size:17px;font-weight:700;margin:6px 0 8px;color:#0b1f3b}
+        .ce-card-left .sub{font-size:13px;color:#1a56db;font-weight:600;margin-bottom:4px}
+        .ce-card-left .desc{font-size:13px;color:#555;line-height:1.5}
+
+        .ce-card-mid{flex:1;display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px}
+        .ce-card-mid .item{text-align:center;border-right:1px solid #f0f0f0;padding:0 14px}
+        .ce-card-mid .item:last-child{border-right:0}
+        .ce-card-mid .img-box{height:100px;display:flex;align-items:center;justify-content:center;margin-bottom:8px}
+        .ce-card-mid .img-box img{max-height:100%;max-width:100%;object-fit:contain}
+        .ce-card-mid .item h5{font-size:15px;font-weight:700;color:#0b1f3b;margin-bottom:6px}
+        .ce-card-mid .item ul{list-style:none;padding:0;text-align:left}
+        .ce-card-mid .item ul li{font-size:13px;color:#555;margin-bottom:4px;display:flex;align-items:baseline;gap:4px}
+        .ce-card-mid .item ul li i{color:#1a56db;font-size:10px}
+
+        .ce-card-right{flex:0 0 200px;border-left:1px solid #eef0f2;padding-left:24px}
+        .ce-card-right h5{font-size:15px;font-weight:700;color:#0b1f3b;margin-bottom:12px;text-align:center}
+        .ce-card-right .res-item{display:flex;align-items:center;gap:10px;margin-bottom:12px;font-size:15px;color:#333}
+        .ce-card-right .res-item i{color:#1a56db;font-size:20px;width:28px;text-align:center}
+        .ce-card-right .res-item .val{font-weight:700;color:#1a56db;font-size:18px}
+
+        .ce-bottom{padding:30px 0;background:#fff}
+        .ce-bottom-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:40px}
+        .ce-col h4{font-size:17px;font-weight:700;color:#0b1f3b;margin-bottom:14px}
+        .ce-col ul{list-style:none}
+        .ce-col ul li{font-size:14px;color:#555;margin-bottom:8px;display:flex;align-items:center;gap:8px}
+        .ce-col ul li i{color:#1a56db;font-size:16px}
+        .ce-icon-box{display:flex;gap:24px;flex-wrap:wrap}
+        .ce-icon-box .ic{display:flex;flex-direction:column;align-items:center;text-align:center;width:90px}
+        .ce-icon-box .ic i{font-size:32px;color:#1a56db;margin-bottom:8px}
+        .ce-icon-box .ic span{font-size:13px;color:#333;font-weight:600}
+        .ce-cta{background:#0b1f3b;color:#fff;border-radius:10px;padding:28px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center}
+        .ce-cta h4{font-size:18px;font-weight:700;margin-bottom:8px;color:#fff}
+        .ce-cta p{font-size:14px;color:#b0c4de}
+
+        @media(max-width:1024px){
+            .ce-stats{flex-wrap:wrap}.ce-stat-item{flex:0 0 30%}.ce-card{flex-direction:column}
+            .ce-card-left{border-right:0;border-bottom:1px solid #eef0f2;padding-bottom:18px;flex:auto}
+            .ce-card-right{border-left:0;border-top:1px solid #eef0f2;padding-top:18px;padding-left:0;flex:auto;display:flex;flex-wrap:wrap;gap:15px;justify-content:center}
+            .ce-card-right .res-item{margin-bottom:0}
+            .ce-bottom-grid{grid-template-columns:1fr 1fr}
+            .ce-card-mid{grid-template-columns:1fr 1fr}
+            .ce-card-mid .item:last-child{border-right:1px solid #f0f0f0}
+        }
+        @media(max-width:768px){
+            .ce-header h1{font-size:28px}.ce-stat-item{flex:0 0 45%}
+            .ce-card-mid{grid-template-columns:1fr}.ce-card-mid .item{border-right:0!important;border-bottom:1px solid #f0f0f0;padding:12px 0}
+            .ce-card-mid .item:last-child{border-bottom:0}.ce-bottom-grid{grid-template-columns:1fr}
+            .ce-card-right{flex-direction:column;align-items:center}
+        }
+    
+        .ce-card-left {
+            display: flex;
+            flex-direction: row;
+            gap: 16px;
+            align-items: stretch;
+        }
+        .ce-card-text {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .ce-card-img {
+            width: 220px;
+            flex-shrink: 0;
+            display: flex;
+            flex-direction: column;
+            align-self: stretch;
+        }
+        .ce-card-img .img-placeholder {
+            width: 100%;
+            aspect-ratio: 9 / 16;
+            max-height: 320px;
+            background: #fff;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ccc;
+            font-size: 14px;
+            border: 1px dashed #ddd;
+            overflow: hidden;
+        }
+
+    </style>
+</head>
+<body>
+
+<header class="site-header">
+    <div class="container">
+        <div class="header-inner">
+            <a href="index.html" class="logo-area" aria-label="Techinherit Home">
+                <img src="img/logo.webp" alt="Techinherit" class="logo-img" />
+                <span class="logo-text">Techinherit</span>
+            </a>
+
+            <button class="hamburger-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+            </button>
+
+            <nav class="nav-links" aria-label="Primary navigation" role="navigation">
+                <a href="index.html" data-i18n="nav.home">Home</a>
+                <a href="about-us.html" data-i18n="nav.about">About Us</a>
+
+                <div class="nav-dropdown">
+                    <a href="#" class="dropdown-trigger">
+                        Services <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="product-design.html" data-i18n="nav.product-design">Product Design</a></li>
+                        <li><a href="raw-materials.html" data-i18n="nav.raw-materials">Plastic Raw Materials</a></li>
+                        <li><a href="mold-development.html" data-i18n="nav.mold">Mold Development</a></li>
+                        <li><a href="injection-molding.html" data-i18n="nav.injection">Injection Molding</a></li>
+                        <li><a href="quality-control.html" data-i18n="nav.quality">Quality Control</a></li>
+                        <li><a href="odm-oem.html">Assemble</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav-dropdown">
+                    <a href="#" class="dropdown-trigger">
+                        Capabilities <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="rd-strength.html">R&D Strength</a></li>
+                        <li><a href="production-equipment.html" data-i18n="nav.equipment">Production Equipment</a></li>
+                    </ul>
+                </div>
+
+                <a href="case-studies.html" data-i18n="nav.cases">Industry Cases</a>
+                <a href="news.html">News</a>
+                <a href="#footer" data-i18n="nav.contact">Contact Us</a>
+                <a href="global-partnership.html">Join Us</a>
+                <a href="#footer" class="btn-header" data-i18n="nav.quote">Get a Quote</a>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<main>
+
+    <section class="ce-header">
+        <div class="container">
+            <h1>AI Hardware Plastic Parts: <span>5</span> Success Cases</h1>
+            <p>From Materials &middot; Molds &middot; Injection Molding &middot; Process — Achieving Precision &amp; Performance for AI Hardware</p>
+        </div>
+    </section>
+
+    <section class="section-padding" style="background:#fff;">
+        <div class="container">
+            <div class="ce-stats">
+                <div class="ce-stat-item"><i class="fa-regular fa-gem"></i><h4>Material Engineering</h4><p>Premium materials selected to meet high precision, thermal management and EMC requirements</p></div>
+                <div class="ce-stat-item"><i class="fa-solid fa-cogs"></i><h4>Mold Technology</h4><p>Ultra-precision mold design ensuring tight tolerances and complex geometry</p></div>
+                <div class="ce-stat-item"><i class="fa-solid fa-industry"></i><h4>Injection Molding</h4><p>Advanced injection molding with precision process control for consistent quality</p></div>
+                <div class="ce-stat-item"><i class="fa-regular fa-circle-check"></i><h4>Quality Assurance</h4><p>Full-process quality control, passing rigorous thermal and reliability tests</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding" style="background:#f8fafc;">
+        <div class="container">
+
+                        <div class="ce-card">
+                <div class="ce-card-left">
+                    <div class="ce-card-text">
+                    <div class="num">01 <small>/ 05</small></div>
+                    <h3>AI Speaker Housing</h3>
+                    <div class="sub">Acoustic Performance, High Gloss Finish, Durability</div>
+                    <div class="desc">AI smart speaker housing requires excellent acoustic performance, premium surface finish and durability for enhanced user experience.</div>                    </div>
+                    <div class="ce-card-img">                        <div class="img-placeholder" style="overflow:hidden;padding:0;border:none;background:transparent;"><img src="img/ai-hardware-1.webp" alt="AI Speaker Housing" style="width:100%;height:100%;object-fit:contain;border-radius:6px;" /></div>                    </div>                </div>
+
+                <div class="ce-card-mid">
+                    <div class="item"><div class="img-box"><img src="img/pc.webp" alt="Material"></div><h5>Material</h5><ul><li><i class="fa-solid fa-circle"></i> PC+ABS FR</li><li><i class="fa-solid fa-circle"></i> High flow, easy processing</li><li><i class="fa-solid fa-circle"></i> High rigidity, impact resistant</li></ul></div>
+                    <div class="item"><div class="img-box"><img src="img/mold-1.webp" alt="Mold"></div><h5>Mold</h5><ul><li><i class="fa-solid fa-circle"></i> High-gloss appearance mold</li><li><i class="fa-solid fa-circle"></i> Mold steel: P20+Ni</li><li><i class="fa-solid fa-circle"></i> Surface: SPI-A2</li></ul></div>
+                    <div class="item"><div class="img-box"><img src="img/injection-machine-1.webp" alt="Injection"></div><h5>Injection</h5><ul><li><i class="fa-solid fa-circle"></i> High-gloss injection process</li><li><i class="fa-solid fa-circle"></i> Machine: 280T</li><li><i class="fa-solid fa-circle"></i> Mold temp: 60-80&deg;C</li></ul></div>
+                </div>
+                <div class="ce-card-right">
+                    <h5>Key Results</h5>
+                    <div class="res-item"><i class="fa-solid fa-music"></i><span>Sound Transmission <span class="val">&gt;85%</span></span></div>
+                    <div class="res-item"><i class="fa-solid fa-hand"></i><span>Scratch Resistance <span class="val">Level 4.5</span></span></div>
+                    <div class="res-item"><i class="fa-solid fa-check-circle"></i><span>Yield Rate <span class="val">99.2%</span></span></div>
+                    <div class="res-item"><i class="fa-solid fa-weight-scale"></i><span>Drop Test <span class="val">1.2m No Damage</span></span></div>
+                </div>
+            </div>
+
+            <div class="ce-card">
+                <div class="ce-card-left">
+                    <div class="ce-card-text">
+                    <div class="num">02 <small>/ 05</small></div>
+                    <h3>AI Camera Housing</h3>
+                    <div class="sub">Precision Assembly, Heat Dissipation, UV Resistant</div>
+                    <div class="desc">AI camera housing requires precision assembly, good heat dissipation and long-term UV resistance for outdoor use.</div>                    </div>
+                    <div class="ce-card-img">                        <div class="img-placeholder" style="overflow:hidden;padding:0;border:none;background:transparent;"><img src="img/ai-hardware-2.webp" alt="AI Camera Housing" style="width:100%;height:100%;object-fit:contain;border-radius:6px;" /></div>                    </div>                </div>
+
+                <div class="ce-card-mid">
+                    <div class="item"><div class="img-box"><img src="img/pc.webp" alt="Material"></div><h5>Material</h5><ul><li><i class="fa-solid fa-circle"></i> PC+ASA</li><li><i class="fa-solid fa-circle"></i> Excellent toughness, UV resistant</li><li><i class="fa-solid fa-circle"></i> Anti-aging, dimensionally stable</li></ul></div>
+                    <div class="item"><div class="img-box"><img src="img/mold-2.webp" alt="Mold"></div><h5>Mold</h5><ul><li><i class="fa-solid fa-circle"></i> Precision structural mold</li><li><i class="fa-solid fa-circle"></i> Mold steel: S136</li><li><i class="fa-solid fa-circle"></i> Cavity roughness: Ra 0.015µm</li></ul></div>
+                    <div class="item"><div class="img-box"><img src="img/injection-machine-2.webp" alt="Injection"></div><h5>Injection</h5><ul><li><i class="fa-solid fa-circle"></i> Low warpage injection process</li><li><i class="fa-solid fa-circle"></i> Machine: 180T</li><li><i class="fa-solid fa-circle"></i> Mold temp: 80-100&deg;C</li></ul></div>
+                </div>
+                <div class="ce-card-right">
+                    <h5>Key Results</h5>
+                    <div class="res-item"><i class="fa-solid fa-sun"></i><span>Weather Resistance <span class="val">&gt;2000h</span></span></div>
+                    <div class="res-item"><i class="fa-solid fa-shield-halved"></i><span>Protection Rating <span class="val">IP66</span></span></div>
+                    <div class="res-item"><i class="fa-solid fa-check-circle"></i><span>Assembly Yield <span class="val">99.3%</span></span></div>
+                    <div class="res-item"><i class="fa-solid fa-water"></i><span>Humidity Test <span class="val">500h No Issue</span></span></div>
+                </div>
+            </div>
+
+            <div class="ce-card">
+                <div class="ce-card-left">
+                    <div class="ce-card-text">
+                    <div class="num">03 <small>/ 05</small></div>
+                    <h3>AI Edge Computing Box</h3>
+                    <div class="sub">Heat Dissipation, Structural Strength, EMC Shielding</div>
+                    <div class="desc">Edge computing device requires efficient heat dissipation, structural strength, electromagnetic shielding and stability.</div>                    </div>
+                    <div class="ce-card-img">                        <div class="img-placeholder" style="overflow:hidden;padding:0;border:none;background:transparent;"><img src="img/ai-hardware-3.webp" alt="AI Edge Computing Box" style="width:100%;height:100%;object-fit:contain;border-radius:6px;" /></div>                    </div>                </div>
+
+                <div class="ce-card-mid">
+                    <div class="item"><div class="img-box"><img src="img/pc.webp" alt="Material"></div><h5>Material</h5><ul><li><i class="fa-solid fa-circle"></i> PC+GF20% FR</li><li><i class="fa-solid fa-circle"></i> High flow, high rigidity</li><li><i class="fa-solid fa-circle"></i> UL94 V-0, dimensionally stable</li></ul></div>
+                    <div class="item"><div class="img-box"><img src="img/mold-1.webp" alt="Mold"></div><h5>Mold</h5><ul><li><i class="fa-solid fa-circle"></i> Heat dissipation structure mold</li><li><i class="fa-solid fa-circle"></i> Mold steel: 718H</li><li><i class="fa-solid fa-circle"></i> Custom heat sink design</li></ul></div>
+                    <div class="item"><div class="img-box"><img src="img/injection-machine-1.webp" alt="Injection"></div><h5>Injection</h5><ul><li><i class="fa-solid fa-circle"></i> High-pressure injection</li><li><i class="fa-solid fa-circle"></i> Machine: 200T</li><li><i class="fa-solid fa-circle"></i> Injection pressure: 1200bar</li></ul></div>
+                </div>
+                <div class="ce-card-right">
+                    <h5>Key Results</h5>
+                    <div class="res-item"><i class="fa-solid fa-fan"></i><span>Heat Dissipation <span class="val">+35%</span></span></div>
+                    <div class="res-item"><i class="fa-solid fa-bolt"></i><span>EMI Shielding <span class="val">&gt;60dB</span></span></div>
+                    <div class="res-item"><i class="fa-solid fa-check-circle"></i><span>Yield Rate <span class="val">98.9%</span></span></div>
+                    <div class="res-item"><i class="fa-solid fa-temperature-high"></i><span>Thermal Cycle <span class="val">-40~85&deg;C</span></span></div>
+                </div>
+            </div>
+
+            <div class="ce-card">
+                <div class="ce-card-left">
+                    <div class="ce-card-text">
+                    <div class="num">04 <small>/ 05</small></div>
+                    <h3>AI Server Fan Cover</h3>
+                    <div class="sub">Lightweight, Structural Strength, Low Noise</div>
+                    <div class="desc">Server fan cover requires lightweight design, structural strength, low noise and long-term high reliability operation.</div>                    </div>
+                    <div class="ce-card-img">                        <div class="img-placeholder" style="overflow:hidden;padding:0;border:none;background:transparent;"><img src="img/ai-hardware-4.webp" alt="AI Server Fan Cover" style="width:100%;height:100%;object-fit:contain;border-radius:6px;" /></div>                    </div>                </div>
+
+                <div class="ce-card-mid">
+                    <div class="item"><div class="img-box"><img src="img/pbt.webp" alt="Material"></div><h5>Material</h5><ul><li><i class="fa-solid fa-circle"></i> PBT+GF30% FR</li><li><i class="fa-solid fa-circle"></i> High flow, high rigidity</li><li><i class="fa-solid fa-circle"></i> Dimensional stability</li></ul></div>
+                    <div class="item"><div class="img-box"><img src="img/mold-3.webp" alt="Mold"></div><h5>Mold</h5><ul><li><i class="fa-solid fa-circle"></i> High-speed mold</li><li><i class="fa-solid fa-circle"></i> Mold steel: S136</li><li><i class="fa-solid fa-circle"></i> Multi-cavity gate design</li></ul></div>
+                    <div class="item"><div class="img-box"><img src="img/injection-machine-2.webp" alt="Injection"></div><h5>Injection</h5><ul><li><i class="fa-solid fa-circle"></i> High-speed thin-wall injection</li><li><i class="fa-solid fa-circle"></i> Machine: 200T</li><li><i class="fa-solid fa-circle"></i> Mold temp: 60-80&deg;C</li></ul></div>
+                </div>
+                <div class="ce-card-right">
+                    <h5>Key Results</h5>
+                    <div class="res-item"><i class="fa-solid fa-weight-scale"></i><span>Weight Reduction <span class="val">20%</span></span></div>
+                    <div class="res-item"><i class="fa-solid fa-volume-low"></i><span>Noise Reduction <span class="val">15%</span></span></div>
+                    <div class="res-item"><i class="fa-solid fa-clock"></i><span>Service Life <span class="val">&gt;50000h</span></span></div>
+                    <div class="res-item"><i class="fa-solid fa-check-circle"></i><span>Yield Rate <span class="val">99.5%</span></span></div>
+                </div>
+            </div>
+
+            <div class="ce-card">
+                <div class="ce-card-left">
+                    <div class="ce-card-text">
+                    <div class="num">05 <small>/ 05</small></div>
+                    <h3>AI Accelerator Card Housing</h3>
+                    <div class="sub">Precision Assembly, Metallic Finish, High Strength</div>
+                    <div class="desc">AI accelerator card requires high-precision assembly, metallic appearance and high-strength structural protection.</div>                    </div>
+                    <div class="ce-card-img">                        <div class="img-placeholder" style="overflow:hidden;padding:0;border:none;background:transparent;"><img src="img/ai-hardware-5.webp" alt="AI Accelerator Card Housing" style="width:100%;height:100%;object-fit:contain;border-radius:6px;" /></div>                    </div>                </div>
+
+                <div class="ce-card-mid">
+                    <div class="item"><div class="img-box"><img src="img/pc.webp" alt="Material"></div><h5>Material</h5><ul><li><i class="fa-solid fa-circle"></i> PC/ABS + Metal Powder</li><li><i class="fa-solid fa-circle"></i> Metallic texture, high rigidity</li><li><i class="fa-solid fa-circle"></i> Excellent dimensional stability</li></ul></div>
+                    <div class="item"><div class="img-box"><img src="img/mold-1.webp" alt="Mold"></div><h5>Mold</h5><ul><li><i class="fa-solid fa-circle"></i> High-gloss appearance mold</li><li><i class="fa-solid fa-circle"></i> Mold steel: NAK80</li><li><i class="fa-solid fa-circle"></i> Surface: SPI-A1</li></ul></div>
+                    <div class="item"><div class="img-box"><img src="img/injection-machine-1.webp" alt="Injection"></div><h5>Injection</h5><ul><li><i class="fa-solid fa-circle"></i> High-gloss injection process</li><li><i class="fa-solid fa-circle"></i> Machine: 250T</li><li><i class="fa-solid fa-circle"></i> Mold temp: 60-80&deg;C</li></ul></div>
+                </div>
+                <div class="ce-card-right">
+                    <h5>Key Results</h5>
+                    <div class="res-item"><i class="fa-solid fa-star"></i><span>Surface Quality <span class="val">Metal Grade</span></span></div>
+                    <div class="res-item"><i class="fa-solid fa-ruler"></i><span>Precision <span class="val">&plusmn;0.08mm</span></span></div>
+                    <div class="res-item"><i class="fa-solid fa-bolt"></i><span>Impact Strength <span class="val">&gt;50kJ/m&sup2;</span></span></div>
+                    <div class="res-item"><i class="fa-solid fa-check-circle"></i><span>Drop Test <span class="val">1.5m No Damage</span></span></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="ce-bottom">
+        <div class="container">
+            <div class="ce-bottom-grid">
+                <div class="ce-col">
+                    <h4>Our Advantages</h4>
+                    <div class="ce-icon-box">
+                        <div class="ic"><i class="fa-regular fa-file-lines"></i><span>Precision Engineering</span></div>
+                        <div class="ic"><i class="fa-solid fa-cogs"></i><span>Mold Development</span></div>
+                        <div class="ic"><i class="fa-solid fa-gear"></i><span>Injection Molding</span></div>
+                        <div class="ic"><i class="fa-regular fa-circle-check"></i><span>Quality Control</span></div>
+                        <div class="ic"><i class="fa-solid fa-truck-fast"></i><span>Fast Delivery</span></div>
+                    </div>
+                </div>
+                <div class="ce-col">
+                    <h4>Application Value</h4>
+                    <ul>
+                        <li><i class="fa-solid fa-bullseye"></i> Enhance Product Competitiveness</li>
+                        <li><i class="fa-solid fa-bolt"></i> Optimize Structure &amp; Performance</li>
+                        <li><i class="fa-solid fa-clock"></i> Shorten Development Cycles</li>
+                        <li><i class="fa-solid fa-shield-halved"></i> Ensure Batch Quality</li>
+                    </ul>
+                </div>
+                <div class="ce-cta">
+                    <h4>Professional &middot; Focused &middot; Reliable</h4>
+                    <p>Providing high-precision plastic component solutions for the global AI hardware industry</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer class="site-footer" id="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <div class="footer-brand">
+                    <img src="img/logo.webp" alt="Techinherit" class="footer-logo-img" />
+                    <span class="footer-brand-text">Techinherit</span>
+                </div>
+                <p>We are dedicated to providing high-quality plastic products and services to customers worldwide.</p>
+            </div>
+
+            <div class="footer-col">
+                <h4 data-i18n="footer.quick">QUICK LINKS</h4>
+                <ul>
+                    <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+                    <li><a href="about-us.html" data-i18n="nav.about">About Us</a></li>
+                    <li><a href="product-design.html" data-i18n="nav.product-design">Product Design</a></li>
+                    <li><a href="#">Capabilities</a></li>
+                    <li><a href="case-studies.html" data-i18n="nav.cases">Industry Cases</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 data-i18n="footer.services">SERVICES</h4>
+                <ul>
+                    <li><a href="product-design.html" data-i18n="nav.product-design">Product Design</a></li>
+                    <li><a href="raw-materials.html" data-i18n="nav.raw-materials">Plastic Raw Materials</a></li>
+                    <li><a href="mold-development.html" data-i18n="nav.mold">Mold Development</a></li>
+                    <li><a href="injection-molding.html" data-i18n="nav.injection">Injection Molding</a></li>
+                    <li><a href="quality-control.html" data-i18n="nav.quality">Quality Control</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 data-i18n="footer.contact">CONTACT US</h4>
+                <ul class="contact-list">
+                    <li><i class="fas fa-phone-alt" aria-hidden="true"></i> +86 123 4567 8901</li>
+                    <li><i class="fas fa-envelope" aria-hidden="true"></i> info@jicheng.com</li>
+                    <li><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Dongguan, China</li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 data-i18n="footer.follow">FOLLOW US</h4>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/?locale=zh_CN" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            &copy; 2026 Techinherit. All Rights Reserved.
+        </div>
+    </div>
+</footer>
+
+<a href="https://wa.me/85257096596" target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Contact us on WhatsApp">
+    <i class="fab fa-whatsapp" aria-hidden="true"></i>
+</a>
+
+<a href="global-partnership.html" class="global-float" aria-label="Global cooperation">
+    <img src="img/global-cooperation.webp" alt="Global cooperation" />
+</a>
+
+<script>
+    (function() {
+        var toggle = document.querySelector('.hamburger-toggle');
+        var nav = document.querySelector('.nav-links');
+        if (toggle && nav) {
+            toggle.addEventListener('click', function() {
+                var expanded = this.getAttribute('aria-expanded') === 'true' ? false : true;
+                nav.classList.toggle('is-open');
+                this.setAttribute('aria-expanded', expanded);
+            });
+        }
+
+            // Close mobile nav when clicking outside
+            document.addEventListener('click', function(e) {
+                if (window.innerWidth <= 992) {
+                    var nav = document.querySelector('.nav-links');
+                    var toggle = document.querySelector('.hamburger-toggle');
+                    if (nav && nav.classList.contains('is-open') && toggle) {
+                        if (!nav.contains(e.target) && !toggle.contains(e.target)) {
+                            nav.classList.remove('is-open');
+                            toggle.setAttribute('aria-expanded', 'false');
+                        }
+                    }
+                }
+            });
+
+        document.querySelectorAll('.dropdown-trigger').forEach(function(trigger) {
+            trigger.addEventListener('click', function(e) {
+                e.preventDefault();
+                var parent = this.closest('.nav-dropdown');
+                if (parent) {
+                    parent.classList.toggle('is-open');
+                }
+            });
+        });
+
+        document.addEventListener('click', function(e) {
+            document.querySelectorAll('.nav-dropdown.is-open').forEach(function(dropdown) {
+                if (!dropdown.contains(e.target)) {
+                    dropdown.classList.remove('is-open');
+                }
+            });
+        });
+
+            // Hover dropdown (desktop only)
+            if (window.innerWidth > 992) {
+                document.querySelectorAll('.nav-dropdown').forEach(function(dropdown) {
+                    var hoverTimer;
+                    dropdown.addEventListener('mouseenter', function() {
+                        clearTimeout(hoverTimer);
+                        this.classList.add('is-open');
+                    });
+                    dropdown.addEventListener('mouseleave', function() {
+                        var self = this;
+                        hoverTimer = setTimeout(function() {
+                            self.classList.remove('is-open');
+                        }, 200);
+                    });
+                });
+            }
+
+            var header = document.querySelector('.site-header');
+            if (header) {
+                window.addEventListener('scroll', function() {
+                    header.classList.toggle('scrolled', window.scrollY > 10);
+                });
+            }
+    })();
+</script>
+
+</body>
+</html>

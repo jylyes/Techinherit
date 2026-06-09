@@ -51,11 +51,6 @@
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://www.techinherit.com/industries.html</loc>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
         <loc>https://www.techinherit.com/case-studies.html</loc>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>

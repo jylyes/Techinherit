@@ -1,4 +1,4 @@
-﻿
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,7 +20,7 @@
             display: flex;
             flex-direction: column;
             padding: 100px 0 60px;
-            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url('img/塑料原料1.png') center / cover;
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url('img/raw-materials-1.webp') center / cover;
         }
 
         .rm-hero-content {
@@ -476,7 +476,7 @@
         "@type": "Organization",
         "name": "Techinherit",
         "url": "https://www.techinherit.com",
-        "logo": "https://www.techinherit.com/img/logo.png",
+        "logo": "https://www.techinherit.com/img/logo.webp",
         "description": "One-stop plastic manufacturing solution provider.",
         "address": {
             "@type": "PostalAddress",
@@ -500,7 +500,7 @@
         <div class="container">
             <div class="header-inner">
                 <a href="index.html" class="logo-area" aria-label="Techinherit Home">
-                    <img src="img/logo.png" alt="Techinherit" class="logo-img" />
+                    <img src="img/logo.webp" alt="Techinherit" class="logo-img" />
                     <span class="logo-text">Techinherit</span>
                 </a>
 
@@ -538,11 +538,11 @@
                         </ul>
                     </div>
 
-                    <a href="industries.html" data-i18n="nav.industries">Industries</a>
-                    <a href="case-studies.html" data-i18n="nav.cases">Case Studies</a>
+                    <a href="case-studies.html" data-i18n="nav.cases">Industry Cases</a>
+                    <a href="news.html">News</a>
                     <a href="#footer" data-i18n="nav.contact">Contact Us</a>
+                    <a href="global-partnership.html">Join Us</a>
                     <a href="#footer" class="btn-header" data-i18n="nav.quote">Get a Quote</a>
-                    <button class="lang-toggle" id="langToggle" data-i18n="lang.switch" title="Switch language">中文</button>
                 </nav>
             </div>
         </div>
@@ -596,69 +596,117 @@
                     <p>We provide a wide range of plastic materials to meet diverse performance, appearance, and cost requirements across industries.</p>
                 </div>
                 <div class="rm-main-grid">
-                    <ul class="rm-sidebar">
-                        <li class="rm-active">All Materials</li>
-                        <li>Engineering Plastics</li>
-                        <li>General Purpose Plastics</li>
-                        <li>High Performance Plastics</li>
-                        <li>Elastomers (TPE/TPU)</li>
-                        <li>Biodegradable Plastics</li>
+                    <ul class="rm-sidebar" id="rm-filter">
+                        <li class="rm-active" data-filter="all">All Materials</li>
+                        <li data-filter="engineering">Engineering Plastics</li>
+                        <li data-filter="general">General Purpose Plastics</li>
+                        <li data-filter="special-eng">Special Engineering Plastics</li>
+                        <li data-filter="conductive">Conductive Materials</li>
+                        <li data-filter="elastomers">Elastomers (TPE/TPU)</li>
                     </ul>
                     <div class="rm-material-grid">
-                        <div class="rm-mat-card">
-                            <img src="img/塑料原料2.png" alt="ABS" loading="lazy" />
+                        <div class="rm-mat-card" data-cat="engineering" data-mat="ABS">
+                            <img src="img/abs.webp" alt="ABS" loading="lazy" />
                             <h4>ABS</h4>
                             <p>Good impact resistance, strength and rigidity. Easy to machine.</p>
-                            <a href="#">View Details &rarr;</a>
+                            <a href="#rm-compare" class="rm-view-link">View Details &rarr;</a>
                         </div>
-                        <div class="rm-mat-card">
-                            <img src="img/塑料原料3.png" alt="PC" loading="lazy" />
+                        <div class="rm-mat-card" data-cat="engineering" data-mat="PC">
+                            <img src="img/pc.webp" alt="PC" loading="lazy" />
                             <h4>PC</h4>
                             <p>Excellent impact resistance, optical clarity and heat resistance.</p>
-                            <a href="#">View Details &rarr;</a>
+                            <a href="#rm-compare" class="rm-view-link">View Details &rarr;</a>
                         </div>
-                        <div class="rm-mat-card">
-                            <img src="img/塑料原料4.png" alt="PA Nylon" loading="lazy" />
+                        <div class="rm-mat-card" data-cat="engineering" data-mat="PA">
+                            <img src="img/pa.webp" alt="PA Nylon" loading="lazy" />
                             <h4>PA (Nylon)</h4>
                             <p>High strength, wear resistance and chemical resistance.</p>
-                            <a href="#">View Details &rarr;</a>
+                            <a href="#rm-compare" class="rm-view-link">View Details &rarr;</a>
                         </div>
-                        <div class="rm-mat-card">
-                            <img src="img/塑料原料5.png" alt="POM" loading="lazy" />
+                        <div class="rm-mat-card" data-cat="engineering" data-mat="POM">
+                            <img src="img/pom.webp" alt="POM" loading="lazy" />
                             <h4>POM (Acetal)</h4>
                             <p>High stiffness, low friction and excellent dimensional stability.</p>
-                            <a href="#">View Details &rarr;</a>
+                            <a href="#rm-compare" class="rm-view-link">View Details &rarr;</a>
                         </div>
-                        <div class="rm-mat-card">
-                            <img src="img/塑料原料6.png" alt="PP" loading="lazy" />
+                        <div class="rm-mat-card" data-cat="general" data-mat="PP">
+                            <img src="img/pp.webp" alt="PP" loading="lazy" />
                             <h4>PP</h4>
                             <p>Lightweight, chemical resistant and excellent fatigue resistance.</p>
-                            <a href="#">View Details &rarr;</a>
+                            <a href="#rm-compare" class="rm-view-link">View Details &rarr;</a>
                         </div>
-                        <div class="rm-mat-card">
-                            <img src="img/塑料原料7.png" alt="PE" loading="lazy" />
+                        <div class="rm-mat-card" data-cat="general" data-mat="PE">
+                            <img src="img/pe.webp" alt="PE" loading="lazy" />
                             <h4>PE (HDPE/LDPE)</h4>
                             <p>Good impact resistance, chemical resistance and low moisture absorption.</p>
-                            <a href="#">View Details &rarr;</a>
+                            <a href="#rm-compare" class="rm-view-link">View Details &rarr;</a>
                         </div>
-                        <div class="rm-mat-card">
-                            <img src="img/塑料原料8.png" alt="PBT" loading="lazy" />
+                        <div class="rm-mat-card" data-cat="engineering" data-mat="PBT">
+                            <img src="img/pbt.webp" alt="PBT" loading="lazy" />
                             <h4>PBT</h4>
                             <p>High strength, good electrical properties and dimensional stability.</p>
-                            <a href="#">View Details &rarr;</a>
+                            <a href="#rm-compare" class="rm-view-link">View Details &rarr;</a>
                         </div>
-                        <div class="rm-mat-card">
-                            <img src="img/塑料原料9.png" alt="PMMA" loading="lazy" />
+                        <div class="rm-mat-card" data-cat="engineering" data-mat="PMMA">
+                            <img src="img/pmma.webp" alt="PMMA" loading="lazy" />
                             <h4>PMMA (Acrylic)</h4>
                             <p>High transparency, weather resistance and excellent surface finish.</p>
-                            <a href="#">View Details &rarr;</a>
+                            <a href="#rm-compare" class="rm-view-link">View Details &rarr;</a>
+                        </div>
+                        <div class="rm-mat-card" data-cat="elastomers" data-mat="TPE">
+                            <img src="img/tpe.webp" alt="TPE" loading="lazy" />
+                            <h4>TPE</h4>
+                            <p>Soft touch, flexible, durable elastomeric material with rubber-like elasticity.</p>
+                            <a href="#rm-compare" class="rm-view-link">View Details &rarr;</a>
+                        </div>
+                        <div class="rm-mat-card" data-cat="special-eng" data-mat="PPS">
+                            <img src="img/pbt.webp" alt="PPS" loading="lazy" />
+                            <h4>PPS</h4>
+                            <p>High temperature resistance, excellent chemical resistance, inherently flame retardant.</p>
+                            <a href="#rm-compare" class="rm-view-link">View Details &rarr;</a>
+                        </div>
+                        <div class="rm-mat-card" data-cat="special-eng" data-mat="PEEK">
+                            <img src="img/pc.webp" alt="PEEK" loading="lazy" />
+                            <h4>PEEK</h4>
+                            <p>Ultra-high performance with outstanding mechanical strength and thermal stability up to 260°C.</p>
+                            <a href="#rm-compare" class="rm-view-link">View Details &rarr;</a>
+                        </div>
+                        <div class="rm-mat-card" data-cat="special-eng" data-mat="LCP">
+                            <img src="img/pbt.webp" alt="LCP" loading="lazy" />
+                            <h4>LCP</h4>
+                            <p>Liquid crystal polymer with exceptional dimensional stability, low warpage and thin-wall flowability.</p>
+                            <a href="#rm-compare" class="rm-view-link">View Details &rarr;</a>
+                        </div>
+                        <div class="rm-mat-card" data-cat="conductive" data-mat="Conductive PC">
+                            <img src="img/pc.webp" alt="Conductive PC" loading="lazy" />
+                            <h4>Conductive PC</h4>
+                            <p>Surface resistivity 10³–10⁵ Ω/sq. Ideal for ESD-safe enclosures and EMI shielding applications.</p>
+                            <a href="#rm-compare" class="rm-view-link">View Details &rarr;</a>
+                        </div>
+                        <div class="rm-mat-card" data-cat="conductive" data-mat="Conductive ABS">
+                            <img src="img/abs.webp" alt="Conductive ABS" loading="lazy" />
+                            <h4>Conductive ABS</h4>
+                            <p>Permanent antistatic performance with excellent impact strength and surface finish.</p>
+                            <a href="#rm-compare" class="rm-view-link">View Details &rarr;</a>
+                        </div>
+                        <div class="rm-mat-card" data-cat="conductive" data-mat="Conductive PP">
+                            <img src="img/pp.webp" alt="Conductive PP" loading="lazy" />
+                            <h4>Conductive PP</h4>
+                            <p>Cost-effective ESD-safe material with good chemical resistance for packaging and automation.</p>
+                            <a href="#rm-compare" class="rm-view-link">View Details &rarr;</a>
+                        </div>
+                        <div class="rm-mat-card" data-cat="conductive" data-mat="Conductive PA">
+                            <img src="img/pa.webp" alt="Conductive PA" loading="lazy" />
+                            <h4>Conductive PA</h4>
+                            <p>ESD-safe nylon with high strength, wear resistance and durable antistatic performance.</p>
+                            <a href="#rm-compare" class="rm-view-link">View Details &rarr;</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="rm-comparison">
+        <section class="rm-comparison" id="rm-compare">
             <div class="container rm-comp-wrap">
                 <div>
                     <div class="rm-portfolio-header">
@@ -681,7 +729,7 @@
                                 <tr>
                                     <td><b>ABS</b></td>
                                     <td><div class="rm-rating-dots"><span class="rm-filled"></span><span class="rm-filled"></span><span class="rm-filled"></span><span></span><span></span></div></td>
-                                    <td><div class="rm-rating-dots"><span class="rm-filled"></span><span class="rm-filled"></span><span class="rm-filled"></span><span></span><span></span></div></td>
+                                    <td><div class="rm-rating-dots"><span class="rm-filled"></span><span class="rm-filled"></span><span class="rm-filled"></span><span class="rm-filled"></span><span></span></div></td>
                                     <td><div class="rm-rating-dots"><span class="rm-filled"></span><span class="rm-filled"></span><span></span><span></span><span></span></div></td>
                                     <td><div class="rm-rating-dots"><span class="rm-filled"></span><span class="rm-filled"></span><span></span><span></span><span></span></div></td>
                                     <td>Enclosures, Housings, Consumer Products</td>
@@ -689,8 +737,8 @@
                                 <tr>
                                     <td><b>PC</b></td>
                                     <td><div class="rm-rating-dots"><span class="rm-filled"></span><span class="rm-filled"></span><span class="rm-filled"></span><span class="rm-filled"></span><span></span></div></td>
+                                    <td><div class="rm-rating-dots"><span class="rm-filled"></span><span class="rm-filled"></span><span class="rm-filled"></span><span class="rm-filled"></span><span class="rm-filled"></span></div></td>
                                     <td><div class="rm-rating-dots"><span class="rm-filled"></span><span class="rm-filled"></span><span class="rm-filled"></span><span class="rm-filled"></span><span></span></div></td>
-                                    <td><div class="rm-rating-dots"><span class="rm-filled"></span><span class="rm-filled"></span><span class="rm-filled"></span><span></span><span></span></div></td>
                                     <td><div class="rm-rating-dots"><span class="rm-filled"></span><span class="rm-filled"></span><span></span><span></span><span></span></div></td>
                                     <td>Optical Parts, Safety Equipment, Lenses</td>
                                 </tr>
@@ -698,7 +746,7 @@
                                     <td><b>PA (Nylon)</b></td>
                                     <td><div class="rm-rating-dots"><span class="rm-filled"></span><span class="rm-filled"></span><span class="rm-filled"></span><span class="rm-filled"></span><span></span></div></td>
                                     <td><div class="rm-rating-dots"><span class="rm-filled"></span><span class="rm-filled"></span><span class="rm-filled"></span><span></span><span></span></div></td>
-                                    <td><div class="rm-rating-dots"><span class="rm-filled"></span><span class="rm-filled"></span><span></span><span></span><span></span></div></td>
+                                    <td><div class="rm-rating-dots"><span class="rm-filled"></span><span class="rm-filled"></span><span class="rm-filled"></span><span class="rm-filled"></span><span></span></div></td>
                                     <td><div class="rm-rating-dots"><span class="rm-filled"></span><span class="rm-filled"></span><span class="rm-filled"></span><span></span><span></span></div></td>
                                     <td>Gears, Bearings, Automotive Parts</td>
                                 </tr>
@@ -707,15 +755,15 @@
                                     <td><div class="rm-rating-dots"><span class="rm-filled"></span><span class="rm-filled"></span><span class="rm-filled"></span><span class="rm-filled"></span><span></span></div></td>
                                     <td><div class="rm-rating-dots"><span class="rm-filled"></span><span class="rm-filled"></span><span></span><span></span><span></span></div></td>
                                     <td><div class="rm-rating-dots"><span class="rm-filled"></span><span class="rm-filled"></span><span class="rm-filled"></span><span></span><span></span></div></td>
-                                    <td><div class="rm-rating-dots"><span class="rm-filled"></span><span></span><span></span><span></span><span></span></div></td>
+                                    <td><div class="rm-rating-dots"><span class="rm-filled"></span><span class="rm-filled"></span><span class="rm-filled"></span><span></span><span></span></div></td>
                                     <td>Precision Parts, Connectors, Gears</td>
                                 </tr>
                                 <tr>
                                     <td><b>PP</b></td>
                                     <td><div class="rm-rating-dots"><span class="rm-filled"></span><span class="rm-filled"></span><span class="rm-filled"></span><span></span><span></span></div></td>
-                                    <td><div class="rm-rating-dots"><span class="rm-filled"></span><span class="rm-filled"></span><span></span><span></span><span></span></div></td>
                                     <td><div class="rm-rating-dots"><span class="rm-filled"></span><span class="rm-filled"></span><span class="rm-filled"></span><span></span><span></span></div></td>
                                     <td><div class="rm-rating-dots"><span class="rm-filled"></span><span class="rm-filled"></span><span class="rm-filled"></span><span></span><span></span></div></td>
+                                    <td><div class="rm-rating-dots"><span class="rm-filled"></span><span class="rm-filled"></span><span class="rm-filled"></span><span class="rm-filled"></span><span></span></div></td>
                                     <td>Containers, Living Hinges, Automotive Interiors</td>
                                 </tr>
                             </tbody>
@@ -736,7 +784,7 @@
                         <a href="#footer" class="btn-outline-light">Contact Our Experts</a>
                     </div>
                     <div class="rm-help-img">
-                        <img src="img/塑料原料10.png" alt="Material engineering team" loading="lazy" />
+                        <img src="img/raw-materials-10.webp" alt="Material engineering team" loading="lazy" />
                     </div>
                 </div>
             </div>
@@ -777,10 +825,10 @@
                     <div class="industry-icons">
                         <h3 data-i18n="home.cert.title">Certification</h3>
                         <div class="industry-img-container">
-                            <div class="img-box"><img src="img/认证5.png" alt="ISO 9001" loading="lazy" /></div>
-                            <div class="img-box"><img src="img/认证6.png" alt="ISO 14001" loading="lazy" /></div>
-                            <div class="img-box"><img src="img/认证4.png" alt="Certification" loading="lazy" /></div>
-                            <div class="img-box"><img src="img/认证3.png" alt="Certification" loading="lazy" /></div>
+                            <div class="img-box"><img src="img/certification-5.webp" alt="ISO 9001" loading="lazy" /></div>
+                            <div class="img-box"><img src="img/certification-6.webp" alt="ISO 14001" loading="lazy" /></div>
+                            <div class="img-box"><img src="img/certification-4.webp" alt="Certification" loading="lazy" /></div>
+                            <div class="img-box"><img src="img/certification-3.webp" alt="Certification" loading="lazy" /></div>
                         </div>
                     </div>
 
@@ -817,7 +865,7 @@
             <div class="footer-grid">
                 <div class="footer-col">
                     <div class="footer-brand">
-                        <img src="img/logo.png" alt="Techinherit" class="footer-logo-img" />
+                        <img src="img/logo.webp" alt="Techinherit" class="footer-logo-img" />
                         <span class="footer-brand-text">Techinherit</span>
                     </div>
                     <p>We are dedicated to providing high-quality plastic products and services to customers worldwide.</p>
@@ -830,7 +878,7 @@
                         <li><a href="about-us.html" data-i18n="nav.about">About Us</a></li>
                         <li><a href="product-design.html" data-i18n="nav.product-design">Product Design</a></li>
                         <li><a href="#">Capabilities</a></li>
-                        <li><a href="case-studies.html" data-i18n="nav.cases">Case Studies</a></li>
+                        <li><a href="case-studies.html" data-i18n="nav.cases">Industry Cases</a></li>
                     </ul>
                 </div>
 
@@ -877,7 +925,7 @@
     </a>
 
     <a href="global-partnership.html" class="global-float" aria-label="Global cooperation">
-        <img src="img/全球合作.png" alt="Global cooperation" />
+        <img src="img/global-cooperation.webp" alt="Global cooperation" />
     </a>
 
     <script>
@@ -892,6 +940,20 @@
                     this.setAttribute('aria-expanded', expanded);
                 });
             }
+
+            // Close mobile nav when clicking outside
+            document.addEventListener('click', function(e) {
+                if (window.innerWidth <= 992) {
+                    var nav = document.querySelector('.nav-links');
+                    var toggle = document.querySelector('.hamburger-toggle');
+                    if (nav && nav.classList.contains('is-open') && toggle) {
+                        if (!nav.contains(e.target) && !toggle.contains(e.target)) {
+                            nav.classList.remove('is-open');
+                            toggle.setAttribute('aria-expanded', 'false');
+                        }
+                    }
+                }
+            });
 
             document.querySelectorAll('.dropdown-trigger').forEach(function(trigger) {
                 trigger.addEventListener('click', function(e) {
@@ -911,6 +973,23 @@
                 });
             });
 
+            // Hover dropdown (desktop only)
+            if (window.innerWidth > 992) {
+                document.querySelectorAll('.nav-dropdown').forEach(function(dropdown) {
+                    var hoverTimer;
+                    dropdown.addEventListener('mouseenter', function() {
+                        clearTimeout(hoverTimer);
+                        this.classList.add('is-open');
+                    });
+                    dropdown.addEventListener('mouseleave', function() {
+                        var self = this;
+                        hoverTimer = setTimeout(function() {
+                            self.classList.remove('is-open');
+                        }, 200);
+                    });
+                });
+            }
+
             var header = document.querySelector('.site-header');
             window.addEventListener('scroll', function() {
                 header.classList.toggle('scrolled', window.scrollY > 10);
@@ -918,6 +997,42 @@
         })();
     </script>
 
-    <script src="js/i18n.js"></script>
+    <script>
+        (function() {
+            var sidebar = document.getElementById('rm-filter');
+            var cards = document.querySelectorAll('.rm-mat-card');
+            var filterBtns = sidebar.querySelectorAll('li');
+
+            function doFilter(val) {
+                filterBtns.forEach(function(li) {
+                    li.classList.toggle('rm-active', li.getAttribute('data-filter') === val);
+                });
+                cards.forEach(function(card) {
+                    if (val === 'all') {
+                        card.style.display = '';
+                    } else {
+                        card.style.display = card.getAttribute('data-cat') === val ? '' : 'none';
+                    }
+                });
+            }
+
+            filterBtns.forEach(function(li) {
+                li.addEventListener('click', function() {
+                    doFilter(this.getAttribute('data-filter'));
+                });
+            });
+
+            cards.forEach(function(card) {
+                card.style.cursor = 'pointer';
+                card.addEventListener('click', function(e) {
+                    var target = document.querySelector('#rm-compare');
+                    if (target) {
+                        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                });
+            });
+        })();
+    </script>
+
 </body>
 </html>

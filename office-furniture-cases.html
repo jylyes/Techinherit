@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ergonomic Chair Structural Parts: 5 Success Cases | Techinherit</title>
+    <meta name="description" content="Ergonomic chair high-end structural parts - 5 success cases from materials, molds and injection molding" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <style>
+        .of-header{background:#0b1f3b;color:#fff;padding:70px 0 60px;text-align:center}
+        .of-header h1{font-size:40px;font-weight:700;margin-bottom:12px}
+        .of-header h1 span{color:#f0c040;font-weight:900}
+        .of-header p{font-size:18px;color:#b0c4de;margin-top:6px}
+
+        .of-stats{display:flex;justify-content:center;gap:40px;max-width:1100px;margin:0 auto;padding:0 0 10px}
+        .of-stat-item{display:flex;flex-direction:column;align-items:center;text-align:center;flex:1}
+        .of-stat-item i{font-size:34px;color:#1a56db;margin-bottom:6px}
+        .of-stat-item h4{font-size:18px;font-weight:700;color:#0b1f3b}
+        .of-stat-item p{font-size:13px;color:#666;margin-top:4px;max-width:200px}
+
+        .of-card{background:#f0f6ff;border-radius:14px;padding:20px 28px 14px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,0.04);border:1px solid #e5e7eb;display:flex;gap:24px;transition:var(--transition)}
+        .of-card:hover{box-shadow:0 8px 25px rgba(0,0,0,0.08);border-color:var(--color-primary)}
+
+        .of-card-left{flex:0 0 500px;border-right:1px solid #eef0f2;padding-right:24px}
+        .of-card-left .num{font-size:26px;font-weight:900;color:#1a56db;line-height:1}
+        .of-card-left .num small{font-size:13px;font-weight:400;color:#999}
+        .of-card-left h3{font-size:17px;font-weight:700;margin:6px 0 8px;color:#0b1f3b}
+        .of-card-left .sub{font-size:13px;color:#1a56db;font-weight:600;margin-bottom:4px}
+        .of-card-left .desc{font-size:13px;color:#555;line-height:1.6}
+
+        .of-card-mid{flex:1;display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px}
+        .of-card-mid .item{text-align:center;border-right:1px solid #f0f0f0;padding:0 14px}
+        .of-card-mid .item:last-child{border-right:0}
+        .of-card-mid .img-box{height:100px;display:flex;align-items:center;justify-content:center;margin-bottom:8px}
+        .of-card-mid .img-box img{max-height:100%;max-width:100%;object-fit:contain}
+        .of-card-mid .item h5{font-size:15px;font-weight:700;color:#0b1f3b;margin-bottom:6px}
+        .of-card-mid .item ul{list-style:none;padding:0;text-align:left}
+        .of-card-mid .item ul li{font-size:13px;color:#555;margin-bottom:4px;display:flex;align-items:baseline;gap:4px}
+        .of-card-mid .item ul li i{color:#1a56db;font-size:10px}
+
+        .of-card-right{flex:0 0 200px;border-left:1px solid #eef0f2;padding-left:24px}
+        .of-card-right h5{font-size:15px;font-weight:700;color:#0b1f3b;margin-bottom:12px;text-align:center}
+        .of-card-right .res-item{display:flex;align-items:center;gap:10px;margin-bottom:12px;font-size:15px;color:#333}
+        .of-card-right .res-item i{color:#1a56db;font-size:20px;width:28px;text-align:center}
+        .of-card-right .res-item .val{font-weight:700;color:#1a56db;font-size:18px}
+
+        .of-bottom{padding:30px 0;background:#fff}
+        .of-bottom-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:40px}
+        .of-col h4{font-size:17px;font-weight:700;color:#0b1f3b;margin-bottom:14px}
+        .of-col ul{list-style:none}
+        .of-col ul li{font-size:14px;color:#555;margin-bottom:8px;display:flex;align-items:center;gap:8px}
+        .of-col ul li i{color:#1a56db;font-size:16px}
+        .of-icon-box{display:flex;gap:24px;flex-wrap:wrap}
+        .of-icon-box .ic{display:flex;flex-direction:column;align-items:center;text-align:center;width:90px}
+        .of-icon-box .ic i{font-size:32px;color:#1a56db;margin-bottom:8px}
+        .of-icon-box .ic span{font-size:13px;color:#333;font-weight:600}
+        .of-cta{background:#0b1f3b;color:#fff;border-radius:10px;padding:28px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center}
+        .of-cta h4{font-size:18px;font-weight:700;margin-bottom:8px;color:#fff}
+        .of-cta p{font-size:14px;color:#b0c4de}
+
+        @media(max-width:1024px){
+            .of-stats{flex-wrap:wrap}.of-stat-item{flex:0 0 30%}.of-card{flex-direction:column}
+            .of-card-left{border-right:0;border-bottom:1px solid #eef0f2;padding-bottom:18px;flex:auto}
+            .of-card-right{border-left:0;border-top:1px solid #eef0f2;padding-top:18px;padding-left:0;flex:auto;display:flex;flex-wrap:wrap;gap:15px;justify-content:center}
+            .of-card-right .res-item{margin-bottom:0}
+            .of-bottom-grid{grid-template-columns:1fr 1fr}
+            .of-card-mid{grid-template-columns:1fr 1fr}
+            .of-card-mid .item:last-child{border-right:1px solid #f0f0f0}
+        }
+        @media(max-width:768px){
+            .of-header h1{font-size:28px}.of-stat-item{flex:0 0 45%}
+            .of-card-mid{grid-template-columns:1fr}.of-card-mid .item{border-right:0!important;border-bottom:1px solid #f0f0f0;padding:12px 0}
+            .of-card-mid .item:last-child{border-bottom:0}.of-bottom-grid{grid-template-columns:1fr}
+            .of-card-right{flex-direction:column;align-items:center}
+        }
+    
+        .of-card-left {
+            display: flex;
+            flex-direction: row;
+            gap: 16px;
+            align-items: stretch;
+        }
+        .of-card-text {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .of-card-img {
+            width: 220px;
+            flex-shrink: 0;
+            display: flex;
+            flex-direction: column;
+            align-self: stretch;
+        }
+        .of-card-img .img-placeholder {
+            width: 100%;
+            aspect-ratio: 9 / 16;
+            max-height: 320px;
+            background: #fff;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ccc;
+            font-size: 14px;
+            border: 1px dashed #ddd;
+            overflow: hidden;
+        }
+
+    </style>
+</head>
+<body>
+
+<header class="site-header">
+    <div class="container">
+        <div class="header-inner">
+            <a href="index.html" class="logo-area" aria-label="Techinherit Home">
+                <img src="img/logo.webp" alt="Techinherit" class="logo-img" />
+                <span class="logo-text">Techinherit</span>
+            </a>
+
+            <button class="hamburger-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+            </button>
+
+            <nav class="nav-links" aria-label="Primary navigation" role="navigation">
+                <a href="index.html" data-i18n="nav.home">Home</a>
+                <a href="about-us.html" data-i18n="nav.about">About Us</a>
+
+                <div class="nav-dropdown">
+                    <a href="#" class="dropdown-trigger">
+                        Services <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="product-design.html" data-i18n="nav.product-design">Product Design</a></li>
+                        <li><a href="raw-materials.html" data-i18n="nav.raw-materials">Plastic Raw Materials</a></li>
+                        <li><a href="mold-development.html" data-i18n="nav.mold">Mold Development</a></li>
+                        <li><a href="injection-molding.html" data-i18n="nav.injection">Injection Molding</a></li>
+                        <li><a href="quality-control.html" data-i18n="nav.quality">Quality Control</a></li>
+                        <li><a href="odm-oem.html">Assemble</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav-dropdown">
+                    <a href="#" class="dropdown-trigger">
+                        Capabilities <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="rd-strength.html">R&D Strength</a></li>
+                        <li><a href="production-equipment.html" data-i18n="nav.equipment">Production Equipment</a></li>
+                    </ul>
+                </div>
+
+                <a href="case-studies.html" data-i18n="nav.cases">Industry Cases</a>
+                <a href="news.html">News</a>
+                <a href="#footer" data-i18n="nav.contact">Contact Us</a>
+                <a href="global-partnership.html">Join Us</a>
+                <a href="#footer" class="btn-header" data-i18n="nav.quote">Get a Quote</a>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<main>
+
+    <section class="of-header">
+        <div class="container">
+            <h1>Ergonomic Chair Structural Parts: <span>5</span> Success Cases</h1>
+            <p>From Materials &middot; Molds &middot; Injection Molding — Achieving High Performance &amp; Quality</p>
+        </div>
+    </section>
+
+    <section class="section-padding" style="background:#fff;">
+        <div class="container">
+            <div class="of-stats">
+                <div class="of-stat-item"><i class="fa-regular fa-gem"></i><h4>Material Engineering</h4><p>Selected high-performance engineering materials meeting diverse requirements for strength, toughness and durability</p></div>
+                <div class="of-stat-item"><i class="fa-solid fa-cogs"></i><h4>Mold Technology</h4><p>High-precision mold design and manufacturing ensuring stable mass production of complex structures</p></div>
+                <div class="of-stat-item"><i class="fa-solid fa-industry"></i><h4>Injection Molding</h4><p>Advanced injection molding process and quality control ensuring product consistency and reliability</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding" style="background:#f8fafc;">
+        <div class="container">
+
+            <div class="of-card">
+                <div class="of-card-left">
+                    <div class="of-card-text">
+                    <div class="num">01 <small>/ 05</small></div>
+                    <h3>Chair Back Frame</h3>
+                    <div class="sub">High Strength, Lightweight</div>
+                    <div class="desc">Customer sought a lighter, stronger solution that would not deform over long-term use.</div>                    </div>
+                    <div class="of-card-img">                        <div class="img-placeholder" style="overflow:hidden;padding:0;border:none;background:transparent;"><img src="img/office-chair-case-1.webp" alt="Chair Back Frame" style="width:100%;height:100%;object-fit:contain;border-radius:6px;" /></div>                    </div>                </div>
+
+                <div class="of-card-mid">
+                    <div class="item"><div class="img-box"><img src="img/pa.webp" alt="Material"></div><h5>Material</h5><ul><li><i class="fa-solid fa-circle"></i> PA6+GF35%</li><li><i class="fa-solid fa-circle"></i> High rigidity, high strength</li><li><i class="fa-solid fa-circle"></i> Excellent dimensional stability</li><li><i class="fa-solid fa-circle"></i> Superior fatigue resistance</li></ul></div>
+                    <div class="item"><div class="img-box"><img src="img/mold-1.webp" alt="Mold"></div><h5>Mold</h5><ul><li><i class="fa-solid fa-circle"></i> Complex curved shell mold</li><li><i class="fa-solid fa-circle"></i> Multi-slide angled core pulling</li><li><i class="fa-solid fa-circle"></i> Precision fit for great appearance</li><li><i class="fa-solid fa-circle"></i> Mold steel: 1.2738</li></ul></div>
+                    <div class="item"><div class="img-box"><img src="img/injection-machine-1.webp" alt="Injection"></div><h5>Injection</h5><ul><li><i class="fa-solid fa-circle"></i> Stable thin-wall molding</li><li><i class="fa-solid fa-circle"></i> Machine: 1200T</li><li><i class="fa-solid fa-circle"></i> Mold temp: 60-80&deg;C</li><li><i class="fa-solid fa-circle"></i> Injection pressure: 1200bar</li><li><i class="fa-solid fa-circle"></i> Mold temp control: &plusmn;3&deg;C</li><li><i class="fa-solid fa-circle"></i> High-precision injection control</li><li><i class="fa-solid fa-circle"></i> Automated pick &amp; place, reduced stress</li></ul></div>
+                </div>
+                <div class="of-card-right">
+                    <h5>Key Results</h5>
+                    <div class="res-item"><i class="fa-solid fa-weight-scale"></i><span>Weight Reduction <span class="val">18%</span></span></div>
+                    <div class="res-item"><i class="fa-solid fa-bolt"></i><span>Impact Strength <span class="val">+25%</span></span></div>
+                    <div class="res-item"><i class="fa-solid fa-check-circle"></i><span>1M Cycle Test <span class="val">Passed</span></span></div>
+                </div>
+            </div>
+
+            <div class="of-card">
+                <div class="of-card-left">
+                    <div class="of-card-text">
+                    <div class="num">02 <small>/ 05</small></div>
+                    <h3>Seat Frame Bracket</h3>
+                    <div class="sub">High Load Capacity, More Reliable</div>
+                    <div class="desc">Requires high load capacity and impact resistance to ensure long-term safety and reliability.</div>                    </div>
+                    <div class="of-card-img">                        <div class="img-placeholder" style="overflow:hidden;padding:0;border:none;background:transparent;"><img src="img/office-chair-case-2.webp" alt="Seat Frame Bracket" style="width:100%;height:100%;object-fit:contain;border-radius:6px;" /></div>                    </div>                </div>
+
+                <div class="of-card-mid">
+                    <div class="item"><div class="img-box"><img src="img/pa.webp" alt="Material"></div><h5>Material</h5><ul><li><i class="fa-solid fa-circle"></i> PA66+GF30%</li><li><i class="fa-solid fa-circle"></i> High strength, high toughness</li><li><i class="fa-solid fa-circle"></i> Excellent thermal stability</li><li><i class="fa-solid fa-circle"></i> Low warpage</li></ul></div>
+                    <div class="item"><div class="img-box"><img src="img/mold-2.webp" alt="Mold"></div><h5>Mold</h5><ul><li><i class="fa-solid fa-circle"></i> Large structural part mold</li><li><i class="fa-solid fa-circle"></i> Multi-gate balanced design</li><li><i class="fa-solid fa-circle"></i> High-rigidity mold frame</li><li><i class="fa-solid fa-circle"></i> Mold size: 1600&times;1200mm</li></ul></div>
+                    <div class="item"><div class="img-box"><img src="img/injection-machine-2.webp" alt="Injection"></div><h5>Injection</h5><ul><li><i class="fa-solid fa-circle"></i> High-tonnage injection</li><li><i class="fa-solid fa-circle"></i> Machine: &ge;500T</li><li><i class="fa-solid fa-circle"></i> Mold flow analysis optimized fill</li><li><i class="fa-solid fa-circle"></i> Online monitoring, stable quality</li></ul></div>
+                </div>
+                <div class="of-card-right">
+                    <h5>Key Results</h5>
+                    <div class="res-item"><i class="fa-solid fa-weight-hanging"></i><span>Static Load <span class="val">150kg+</span></span></div>
+                    <div class="res-item"><i class="fa-solid fa-bolt"></i><span>Impact Strength <span class="val">+30%</span></span></div>
+                    <div class="res-item"><i class="fa-regular fa-circle-check"></i><span>Pass Rate <span class="val">99.5%+</span></span></div>
+                </div>
+            </div>
+
+            <div class="of-card">
+                <div class="of-card-left">
+                    <div class="of-card-text">
+                    <div class="num">03 <small>/ 05</small></div>
+                    <h3>Armrest Support Bracket</h3>
+                    <div class="sub">Precision Structure, Comfortable &amp; Durable</div>
+                    <div class="desc">Requires precise fit and comfortable feel for long-term durability.</div>                    </div>
+                    <div class="of-card-img">                        <div class="img-placeholder" style="overflow:hidden;padding:0;border:none;background:transparent;"><img src="img/office-chair-case-3.webp" alt="Armrest Support Bracket" style="width:100%;height:100%;object-fit:contain;border-radius:6px;" /></div>                    </div>                </div>
+
+                <div class="of-card-mid">
+                    <div class="item"><div class="img-box"><img src="img/pa.webp" alt="Material"></div><h5>Material</h5><ul><li><i class="fa-solid fa-circle"></i> PA66+GF30%</li><li><i class="fa-solid fa-circle"></i> High rigidity, high strength</li><li><i class="fa-solid fa-circle"></i> Excellent wear resistance</li><li><i class="fa-solid fa-circle"></i> Cost-effective, proven reliability</li></ul></div>
+                    <div class="item"><div class="img-box"><img src="img/mold-1.webp" alt="Mold"></div><h5>Mold</h5><ul><li><i class="fa-solid fa-circle"></i> Precision structural mold</li><li><i class="fa-solid fa-circle"></i> High-accuracy positioning</li><li><i class="fa-solid fa-circle"></i> Precision inserts</li><li><i class="fa-solid fa-circle"></i> Mold steel: D2</li></ul></div>
+                    <div class="item"><div class="img-box"><img src="img/injection-machine-1.webp" alt="Injection"></div><h5>Injection</h5><ul><li><i class="fa-solid fa-circle"></i> Precision molding process</li><li><i class="fa-solid fa-circle"></i> Injection accuracy &plusmn;0.1mm</li><li><i class="fa-solid fa-circle"></i> Low-pressure mold protection</li><li><i class="fa-solid fa-circle"></i> Stable molding, reduced flash</li></ul></div>
+                </div>
+                <div class="of-card-right">
+                    <h5>Key Results</h5>
+                    <div class="res-item"><i class="fa-solid fa-ruler"></i><span>Precision <span class="val">&plusmn;0.15mm</span></span></div>
+                    <div class="res-item"><i class="fa-solid fa-bolt"></i><span>Wear Resistance <span class="val">+40%</span></span></div>
+                    <div class="res-item"><i class="fa-solid fa-check-circle"></i><span>Assembly Yield <span class="val">99.8%</span></span></div>
+                </div>
+            </div>
+
+            <div class="of-card">
+                <div class="of-card-left">
+                    <div class="of-card-text">
+                    <div class="num">04 <small>/ 05</small></div>
+                    <h3>Five Star Feet</h3>
+                    <div class="sub">High Strength, Fatigue Resistant, Durable</div>
+                    <div class="desc">The 5-star foot base requires high strength, toughness, excellent fatigue resistance, and dimensional consistency across all five legs.</div>                    </div>
+                    <div class="of-card-img">                        <div class="img-placeholder" style="overflow:hidden;padding:0;border:none;background:transparent;"><img src="img/office-chair-star-base.webp" alt="Five Star Feet" style="width:100%;height:100%;object-fit:contain;border-radius:6px;" /></div>                    </div>                </div>
+
+                <div class="of-card-mid">
+                    <div class="item"><div class="img-box"><img src="img/pa.webp" alt="Material"></div><h5>Material</h5><ul><li><i class="fa-solid fa-circle"></i> PA6 + 30% Glass Fiber</li><li><i class="fa-solid fa-circle"></i> High strength, high toughness</li><li><i class="fa-solid fa-circle"></i> Excellent fatigue resistance</li><li><i class="fa-solid fa-circle"></i> Good oil &amp; solvent resistance</li><li><i class="fa-solid fa-circle"></i> Outstanding rigidity &amp; load capacity</li></ul></div>
+                    <div class="item"><div class="img-box"><img src="img/mold-3.webp" alt="Mold"></div><h5>Mold</h5><ul><li><i class="fa-solid fa-circle"></i> Precision multi-slide + radial runner</li><li><i class="fa-solid fa-circle"></i> Precision guide for consistent leg dimensions</li><li><i class="fa-solid fa-circle"></i> High-wear slider for glass fiber</li><li><i class="fa-solid fa-circle"></i> Ribs, caster holes, center mount one-shot</li><li><i class="fa-solid fa-circle"></i> Mold life: 1M+ cycles</li></ul></div>
+                    <div class="item"><div class="img-box"><img src="img/injection-machine-2.webp" alt="Injection"></div><h5>Injection</h5><ul><li><i class="fa-solid fa-circle"></i> Optimized fill &amp; hold pressure</li><li><i class="fa-solid fa-circle"></i> Machine: 1000T</li><li><i class="fa-solid fa-circle"></i> Mold temp: 60-80&deg;C</li><li><i class="fa-solid fa-circle"></i> Injection pressure: 1200bar</li><li><i class="fa-solid fa-circle"></i> Balanced runner, reduced sink marks</li><li><i class="fa-solid fa-circle"></i> Optimized cooling, shorter cycle time</li><li><i class="fa-solid fa-circle"></i> Auto inline inspection</li></ul></div>
+                </div>
+                <div class="of-card-right">
+                    <h5>Key Results</h5>
+                    <div class="res-item"><i class="fa-solid fa-clock"></i><span>Fatigue Life <span class="val">+35%</span></span></div>
+                    <div class="res-item"><i class="fa-solid fa-calendar"></i><span>Part Lifespan <span class="val">10+ Yrs</span></span></div>
+                    <div class="res-item"><i class="fa-solid fa-arrow-down"></i><span>Service Complaints <span class="val">-50%</span></span></div>
+                </div>
+            </div>
+
+            <div class="of-card">
+                <div class="of-card-left">
+                    <div class="of-card-text">
+                    <div class="num">05 <small>/ 05</small></div>
+                    <h3>Headrest Bracket</h3>
+                    <div class="sub">Lightweight, High Strength</div>
+                    <div class="desc">Requires lightweight design while maintaining strength and smooth adjustment.</div>                    </div>
+                    <div class="of-card-img">                        <div class="img-placeholder" style="overflow:hidden;padding:0;border:none;background:transparent;"><img src="img/office-chair-case-5.webp" alt="Headrest Bracket" style="width:100%;height:100%;object-fit:contain;border-radius:6px;" /></div>                    </div>                </div>
+
+                <div class="of-card-mid">
+                    <div class="item"><div class="img-box"><img src="img/pc.webp" alt="Material"></div><h5>Material</h5><ul><li><i class="fa-solid fa-circle"></i> PC+ABS</li><li><i class="fa-solid fa-circle"></i> Lightweight</li><li><i class="fa-solid fa-circle"></i> High impact strength</li><li><i class="fa-solid fa-circle"></i> Good surface appearance</li></ul></div>
+                    <div class="item"><div class="img-box"><img src="img/mold-1.webp" alt="Mold"></div><h5>Mold</h5><ul><li><i class="fa-solid fa-circle"></i> High-gloss appearance mold</li><li><i class="fa-solid fa-circle"></i> Mirror polish</li><li><i class="fa-solid fa-circle"></i> In-mold gate design</li><li><i class="fa-solid fa-circle"></i> Mold steel: NAK80</li></ul></div>
+                    <div class="item"><div class="img-box"><img src="img/injection-machine-1.webp" alt="Injection"></div><h5>Injection</h5><ul><li><i class="fa-solid fa-circle"></i> High-gloss molding process</li><li><i class="fa-solid fa-circle"></i> High-gloss mold temp control</li><li><i class="fa-solid fa-circle"></i> Optimized gate design minimizing weld lines</li><li><i class="fa-solid fa-circle"></i> Clean spray finishing</li></ul></div>
+                </div>
+                <div class="of-card-right">
+                    <h5>Key Results</h5>
+                    <div class="res-item"><i class="fa-solid fa-weight-scale"></i><span>Weight Reduction <span class="val">20%</span></span></div>
+                    <div class="res-item"><i class="fa-regular fa-star"></i><span>Appearance <span class="val">Excellent</span></span></div>
+                    <div class="res-item"><i class="fa-solid fa-check-circle"></i><span>Customer Satisfaction <span class="val">100%</span></span></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="of-bottom">
+        <div class="container">
+            <div class="of-bottom-grid">
+                <div class="of-col">
+                    <h4>Our Advantages</h4>
+                    <div class="of-icon-box">
+                        <div class="ic"><i class="fa-regular fa-file-lines"></i><span>Custom Material Solutions</span></div>
+                        <div class="ic"><i class="fa-solid fa-cogs"></i><span>Integrated Mold Development</span></div>
+                        <div class="ic"><i class="fa-solid fa-gear"></i><span>Refined Injection Molding</span></div>
+                        <div class="ic"><i class="fa-regular fa-circle-check"></i><span>Strict Quality Control</span></div>
+                        <div class="ic"><i class="fa-solid fa-truck-fast"></i><span>Fast Local Delivery</span></div>
+                    </div>
+                </div>
+                <div class="of-col">
+                    <h4>Application Value</h4>
+                    <ul>
+                        <li><i class="fa-solid fa-bullseye"></i> Enhance Product Competitiveness</li>
+                        <li><i class="fa-solid fa-bolt"></i> Reduce Overall Costs</li>
+                        <li><i class="fa-solid fa-clock"></i> Shorten Development Cycles</li>
+                        <li><i class="fa-solid fa-shield-halved"></i> Ensure Long-Term Reliability</li>
+                    </ul>
+                </div>
+                <div class="of-cta">
+                    <h4>Professional &middot; Focused &middot; Reliable</h4>
+                    <p>Providing high-end structural component solutions for global ergonomic chair brands</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer class="site-footer" id="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <div class="footer-brand">
+                    <img src="img/logo.webp" alt="Techinherit" class="footer-logo-img" />
+                    <span class="footer-brand-text">Techinherit</span>
+                </div>
+                <p>We are dedicated to providing high-quality plastic products and services to customers worldwide.</p>
+            </div>
+
+            <div class="footer-col">
+                <h4 data-i18n="footer.quick">QUICK LINKS</h4>
+                <ul>
+                    <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+                    <li><a href="about-us.html" data-i18n="nav.about">About Us</a></li>
+                    <li><a href="product-design.html" data-i18n="nav.product-design">Product Design</a></li>
+                    <li><a href="#">Capabilities</a></li>
+                    <li><a href="case-studies.html" data-i18n="nav.cases">Industry Cases</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 data-i18n="footer.services">SERVICES</h4>
+                <ul>
+                    <li><a href="product-design.html" data-i18n="nav.product-design">Product Design</a></li>
+                    <li><a href="raw-materials.html" data-i18n="nav.raw-materials">Plastic Raw Materials</a></li>
+                    <li><a href="mold-development.html" data-i18n="nav.mold">Mold Development</a></li>
+                    <li><a href="injection-molding.html" data-i18n="nav.injection">Injection Molding</a></li>
+                    <li><a href="quality-control.html" data-i18n="nav.quality">Quality Control</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 data-i18n="footer.contact">CONTACT US</h4>
+                <ul class="contact-list">
+                    <li><i class="fas fa-phone-alt" aria-hidden="true"></i> +86 123 4567 8901</li>
+                    <li><i class="fas fa-envelope" aria-hidden="true"></i> info@jicheng.com</li>
+                    <li><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Dongguan, China</li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 data-i18n="footer.follow">FOLLOW US</h4>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/?locale=zh_CN" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            &copy; 2026 Techinherit. All Rights Reserved.
+        </div>
+    </div>
+</footer>
+
+<a href="https://wa.me/85257096596" target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Contact us on WhatsApp">
+    <i class="fab fa-whatsapp" aria-hidden="true"></i>
+</a>
+
+<a href="global-partnership.html" class="global-float" aria-label="Global cooperation">
+    <img src="img/global-cooperation.webp" alt="Global cooperation" />
+</a>
+
+<script>
+    (function() {
+        var toggle = document.querySelector('.hamburger-toggle');
+        var nav = document.querySelector('.nav-links');
+        if (toggle && nav) {
+            toggle.addEventListener('click', function() {
+                var expanded = this.getAttribute('aria-expanded') === 'true' ? false : true;
+                nav.classList.toggle('is-open');
+                this.setAttribute('aria-expanded', expanded);
+            });
+        }
+
+            // Close mobile nav when clicking outside
+            document.addEventListener('click', function(e) {
+                if (window.innerWidth <= 992) {
+                    var nav = document.querySelector('.nav-links');
+                    var toggle = document.querySelector('.hamburger-toggle');
+                    if (nav && nav.classList.contains('is-open') && toggle) {
+                        if (!nav.contains(e.target) && !toggle.contains(e.target)) {
+                            nav.classList.remove('is-open');
+                            toggle.setAttribute('aria-expanded', 'false');
+                        }
+                    }
+                }
+            });
+
+        document.querySelectorAll('.dropdown-trigger').forEach(function(trigger) {
+            trigger.addEventListener('click', function(e) {
+                e.preventDefault();
+                var parent = this.closest('.nav-dropdown');
+                if (parent) {
+                    parent.classList.toggle('is-open');
+                }
+            });
+        });
+
+        document.addEventListener('click', function(e) {
+            document.querySelectorAll('.nav-dropdown.is-open').forEach(function(dropdown) {
+                if (!dropdown.contains(e.target)) {
+                    dropdown.classList.remove('is-open');
+                }
+            });
+        });
+
+            // Hover dropdown (desktop only)
+            if (window.innerWidth > 992) {
+                document.querySelectorAll('.nav-dropdown').forEach(function(dropdown) {
+                    var hoverTimer;
+                    dropdown.addEventListener('mouseenter', function() {
+                        clearTimeout(hoverTimer);
+                        this.classList.add('is-open');
+                    });
+                    dropdown.addEventListener('mouseleave', function() {
+                        var self = this;
+                        hoverTimer = setTimeout(function() {
+                            self.classList.remove('is-open');
+                        }, 200);
+                    });
+                });
+            }
+
+            var header = document.querySelector('.site-header');
+            if (header) {
+                window.addEventListener('scroll', function() {
+                    header.classList.toggle('scrolled', window.scrollY > 10);
+                });
+            }
+    })();
+</script>
+
+</body>
+</html>
