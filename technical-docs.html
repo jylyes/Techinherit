@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Us | Techinherit</title>
-    <meta name="description" content="Learn about Techinherit - your trusted plastic manufacturing partner with 10+ years of experience, 100+ employees, and 2000+ successful projects." />
+    <title>Technical Documents | Techinherit</title>
+    <meta name="description" content="Access Techinherit's technical documentation library including material data sheets, processing guides, DFM guidelines, quality certifications, and more." />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,38 +13,154 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
     <link rel="stylesheet" href="css/styles.css" />
-    <!-- GEO / Hreflang -->
-    <meta name="geo.region" content="CN-44" />
-    <meta name="geo.placename" content="Dongguan, China" />
-    <link rel="alternate" href="https://www.techinherit.com/" hreflang="en" />
-    <link rel="alternate" href="https://www.techinherit.com/" hreflang="en-ZA" />
-    <link rel="alternate" href="https://www.techinherit.com/" hreflang="en-NG" />
-    <link rel="alternate" href="https://www.techinherit.com/" hreflang="en-AE" />
-    <link rel="alternate" href="https://www.techinherit.com/" hreflang="en-ID" />
-    <!-- Organization Schema -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "Techinherit",
-        "url": "https://www.techinherit.com",
-        "logo": "https://www.techinherit.com/img/logo.webp",
-        "description": "One-stop plastic manufacturing solution provider.",
-        "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Dongguan",
-            "addressCountry": "CN"
-        },
-        "contactPoint": {
-            "@type": "ContactPoint",
-            "telephone": "+86-123-4567-8901",
-            "contactType": "sales"
-        },
-        "sameAs": [
-            "https://www.facebook.com/techinherit"
-        ]
-    }
-    </script>
+
+    <style>
+        .td-hero {
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 100px 0 60px;
+            background: linear-gradient(to right, rgba(8,27,51,0.92), rgba(8,27,51,0.65)), url('img/equipment-showcase.webp') center / cover;
+        }
+
+        .td-hero .container { text-align: center; }
+
+        .td-hero h1 {
+            font-size: 54px;
+            font-weight: 900;
+            color: #fff;
+            margin-bottom: 20px;
+            line-height: 1.15;
+            letter-spacing: 1px;
+            animation: heroFadeUp 0.8s ease both;
+        }
+
+        .td-hero p {
+            font-size: 20px;
+            color: #d1d5db;
+            max-width: 650px;
+            line-height: 1.7;
+            margin: 0 auto;
+            animation: heroFadeUp 0.8s 0.2s ease both;
+        }
+
+        .td-breadcrumb {
+            padding: 16px 0;
+            background: #f8fafc;
+            border-bottom: 1px solid #edf2f7;
+        }
+
+        .td-breadcrumb a {
+            color: #1a56db;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .td-breadcrumb a:hover { text-decoration: underline; }
+
+        .td-breadcrumb span {
+            color: #999;
+            font-size: 14px;
+        }
+
+        .td-list-section { padding: 40px 0; }
+
+        .td-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .td-list-item {
+            padding: 20px 0;
+            border-bottom: 1px solid #edf2f7;
+        }
+
+        .td-list-item:last-child { border-bottom: none; }
+
+        .td-list-item .td-date {
+            font-size: 13px;
+            color: #999;
+            margin-bottom: 4px;
+        }
+
+        .td-list-item .td-date i { margin-right: 4px; }
+
+        .td-list-item h3 {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 6px;
+        }
+
+        .td-list-item h3 a {
+            color: #0b1f3b;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .td-list-item h3 a:hover { color: #1a56db; }
+
+        .td-list-item .td-desc {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 8px;
+        }
+
+        .td-list-item .td-detail-link {
+            font-size: 13px;
+            font-weight: 600;
+            color: #1a56db;
+            text-decoration: none;
+        }
+
+        .td-list-item .td-detail-link:hover { text-decoration: underline; }
+
+        .td-pagination {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 6px;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #edf2f7;
+        }
+
+        .td-pagination a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px;
+            height: 36px;
+            border: 1px solid #e5e7eb;
+            border-radius: 4px;
+            color: #333;
+            text-decoration: none;
+            font-size: 14px;
+            transition: 0.2s;
+        }
+
+        .td-pagination a:hover {
+            border-color: #1a56db;
+            color: #1a56db;
+        }
+
+        .td-pagination a.active {
+            background: #1a56db;
+            color: #fff;
+            border-color: #1a56db;
+        }
+
+        .td-pagination a.prev-next {
+            width: auto;
+            padding: 0 12px;
+        }
+
+        @media (max-width: 768px) {
+            .td-hero h1 { font-size: 34px; }
+        }
+    </style>
 </head>
 <body>
 
@@ -64,7 +180,7 @@
 
                 <nav class="nav-links" aria-label="Primary navigation" role="navigation">
                     <a href="index.html" data-i18n="nav.home">Home</a>
-                    <a href="about-us.html" class="active" data-i18n="nav.about">About Us</a>
+                    <a href="about-us.html" data-i18n="nav.about">About Us</a>
 
                     <div class="nav-dropdown">
                         <a href="#" class="dropdown-trigger">
@@ -91,7 +207,7 @@
                     </div>
 
                     <a href="case-studies.html" data-i18n="nav.cases">Industry Cases</a>
-                    <a href="technical-docs.html">Technical Docs</a>
+                    <a href="technical-docs.html" class="active">Technical Docs</a>
                     <a href="news.html">News</a>
                     <a href="global-partnership.html">Join Us</a>
                     <a href="get-quote.html" class="btn-header" data-i18n="nav.quote">Get a Quote</a>
@@ -102,120 +218,26 @@
 
     <main>
 
-        <section class="about-hero">
+        <section class="td-hero">
             <div class="container">
-                <div class="about-hero-content">
-                    <h1>Engineering-Driven<br>Plastic Manufacturing Partner</h1>
-                    <h2>About Techinherit</h2>
-                    <p>From concept development to mass production, we help global customers turn ideas into reliable plastic products. With strong engineering capabilities and a complete industrial chain, we deliver efficient one-stop solutions.</p>
-                </div>
+                <h1>Technical Documents</h1>
+                <p>Material data sheets, processing guidelines, DFM standards, and quality certifications to support your product development.</p>
             </div>
         </section>
 
-        <section class="about-section section-padding">
+        <div class="td-breadcrumb">
             <div class="container">
-                <div class="about-grid">
-                    <div class="about-content">
-                        <small>ABOUT US</small>
-                        <h2>Your Trusted Plastic<br>Manufacturing Expert</h2>
-                        <p>Techinherit specializes in the development and manufacturing of customized plastic products. We possess a complete one-stop industrial chain, encompassing plastic product design, material research and development, mold development, injection molding, and finished product assembly. Leveraging our strong engineering capabilities, we are deeply involved in our clients' product development, helping them reduce development risks, shorten delivery cycles, and achieve stable mass production with high quality, high efficiency, and high cost-effectiveness. The company adheres to the principle of "precision engineering, trusted delivery," continuously creating long-term value for our clients.</p>
-                    </div>
-                    <div class="about-img" style="background-image: url('img/factory.webp');" role="img" aria-label="Techinherit factory view"></div>
-                </div>
+                <a href="index.html">Home</a> <span>&gt;</span> <span>Technical Documents</span>
             </div>
-        </section>
+        </div>
 
-        <section class="about-details">
+        <section class="td-list-section" style="background:#fff;min-height:300px;">
             <div class="container">
-                <div class="section-heading-center">
-                    <small>CHOOSE US</small>
-                    <h2>Why Customers Choose Us</h2>
-                    <p>We provide comprehensive solutions that set us apart from the competition.</p>
+                <div style="text-align:center;padding:80px 20px;">
+                    <i class="far fa-file-alt" style="font-size:64px;color:#d1d5db;margin-bottom:20px;display:block;"></i>
+                    <h3 style="font-size:20px;color:#666;font-weight:400;">No articles published yet</h3>
+                    <p style="font-size:14px;color:#999;margin-top:8px;">Technical documents will be available soon. Stay tuned!</p>
                 </div>
-
-                <div class="details-grid">
-
-                    <div class="detail-card">
-                        <span class="detail-number"><i class="fas fa-pencil-ruler"></i></span>
-                        <h4>Product Design Support</h4>
-                        <p>Transform concepts into manufacturable products with our professional design team.</p>
-                    </div>
-
-                    <div class="detail-card">
-                        <span class="detail-number"><i class="fas fa-flask"></i></span>
-                        <h4>Strong Material Expertise</h4>
-                        <p>Optimize performance, durability, and cost with our material knowledge.</p>
-                    </div>
-
-                    <div class="detail-card">
-                        <span class="detail-number"><i class="fas fa-industry"></i></span>
-                        <h4>In-House Mold &amp; Injection</h4>
-                        <p>Faster tooling, consistent quality, and scalable capacity — from mold development to mass production in-house.</p>
-                    </div>
-
-                    <div class="detail-card">
-                        <span class="detail-number"><i class="fas fa-tools"></i></span>
-                        <h4>Assembly Service</h4>
-                        <p>Professional assembly and kitting services to deliver finished products ready for market.</p>
-                    </div>
-
-                    <div class="detail-card">
-                        <span class="detail-number"><i class="fas fa-bolt"></i></span>
-                        <h4>Rapid Problem Solving</h4>
-                        <p>Engineering response within 24 hours to keep your project on track.</p>
-                    </div>
-
-                    <div class="detail-card">
-                        <span class="detail-number"><i class="fas fa-handshake"></i></span>
-                        <h4>Long-Term Partnership</h4>
-                        <p>Full support from prototype to mass production, every step of the way.</p>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <section class="stats-banner">
-            <div class="container">
-                <div class="stats-grid">
-                    <div class="stat-item">
-                        <i class="stat-icon fas fa-shield-halved"></i>
-                        <div class="stat-text">
-                            <h3>10+</h3>
-                            <span>Years Industry<br>Experience</span>
-                        </div>
-                    </div>
-                    <div class="stat-item">
-                        <i class="stat-icon fas fa-users"></i>
-                        <div class="stat-text">
-                            <h3>100+</h3>
-                            <span>Professional<br>Employees</span>
-                        </div>
-                    </div>
-                    <div class="stat-item">
-                        <i class="stat-icon fas fa-clipboard-check"></i>
-                        <div class="stat-text">
-                            <h3>2000+</h3>
-                            <span>Projects<br>Completed</span>
-                        </div>
-                    </div>
-                    <div class="stat-item">
-                        <i class="stat-icon fas fa-globe"></i>
-                        <div class="stat-text">
-                            <h3>50+</h3>
-                            <span>Countries<br>Served</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-                <section class="home-cta">
-            <div class="container" style="text-align:center;">
-                <h2 style="font-size:32px;font-weight:800;color:#fff;margin-bottom:15px;">Ready to Start Your Project?</h2>
-                <p style="font-size:16px;color:#d1d5db;max-width:600px;margin:0 auto 30px;">From concept to finished product — our engineering team is ready to discuss your requirements and provide a tailored solution.</p>
-                <a href="get-quote.html" class="btn-primary" style="background:#fff;color:#0b3d91;font-weight:700;">Request a Quote</a>
             </div>
         </section>
 
@@ -303,7 +325,6 @@
                 });
             }
 
-            // Close mobile nav when clicking outside
             document.addEventListener('click', function(e) {
                 if (window.innerWidth <= 992) {
                     var nav = document.querySelector('.nav-links');
@@ -321,41 +342,31 @@
                 trigger.addEventListener('click', function(e) {
                     e.preventDefault();
                     var parent = this.closest('.nav-dropdown');
-                    if (parent) {
-                        parent.classList.toggle('is-open');
-                    }
+                    if (parent) { parent.classList.toggle('is-open'); }
                 });
             });
 
             document.addEventListener('click', function(e) {
                 document.querySelectorAll('.nav-dropdown.is-open').forEach(function(dropdown) {
-                    if (!dropdown.contains(e.target)) {
-                        dropdown.classList.remove('is-open');
-                    }
+                    if (!dropdown.contains(e.target)) { dropdown.classList.remove('is-open'); }
                 });
             });
 
-            // Hover dropdown (desktop only)
             if (window.innerWidth > 992) {
                 document.querySelectorAll('.nav-dropdown').forEach(function(dropdown) {
                     var hoverTimer;
                     dropdown.addEventListener('mouseenter', function() {
-                        clearTimeout(hoverTimer);
-                        this.classList.add('is-open');
+                        clearTimeout(hoverTimer); this.classList.add('is-open');
                     });
                     dropdown.addEventListener('mouseleave', function() {
                         var self = this;
-                        hoverTimer = setTimeout(function() {
-                            self.classList.remove('is-open');
-                        }, 200);
+                        hoverTimer = setTimeout(function() { self.classList.remove('is-open'); }, 200);
                     });
                 });
             }
 
             var header = document.querySelector('.site-header');
-            window.addEventListener('scroll', function() {
-                header.classList.toggle('scrolled', window.scrollY > 10);
-            });
+            window.addEventListener('scroll', function() { header.classList.toggle('scrolled', window.scrollY > 10); });
         })();
     </script>
 
