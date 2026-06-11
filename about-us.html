@@ -67,7 +67,7 @@
                     <a href="about-us.html" class="active" data-i18n="nav.about">About Us</a>
 
                     <div class="nav-dropdown">
-                        <a href="#" class="dropdown-trigger">
+                        <a href="services.html" class="dropdown-trigger">
                             All Services <i class="fas fa-chevron-down" aria-hidden="true"></i>
                         </a>
                         <ul class="dropdown-menu">
@@ -81,7 +81,7 @@
                     </div>
 
                     <div class="nav-dropdown">
-                        <a href="#" class="dropdown-trigger">
+                        <a href="rd-strength.html" class="dropdown-trigger">
                             Factory Strength <i class="fas fa-chevron-down" aria-hidden="true"></i>
                         </a>
                         <ul class="dropdown-menu">
@@ -92,7 +92,7 @@
 
                     <a href="case-studies.html" data-i18n="nav.cases">Industry Cases</a>
                     <a href="technical-docs.html">Technical Docs</a>
-                    <a href="news.html">News</a>
+                    <a href="news.html">消息动态</a>
                     <a href="global-partnership.html">Join Us</a>
                     <a href="get-quote.html" class="btn-header" data-i18n="nav.quote">Get a Quote</a>
                 </nav>
@@ -118,7 +118,7 @@
                     <div class="about-content">
                         <small>ABOUT US</small>
                         <h2>Your Trusted Plastic<br>Manufacturing Expert</h2>
-                        <p>Techinherit specializes in the development and manufacturing of customized plastic products. We possess a complete one-stop industrial chain, encompassing plastic product design, material research and development, mold development, injection molding, and finished product assembly. Leveraging our strong engineering capabilities, we are deeply involved in our clients' product development, helping them reduce development risks, shorten delivery cycles, and achieve stable mass production with high quality, high efficiency, and high cost-effectiveness. The company adheres to the principle of "precision engineering, trusted delivery," continuously creating long-term value for our clients.</p>
+                        <p>Techinherit specializes in the development and manufacturing of customized plastic products. We possess a complete one-stop industrial chain, encompassing plastic product design, material research and development, mold development, injection molding, and finished product assembly. Leveraging our strong engineering capabilities, we are deeply involved in our clients' product development, helping them reduce development risks, shorten delivery cycles, and achieve stable mass production with high quality, high efficiency, and high cost-effectiveness. The company is committed to technology development, quality assurance, and specialized focus on plastics, providing clients with the highest quality and most professional complete plastic technology solutions.</p>
                     </div>
                     <div class="about-img" style="background-image: url('img/factory.webp');" role="img" aria-label="Techinherit factory view"></div>
                 </div>
@@ -319,8 +319,9 @@
 
             document.querySelectorAll('.dropdown-trigger').forEach(function(trigger) {
                 trigger.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    var parent = this.closest('.nav-dropdown');
+                    if (e.target.closest('.fa-chevron-down')) {
+                        e.preventDefault();
+                        var parent = this.closest('.nav-dropdown');
                     if (parent) {
                         parent.classList.toggle('is-open');
                     }

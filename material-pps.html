@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PPS Material | Techinherit</title>
+    <meta name="description" content="Technical datasheet for Polyphenylene Sulfide - mechanical properties, thermal properties, processing parameters, and applications." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <style>
+        .md-hero { padding: 120px 0 50px; background: linear-gradient(to right, rgba(8,27,51,0.92), rgba(8,27,51,0.65)), url('img/equipment-showcase.webp') center / cover; color: #fff; }
+        .md-hero .container { display: flex; align-items: center; gap: 40px; }
+        .md-hero-img { flex: 0 0 180px; }
+        .md-hero-img img { width: 100%; border-radius: 8px; background: #fff; }
+        .md-hero-text h1 { font-size: 38px; font-weight: 900; margin-bottom: 8px; }
+        .md-hero-text .md-tag { font-size: 13px; font-weight: 600; color: #93b4e8; margin-bottom: 10px; display: block; }
+        .md-hero-text p { font-size: 15px; color: #d1d5db; max-width: 600px; line-height: 1.6; }
+        .md-breadcrumb { padding: 14px 0; background: #f8fafc; border-bottom: 1px solid #edf2f7; }
+        .md-breadcrumb a { color: #1a56db; text-decoration: none; font-size: 14px; }
+        .md-breadcrumb a:hover { text-decoration: underline; }
+        .md-breadcrumb span { color: #999; font-size: 14px; }
+        .md-section { padding: 50px 0; }
+        .md-grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
+        .md-grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+        .md-card { background: #fff; border: 1px solid #e5e7eb; border-radius: 10px; padding: 24px; }
+        .md-card h3 { font-size: 16px; font-weight: 700; color: #0b1f3b; margin-bottom: 14px; padding-bottom: 10px; border-bottom: 2px solid #eef3fc; }
+        .md-card table { width: 100%; border-collapse: collapse; font-size: 14px; }
+        .md-card td { padding: 8px 0; border-bottom: 1px solid #f3f4f6; }
+        .md-card td:last-child { text-align: right; font-weight: 600; color: #1a56db; }
+        .md-prop-bar { height: 8px; background: #eef3fc; border-radius: 4px; margin: 6px 0 10px; overflow: hidden; }
+        .md-prop-bar span { display: block; height: 100%; border-radius: 4px; background: #1a56db; }
+        .md-app-item { text-align: center; padding: 20px 16px; background: #f8fafc; border-radius: 8px; }
+        .md-app-icon { font-size: 32px; color: #1a56db; margin-bottom: 10px; display: block; }
+        .md-app-item h4 { font-size: 14px; font-weight: 700; margin-bottom: 4px; }
+        .md-app-item p { font-size: 13px; color: #666; }
+        .md-param-row { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #f3f4f6; font-size: 14px; }
+        .md-param-row .label { color: #666; }
+        .md-param-row .value { font-weight: 600; color: #0b1f3b; }
+        @media (max-width: 768px) { .md-hero .container { flex-direction: column; text-align: center; } .md-hero-img { flex: none; width: 140px; } .md-grid-2, .md-grid-4 { grid-template-columns: 1fr; } }
+    
+        .mat-nav-wrap {
+            background: #f0f4fa;
+            border-bottom: 1px solid #e0e7ef;
+            padding: 10px 0;
+        }
+        .mat-nav-wrap .container { overflow-x: auto; }
+        .mat-nav {
+            display: flex;
+            gap: 4px;
+            white-space: nowrap;
+            padding: 2px 0;
+        }
+        .mat-nav a {
+            display: inline-block;
+            padding: 5px 12px;
+            font-size: 13px;
+            font-weight: 600;
+            color: #4a5568;
+            background: #fff;
+            border: 1px solid #e2e8f0;
+            border-radius: 6px;
+            text-decoration: none;
+            transition: 0.2s;
+        }
+        .mat-nav a:hover {
+            border-color: #1a56db;
+            color: #1a56db;
+        }
+        .mat-nav a.active {
+            background: #1a56db;
+            color: #fff;
+            border-color: #1a56db;
+        }
+
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="header-inner">
+                <a href="index.html" class="logo-area" aria-label="Techinherit Home">
+                    <img src="img/logo.webp" alt="Techinherit" class="logo-img" />
+                    <span class="logo-text">Techinherit</span>
+                </a>
+                <button class="hamburger-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span class="hamburger-bar"></span><span class="hamburger-bar"></span><span class="hamburger-bar"></span>
+                </button>
+                <nav class="nav-links" aria-label="Primary navigation" role="navigation">
+                    <a href="index.html" data-i18n="nav.home">Home</a>
+                    <a href="about-us.html" data-i18n="nav.about">About Us</a>
+                    <div class="nav-dropdown">
+                        <a href="services.html" class="dropdown-trigger">All Services <i class="fas fa-chevron-down" aria-hidden="true"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="product-design.html" data-i18n="nav.product-design">Product Design</a></li>
+                            <li><a href="raw-materials.html" data-i18n="nav.raw-materials">Plastic Raw Materials</a></li>
+                            <li><a href="mold-development.html" data-i18n="nav.mold">Mold Development</a></li>
+                            <li><a href="injection-molding.html" data-i18n="nav.injection">Injection Molding</a></li>
+                            <li><a href="quality-control.html" data-i18n="nav.quality">Quality Control</a></li>
+                            <li><a href="odm-oem.html">Assemble</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-dropdown">
+                        <a href="rd-strength.html" class="dropdown-trigger">Factory Strength <i class="fas fa-chevron-down" aria-hidden="true"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="rd-strength.html">R&D Strength</a></li>
+                            <li><a href="production-equipment.html" data-i18n="nav.equipment">Production Equipment</a></li>
+                        </ul>
+                    </div>
+                    <a href="case-studies.html" data-i18n="nav.cases">Industry Cases</a>
+                    <a href="technical-docs.html">Technical Docs</a>
+                    <a href="news.html">消息动态</a>
+                    <a href="global-partnership.html">Join Us</a>
+                    <a href="get-quote.html" class="btn-header" data-i18n="nav.quote">Get a Quote</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="md-hero">
+            <div class="container">
+                <div class="md-hero-img"><img src="img/pps.webp" alt="PPS" /></div>
+                <div class="md-hero-text">
+                    <span class="md-tag">HIGH-PERFORMANCE PLASTIC</span>
+                    <h1>PPS<br /><small style="font-size:18px;font-weight:300;color:#93b4e8;">Polyphenylene Sulfide</small></h1>
+                    <p>PPS is a high-performance semi-crystalline engineering plastic offering exceptional thermal stability (continuous use up to 220°C), inherent flame retardancy (UL94 V-0 without additives), and outstanding chemical resistance against virtually all organic solvents. It exhibits excellent dimensional stability, high stiffness, and low creep.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="md-breadcrumb">
+            <div class="container">
+                <a href="index.html">Home</a> <span>&gt;</span>
+                <a href="raw-materials.html">Plastic Raw Materials</a> <span>&gt;</span>
+                <span>PPS</span>
+            </div>
+        </div>
+
+<div class="mat-nav-wrap"><div class="container"><div class="mat-nav"><a href="material-abs.html">ABS</a><a href="material-pc.html">PC</a><a href="material-pa.html">PA (Nylon)</a><a href="material-pom.html">POM (Acetal)</a><a href="material-pp.html">PP</a><a href="material-pe.html">PE</a><a href="material-pbt.html">PBT</a><a href="material-pmma.html">PMMA</a><a href="material-tpe.html">TPE</a><a href="material-pps.html" class="active">PPS</a><a href="material-peek.html">PEEK</a><a href="material-lcp.html">LCP</a><a href="material-conductive-pc.html">Cond. PC</a><a href="material-conductive-abs.html">Cond. ABS</a><a href="material-conductive-pp.html">Cond. PP</a><a href="material-conductive-pa.html">Cond. PA</a></div></div></div>
+
+        <section class="md-section" style="background:#fff;">
+            <div class="container">
+                <div class="md-grid-2">
+                    <div class="md-card">
+                        <h3><i class="fas fa-table" style="color:#1a56db;margin-right:6px;"></i> Mechanical Properties</h3>
+                        <table><tr><td>Tensile Strength</td><td>80 - 90 MPa</td></tr>
+<tr><td>Tensile Modulus</td><td>4,000 - 4,300 MPa</td></tr>
+<tr><td>Elongation at Break</td><td>1 - 3%</td></tr>
+<tr><td>Flexural Strength</td><td>140 MPa</td></tr>
+<tr><td>Impact Strength (Izod, notched)</td><td>5 - 7 kJ/m²</td></tr>
+<tr><td>Hardness (Rockwell)</td><td>R120 - R124</td></tr></table>
+                    </div>
+                    <div class="md-card">
+                        <h3><i class="fas fa-thermometer-half" style="color:#1a56db;margin-right:6px;"></i> Thermal Properties</h3>
+                        <table><tr><td>Melting Point</td><td>285 °C</td></tr>
+<tr><td>HDT (1.82 MPa)</td><td>260 °C</td></tr>
+<tr><td>Continuous Use Temp</td><td>220 °C</td></tr>
+<tr><td>Max Operating Temp (short)</td><td>260 °C</td></tr>
+<tr><td>Min Service Temp</td><td>-40 °C</td></tr>
+<tr><td>Flammability (UL94)</td><td>V-0 (inherent)</td></tr></table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="md-section" style="background:#f8fafc;">
+            <div class="container">
+                <div class="md-grid-2">
+                    <div class="md-card">
+                        <h3><i class="fas fa-cogs" style="color:#1a56db;margin-right:6px;"></i> Processing Parameters</h3>
+                        <div class="md-param-row"><span class="label">Drying Temperature</span><span class="value">130 - 150 °C</span></div>
+<div class="md-param-row"><span class="label">Drying Time</span><span class="value">3 - 4 hrs</span></div>
+<div class="md-param-row"><span class="label">Melt Temperature</span><span class="value">300 - 340 °C</span></div>
+<div class="md-param-row"><span class="label">Mold Temperature</span><span class="value">120 - 160 °C</span></div>
+<div class="md-param-row"><span class="label">Injection Pressure</span><span class="value">80 - 140 MPa</span></div>
+<div class="md-param-row"><span class="label">Shrinkage Rate</span><span class="value">0.2 - 0.6%</span></div>
+                    </div>
+                    <div class="md-card">
+                        <h3><i class="fas fa-check-circle" style="color:#1a56db;margin-right:6px;"></i> Key Features</h3>
+                        <table><tr><td>Heat Resistance</td><td><div class="md-prop-bar"><span style="width:95%;"></span></div>Outstanding (220°C)</td></tr>
+<tr><td>Chemical Resistance</td><td><div class="md-prop-bar"><span style="width:98%;"></span></div>No known solvent</td></tr>
+<tr><td>Flame Retardancy</td><td><div class="md-prop-bar"><span style="width:99%;"></span></div>Inherent V-0</td></tr>
+<tr><td>Dimensional Stability</td><td><div class="md-prop-bar"><span style="width:90%;"></span></div>Excellent</td></tr>
+<tr><td>Stiffness</td><td><div class="md-prop-bar"><span style="width:85%;"></span></div>High</td></tr></table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="md-section" style="background:#fff;">
+            <div class="container">
+                <h3 style="font-size:20px;font-weight:700;margin-bottom:20px;color:#0b1f3b;"><i class="fas fa-industry" style="color:#1a56db;margin-right:6px;"></i> Typical Applications</h3>
+                <div class="md-grid-4"><div class="md-app-item"><i class="fas fa-car md-app-icon"></i><h4>Automotive</h4><p>Engine components, EGR valves, fuel systems</p></div>
+<div class="md-app-item"><i class="fas fa-microchip md-app-icon"></i><h4>Electronics</h4><p>Connectors, SMT components, relay parts</p></div>
+<div class="md-app-item"><i class="fas fa-cogs md-app-icon"></i><h4>Industrial</h4><p>Pump impellers, compressor parts, valve seats</p></div>
+<div class="md-app-item"><i class="fas fa-rocket md-app-icon"></i><h4>Aerospace</h4><p>Aircraft connectors, interior components</p></div></div>
+            </div>
+        </section>
+
+        
+    </main>
+
+    <footer class="site-footer" id="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-brand"><img src="img/logo.webp" alt="Techinherit" class="footer-logo-img" /><span class="footer-brand-text">Techinherit</span></div>
+                    <p>We are dedicated to providing high-quality plastic products and services to customers worldwide.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>QUICK LINKS</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li><li><a href="about-us.html">About Us</a></li>
+                        <li><a href="product-design.html">Product Design</a></li><li><a href="rd-strength.html">Factory Strength</a></li>
+                        <li><a href="case-studies.html">Industry Cases</a></li><li><a href="technical-docs.html">Technical Docs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>SERVICES</h4>
+                    <ul>
+                        <li><a href="product-design.html">Product Design</a></li><li><a href="raw-materials.html">Plastic Raw Materials</a></li>
+                        <li><a href="mold-development.html">Mold Development</a></li><li><a href="injection-molding.html">Injection Molding</a></li>
+                        <li><a href="quality-control.html">Quality Control</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>CONTACT US</h4>
+                    <ul class="contact-list">
+                        <li><i class="fas fa-phone-alt"></i> +86 123 4567 8901</li>
+                        <li><i class="fas fa-envelope"></i> info@jicheng.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Dongguan, China</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>FOLLOW US</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">&copy; 2026 Techinherit. All Rights Reserved.</div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/85257096596" target="_blank" class="whatsapp-float"><i class="fab fa-whatsapp"></i></a>
+    <a href="global-partnership.html" class="global-float"><img src="img/global-cooperation.webp" alt="Global" /></a>
+    <script>
+        (function(){var t=document.querySelector('.hamburger-toggle'),n=document.querySelector('.nav-links');t&&n&&t.addEventListener('click',function(){var e='true'===this.getAttribute('aria-expanded');n.classList.toggle('is-open'),this.setAttribute('aria-expanded',!e)}),document.addEventListener('click',function(e){if(window.innerWidth<=992){var t=document.querySelector('.nav-links'),n=document.querySelector('.hamburger-toggle');t&&t.classList.contains('is-open')&&n&&!t.contains(e.target)&&!n.contains(e.target)&&(t.classList.remove('is-open'),n.setAttribute('aria-expanded','false'))}}),document.querySelectorAll('.dropdown-trigger').forEach(function(t){t.addEventListener('click',function(e){e.preventDefault();var t=this.closest('.nav-dropdown');t&&t.classList.toggle('is-open')})}),document.addEventListener('click',function(e){document.querySelectorAll('.nav-dropdown.is-open').forEach(function(t){t.contains(e.target)||t.classList.remove('is-open')})}),window.innerWidth>992&&document.querySelectorAll('.nav-dropdown').forEach(function(t){var n;t.addEventListener('mouseenter',function(){clearTimeout(n),this.classList.add('is-open')}),t.addEventListener('mouseleave',function(){var e=this;n=setTimeout(function(){e.classList.remove('is-open')},200)})});var e=document.querySelector('.site-header');window.addEventListener('scroll',function(){e.classList.toggle('scrolled',window.scrollY>10)})})();
+    </script>
+</body>
+</html>

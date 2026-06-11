@@ -206,7 +206,7 @@
                     <a href="about-us.html" data-i18n="nav.about">About Us</a>
 
                     <div class="nav-dropdown">
-                        <a href="#" class="dropdown-trigger">
+                        <a href="services.html" class="dropdown-trigger">
                             All Services <i class="fas fa-chevron-down" aria-hidden="true"></i>
                         </a>
                         <ul class="dropdown-menu">
@@ -220,7 +220,7 @@
                     </div>
 
                     <div class="nav-dropdown">
-                        <a href="#" class="dropdown-trigger">
+                        <a href="rd-strength.html" class="dropdown-trigger">
                             Factory Strength <i class="fas fa-chevron-down" aria-hidden="true"></i>
                         </a>
                         <ul class="dropdown-menu">
@@ -231,7 +231,7 @@
 
                     <a href="case-studies.html" data-i18n="nav.cases">Industry Cases</a>
                     <a href="technical-docs.html">Technical Docs</a>
-                    <a href="news.html">News</a>
+                    <a href="news.html">消息动态</a>
                     <a href="global-partnership.html">Join Us</a>
                     <a href="get-quote.html" class="active btn-header" data-i18n="nav.quote">Get a Quote</a>
                 </nav>
@@ -430,8 +430,9 @@
 
             document.querySelectorAll('.dropdown-trigger').forEach(function(trigger) {
                 trigger.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    var parent = this.closest('.nav-dropdown');
+                    if (e.target.closest('.fa-chevron-down')) {
+                        e.preventDefault();
+                        var parent = this.closest('.nav-dropdown');
                     if (parent) {
                         parent.classList.toggle('is-open');
                     }
