@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
@@ -11,11 +11,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/styles.css?v=11" />
 
     <style>
         .news-hero {
-            height: 420px;
+            height: 550px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -247,19 +247,29 @@
             </button>
 
             <nav class="nav-links" aria-label="Primary navigation" role="navigation">
-                <a href="index.html" data-i18n="nav.home">Home</a>
-                <a href="about-us.html" data-i18n="nav.about">About Us</a>
+                <a href="index.html">Home</a>
+
+                <div class="nav-dropdown">
+                    <a href="about-us.html" class="dropdown-trigger">
+                        About Us <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="get-quote.html">Contact Us</a></li>
+                        <li><a href="global-partnership.html">Join Us</a></li>
+                    </ul>
+                </div>
 
                 <div class="nav-dropdown">
                     <a href="services.html" class="dropdown-trigger">
                         All Services <i class="fas fa-chevron-down" aria-hidden="true"></i>
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a href="product-design.html" data-i18n="nav.product-design">Product Design</a></li>
-                        <li><a href="raw-materials.html" data-i18n="nav.raw-materials">Plastic Raw Materials</a></li>
-                        <li><a href="mold-development.html" data-i18n="nav.mold">Mold Development</a></li>
-                        <li><a href="injection-molding.html" data-i18n="nav.injection">Injection Molding</a></li>
-                        <li><a href="quality-control.html" data-i18n="nav.quality">Quality Control</a></li>
+                        <li><a href="product-design.html">Product Design</a></li>
+                        <li><a href="raw-materials.html">Plastic Raw Materials</a></li>
+                        <li><a href="mold-development.html">Mold Development</a></li>
+                        <li><a href="injection-molding.html">Injection Molding</a></li>
+                        <li><a href="quality-control.html">Quality Control</a></li>
                         <li><a href="odm-oem.html">Assemble</a></li>
                     </ul>
                 </div>
@@ -270,16 +280,26 @@
                     </a>
                     <ul class="dropdown-menu">
                         <li><a href="rd-strength.html">R&D Strength</a></li>
-                        <li><a href="production-equipment.html" data-i18n="nav.equipment">Production Equipment</a></li>
+                        <li><a href="production-equipment.html">Production Equipment</a></li>
                     </ul>
                 </div>
 
-                <a href="case-studies.html" data-i18n="nav.cases">Industry Cases</a>
-                <a href="technical-docs.html">Technical Docs</a>
-                <a href="news.html" class="active">消息动态</a>
-                <a href="global-partnership.html">Join Us</a>
-                <a href="get-quote.html" class="btn-header" data-i18n="nav.quote">Get a Quote</a>
+                <a href="case-studies.html">Industry Cases</a>
+
+                <div class="nav-dropdown active">
+                    <a href="news.html" class="dropdown-trigger">
+                        News <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="news.html" class="active">Industry News</a></li>
+                        <li><a href="technical-docs.html">Technical Docs</a></li>
+                        <li><a href="faq.html">Q&A Center</a></li>
+                    </ul>
+                </div>
+
+                <a href="get-quote.html" class="btn-header">Get a Quote</a>
             </nav>
+
         </div>
     </div>
 </header>
@@ -309,9 +329,49 @@
     <section class="news-list">
         <div class="container">
 
-            <div style="text-align:center;padding:80px 20px;color:#999;">
-                <i class="fa-regular fa-newspaper" style="font-size:48px;display:block;margin-bottom:20px;"></i>
-                <p style="font-size:16px;">News content coming soon. Stay tuned!</p>
+            <div class="news-item">
+                <div class="news-img"><img src="img/quality-control-1.webp" alt="ISO 13485 Certification" /></div>
+                <div class="news-content">
+                    <h3>Techinherit Achieves ISO 13485 Certification for Medical Device Manufacturing</h3>
+                    <p>We are proud to announce our new ISO 13485:2016 certification, expanding our capabilities in medical-grade plastic component production. This certification demonstrates our commitment to quality management systems specific to medical device manufacturing and positions us to serve the growing medical plastics market with confidence.</p>
+                    <div class="news-meta"><span class="cat">Company News</span><span class="date">May 15, 2026</span></div>
+                </div>
+            </div>
+
+            <div class="news-item">
+                <div class="news-img"><img src="img/equipment-showcase.webp" alt="New injection molding machines" /></div>
+                <div class="news-content">
+                    <h3>Techinherit Expands Production Capacity with 5 New All-Electric Injection Molding Machines</h3>
+                    <p>Techinherit has invested in 5 new all-electric injection molding machines ranging from 180 to 650 tons, increasing our monthly production capacity by 35%. These energy-efficient machines provide higher precision, faster cycle times, and reduced energy consumption, benefiting both our clients and the environment.</p>
+                    <div class="news-meta"><span class="cat">Company News</span><span class="date">Apr 20, 2026</span></div>
+                </div>
+            </div>
+
+            <div class="news-item">
+                <div class="news-img"><img src="img/factory.webp" alt="Factory expansion" /></div>
+                <div class="news-content">
+                    <h3>Techinherit Dongguan Headquarters Completes Phase 2 Facility Expansion</h3>
+                    <p>The Phase 2 expansion of our Dongguan headquarters adds 8,000 square meters of production space, including a new cleanroom workshop for medical and food-grade applications, an expanded R&D laboratory, and dedicated assembly lines for finished product kitting and packaging.</p>
+                    <div class="news-meta"><span class="cat">Company News</span><span class="date">Mar 10, 2026</span></div>
+                </div>
+            </div>
+
+            <div class="news-item">
+                <div class="news-img"><img src="img/product-design-1.webp" alt="Design for Manufacturing" /></div>
+                <div class="news-content">
+                    <h3>New DFM Guide Released: Helping OEMs Reduce Tooling Costs by Up to 25%</h3>
+                    <p>Techinherit's engineering team has published a comprehensive Design for Manufacturing guide that has helped early adopters reduce tooling costs by up to 25%. The guide covers critical design considerations including draft angles, wall thickness optimization, rib and boss design, and gate placement strategies specifically for injection molded plastic parts.</p>
+                    <div class="news-meta"><span class="cat">Technical</span><span class="date">Feb 18, 2026</span></div>
+                </div>
+            </div>
+
+            <div class="news-item">
+                <div class="news-img"><img src="img/rd-assembly.webp" alt="R&D team" /></div>
+                <div class="news-content">
+                    <h3>Techinherit R&D Team Develops New Conductive ABS Compound for ESD-Sensitive Applications</h3>
+                    <p>Our R&D team has successfully developed a new conductive ABS compound with surface resistivity below 10³ Ω/sq, designed for ESD-sensitive applications in electronics manufacturing, automotive sensor housings, and cleanroom equipment. The new material is now available for sampling.</p>
+                    <div class="news-meta"><span class="cat">Industry</span><span class="date">Jan 25, 2026</span></div>
+                </div>
             </div>
 
         </div>
@@ -337,30 +397,30 @@
             </div>
 
             <div class="footer-col">
-                <h4 data-i18n="footer.quick">QUICK LINKS</h4>
+                <h4>QUICK LINKS</h4>
                 <ul>
-                    <li><a href="index.html" data-i18n="nav.home">Home</a></li>
-                    <li><a href="about-us.html" data-i18n="nav.about">About Us</a></li>
-                    <li><a href="product-design.html" data-i18n="nav.product-design">Product Design</a></li>
-                    <li><a href="rd-strength.html">Factory Strength</a></li>
-                    <li><a href="case-studies.html" data-i18n="nav.cases">Industry Cases</a></li>
-                    <li><a href="technical-docs.html">Technical Docs</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="services.html">All Services</a></li>
+                    <li><a href="case-studies.html">Industry Cases</a></li>
+                    <li><a href="news.html">News & Updates</a></li>
+                    <li><a href="faq.html">Q&A Center</a></li>
                 </ul>
             </div>
 
             <div class="footer-col">
-                <h4 data-i18n="footer.services">SERVICES</h4>
+                <h4>SERVICES</h4>
                 <ul>
-                    <li><a href="product-design.html" data-i18n="nav.product-design">Product Design</a></li>
-                    <li><a href="raw-materials.html" data-i18n="nav.raw-materials">Plastic Raw Materials</a></li>
-                    <li><a href="mold-development.html" data-i18n="nav.mold">Mold Development</a></li>
-                    <li><a href="injection-molding.html" data-i18n="nav.injection">Injection Molding</a></li>
-                    <li><a href="quality-control.html" data-i18n="nav.quality">Quality Control</a></li>
+                    <li><a href="product-design.html">Product Design</a></li>
+                    <li><a href="raw-materials.html">Plastic Raw Materials</a></li>
+                    <li><a href="mold-development.html">Mold Development</a></li>
+                    <li><a href="injection-molding.html">Injection Molding</a></li>
+                    <li><a href="quality-control.html">Quality Control</a></li>
                 </ul>
             </div>
 
             <div class="footer-col">
-                <h4 data-i18n="footer.contact">CONTACT US</h4>
+                <h4>CONTACT US</h4>
                 <ul class="contact-list">
                     <li><i class="fas fa-phone-alt" aria-hidden="true"></i> +86 123 4567 8901</li>
                     <li><i class="fas fa-envelope" aria-hidden="true"></i> info@jicheng.com</li>
@@ -369,7 +429,7 @@
             </div>
 
             <div class="footer-col">
-                <h4 data-i18n="footer.follow">FOLLOW US</h4>
+                <h4>FOLLOW US</h4>
                 <div class="social-links">
                     <a href="https://www.facebook.com/?locale=zh_CN" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
                     <a href="#" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
@@ -422,16 +482,16 @@
         });
 
         document.querySelectorAll('.dropdown-trigger').forEach(function(trigger) {
-            trigger.addEventListener('click', function(e) {
-                if (e.target.closest('.fa-chevron-down')) {
+                trigger.addEventListener('click', function(e) {
+                    if (e.target.closest('.fa-chevron-down')) {
                         e.preventDefault();
                         var parent = this.closest('.nav-dropdown');
-                        if (parent) {
-                            parent.classList.toggle('is-open');
-                        }
                     }
+                    if (parent) {
+                        parent.classList.toggle('is-open');
+                    }
+                });
             });
-        });
 
         document.addEventListener('click', function(e) {
             document.querySelectorAll('.nav-dropdown.is-open').forEach(function(dropdown) {

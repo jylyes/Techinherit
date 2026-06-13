@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
@@ -9,73 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-    <link rel="stylesheet" href="css/styles.css" />
-    <style>
-        .md-hero { padding: 120px 0 50px; background: linear-gradient(to right, rgba(8,27,51,0.92), rgba(8,27,51,0.65)), url('img/equipment-showcase.webp') center / cover; color: #fff; }
-        .md-hero .container { display: flex; align-items: center; gap: 40px; }
-        .md-hero-img { flex: 0 0 180px; }
-        .md-hero-img img { width: 100%; border-radius: 8px; background: #fff; }
-        .md-hero-text h1 { font-size: 38px; font-weight: 900; margin-bottom: 8px; }
-        .md-hero-text .md-tag { font-size: 13px; font-weight: 600; color: #93b4e8; margin-bottom: 10px; display: block; }
-        .md-hero-text p { font-size: 15px; color: #d1d5db; max-width: 600px; line-height: 1.6; }
-        .md-breadcrumb { padding: 14px 0; background: #f8fafc; border-bottom: 1px solid #edf2f7; }
-        .md-breadcrumb a { color: #1a56db; text-decoration: none; font-size: 14px; }
-        .md-breadcrumb a:hover { text-decoration: underline; }
-        .md-breadcrumb span { color: #999; font-size: 14px; }
-        .md-section { padding: 50px 0; }
-        .md-grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
-        .md-grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
-        .md-card { background: #fff; border: 1px solid #e5e7eb; border-radius: 10px; padding: 24px; }
-        .md-card h3 { font-size: 16px; font-weight: 700; color: #0b1f3b; margin-bottom: 14px; padding-bottom: 10px; border-bottom: 2px solid #eef3fc; }
-        .md-card table { width: 100%; border-collapse: collapse; font-size: 14px; }
-        .md-card td { padding: 8px 0; border-bottom: 1px solid #f3f4f6; }
-        .md-card td:last-child { text-align: right; font-weight: 600; color: #1a56db; }
-        .md-prop-bar { height: 8px; background: #eef3fc; border-radius: 4px; margin: 6px 0 10px; overflow: hidden; }
-        .md-prop-bar span { display: block; height: 100%; border-radius: 4px; background: #1a56db; }
-        .md-app-item { text-align: center; padding: 20px 16px; background: #f8fafc; border-radius: 8px; }
-        .md-app-icon { font-size: 32px; color: #1a56db; margin-bottom: 10px; display: block; }
-        .md-app-item h4 { font-size: 14px; font-weight: 700; margin-bottom: 4px; }
-        .md-app-item p { font-size: 13px; color: #666; }
-        .md-param-row { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #f3f4f6; font-size: 14px; }
-        .md-param-row .label { color: #666; }
-        .md-param-row .value { font-weight: 600; color: #0b1f3b; }
-        @media (max-width: 768px) { .md-hero .container { flex-direction: column; text-align: center; } .md-hero-img { flex: none; width: 140px; } .md-grid-2, .md-grid-4 { grid-template-columns: 1fr; } }
-    
-        .mat-nav-wrap {
-            background: #f0f4fa;
-            border-bottom: 1px solid #e0e7ef;
-            padding: 10px 0;
-        }
-        .mat-nav-wrap .container { overflow-x: auto; }
-        .mat-nav {
-            display: flex;
-            gap: 4px;
-            white-space: nowrap;
-            padding: 2px 0;
-        }
-        .mat-nav a {
-            display: inline-block;
-            padding: 5px 12px;
-            font-size: 13px;
-            font-weight: 600;
-            color: #4a5568;
-            background: #fff;
-            border: 1px solid #e2e8f0;
-            border-radius: 6px;
-            text-decoration: none;
-            transition: 0.2s;
-        }
-        .mat-nav a:hover {
-            border-color: #1a56db;
-            color: #1a56db;
-        }
-        .mat-nav a.active {
-            background: #1a56db;
-            color: #fff;
-            border-color: #1a56db;
-        }
-
-    </style>
+    <link rel="stylesheet" href="css/styles.css?v=11" />
 </head>
 <body>
     <header class="site-header">
@@ -88,32 +22,58 @@
                 <button class="hamburger-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
                     <span class="hamburger-bar"></span><span class="hamburger-bar"></span><span class="hamburger-bar"></span>
                 </button>
-                <nav class="nav-links" aria-label="Primary navigation" role="navigation">
-                    <a href="index.html" data-i18n="nav.home">Home</a>
-                    <a href="about-us.html" data-i18n="nav.about">About Us</a>
+                                <nav class="nav-links" aria-label="Primary navigation" role="navigation">
+                    <a href="index.html">Home</a>
+
                     <div class="nav-dropdown">
-                        <a href="services.html" class="dropdown-trigger">All Services <i class="fas fa-chevron-down" aria-hidden="true"></i></a>
+                        <a href="about-us.html" class="dropdown-trigger">
+                            About Us <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                        </a>
                         <ul class="dropdown-menu">
-                            <li><a href="product-design.html" data-i18n="nav.product-design">Product Design</a></li>
-                            <li><a href="raw-materials.html" data-i18n="nav.raw-materials">Plastic Raw Materials</a></li>
-                            <li><a href="mold-development.html" data-i18n="nav.mold">Mold Development</a></li>
-                            <li><a href="injection-molding.html" data-i18n="nav.injection">Injection Molding</a></li>
-                            <li><a href="quality-control.html" data-i18n="nav.quality">Quality Control</a></li>
+                            <li><a href="about-us.html">About Us</a></li>
+                            <li><a href="get-quote.html">Contact Us</a></li>
+                            <li><a href="global-partnership.html">Join Us</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="nav-dropdown">
+                        <a href="services.html" class="dropdown-trigger">
+                            All Services <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="product-design.html">Product Design</a></li>
+                            <li><a href="raw-materials.html">Plastic Raw Materials</a></li>
+                            <li><a href="mold-development.html">Mold Development</a></li>
+                            <li><a href="injection-molding.html">Injection Molding</a></li>
+                            <li><a href="quality-control.html">Quality Control</a></li>
                             <li><a href="odm-oem.html">Assemble</a></li>
                         </ul>
                     </div>
+
                     <div class="nav-dropdown">
-                        <a href="rd-strength.html" class="dropdown-trigger">Factory Strength <i class="fas fa-chevron-down" aria-hidden="true"></i></a>
+                        <a href="rd-strength.html" class="dropdown-trigger">
+                            Factory Strength <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                        </a>
                         <ul class="dropdown-menu">
                             <li><a href="rd-strength.html">R&D Strength</a></li>
-                            <li><a href="production-equipment.html" data-i18n="nav.equipment">Production Equipment</a></li>
+                            <li><a href="production-equipment.html">Production Equipment</a></li>
                         </ul>
                     </div>
-                    <a href="case-studies.html" data-i18n="nav.cases">Industry Cases</a>
-                    <a href="technical-docs.html">Technical Docs</a>
-                    <a href="news.html">消息动态</a>
-                    <a href="global-partnership.html">Join Us</a>
-                    <a href="get-quote.html" class="btn-header" data-i18n="nav.quote">Get a Quote</a>
+
+                    <a href="case-studies.html">Industry Cases</a>
+
+                    <div class="nav-dropdown">
+                        <a href="news.html" class="dropdown-trigger">
+                            News <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="news.html">Industry News</a></li>
+                            <li><a href="technical-docs.html">Technical Docs</a></li>
+                            <li><a href="faq.html">Q&A Center</a></li>
+                        </ul>
+                    </div>
+
+                    <a href="get-quote.html" class="btn-header">Get a Quote</a>
                 </nav>
             </div>
         </div>
@@ -125,20 +85,17 @@
             <div class="container">
                 <div class="md-hero-img"><img src="img/pc.webp" alt="PC" /></div>
                 <div class="md-hero-text">
-                    <span class="md-tag">ENGINEERING PLASTIC</span>
-                    <h1>PC<br /><small style="font-size:18px;font-weight:300;color:#93b4e8;">Polycarbonate</small></h1>
-                    <p>PC is an amorphous, transparent engineering thermoplastic known for the highest impact resistance of any thermoplastic, exceptional dimensional stability, optical clarity, and a wide service temperature range from -40°C to 135°C. It maintains rigidity up to 140°C and toughness down to -20°C.</p>
+                    <div class="md-hero-left">
+                        <span class="md-tag">ENGINEERING PLASTIC</span>
+                        <h1>PC<br /><small style="font-size:18px;font-weight:300;color:#93b4e8;">Polycarbonate</small></h1>
+                        <p>PC is an amorphous, transparent engineering thermoplastic known for the highest impact resistance of any thermoplastic, exceptional dimensional stability, optical clarity, and a wide service temperature range from -40°C to 135°C. It maintains rigidity up to 140°C and toughness down to -20°C.</p>
+                    </div>
+                    <div class="md-hero-right">
+                        <p><strong>Techinherit</strong> — With over 20 years of experience in the plastics industry, we have a professional R&D laboratory. We have developed thousands of customized material formulations and solved tens of thousands of application challenges. Holding multiple modified plastic patents, we are a manufacturing enterprise dedicated to plastic R&D, production, and sales.</p>
+                    </div>
                 </div>
             </div>
         </section>
-
-        <div class="md-breadcrumb">
-            <div class="container">
-                <a href="index.html">Home</a> <span>&gt;</span>
-                <a href="raw-materials.html">Plastic Raw Materials</a> <span>&gt;</span>
-                <span>PC</span>
-            </div>
-        </div>
 
 <div class="mat-nav-wrap"><div class="container"><div class="mat-nav"><a href="material-abs.html">ABS</a><a href="material-pc.html" class="active">PC</a><a href="material-pa.html">PA (Nylon)</a><a href="material-pom.html">POM (Acetal)</a><a href="material-pp.html">PP</a><a href="material-pe.html">PE</a><a href="material-pbt.html">PBT</a><a href="material-pmma.html">PMMA</a><a href="material-tpe.html">TPE</a><a href="material-pps.html">PPS</a><a href="material-peek.html">PEEK</a><a href="material-lcp.html">LCP</a><a href="material-conductive-pc.html">Cond. PC</a><a href="material-conductive-abs.html">Cond. ABS</a><a href="material-conductive-pp.html">Cond. PP</a><a href="material-conductive-pa.html">Cond. PA</a></div></div></div>
 
@@ -214,9 +171,12 @@
                 <div class="footer-col">
                     <h4>QUICK LINKS</h4>
                     <ul>
-                        <li><a href="index.html">Home</a></li><li><a href="about-us.html">About Us</a></li>
-                        <li><a href="product-design.html">Product Design</a></li><li><a href="rd-strength.html">Factory Strength</a></li>
-                        <li><a href="case-studies.html">Industry Cases</a></li><li><a href="technical-docs.html">Technical Docs</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="services.html">All Services</a></li>
+                        <li><a href="case-studies.html">Industry Cases</a></li>
+                        <li><a href="news.html">News & Updates</a></li>
+                        <li><a href="faq.html">Q&A Center</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">

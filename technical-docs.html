@@ -1,4 +1,4 @@
-
+﻿
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,11 +12,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/styles.css?v=11" />
 
     <style>
         .td-hero {
-            height: 400px;
+            height: 550px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -43,25 +43,6 @@
             line-height: 1.7;
             margin: 0 auto;
             animation: heroFadeUp 0.8s 0.2s ease both;
-        }
-
-        .td-breadcrumb {
-            padding: 16px 0;
-            background: #f8fafc;
-            border-bottom: 1px solid #edf2f7;
-        }
-
-        .td-breadcrumb a {
-            color: #1a56db;
-            text-decoration: none;
-            font-size: 14px;
-        }
-
-        .td-breadcrumb a:hover { text-decoration: underline; }
-
-        .td-breadcrumb span {
-            color: #999;
-            font-size: 14px;
         }
 
         .td-list-section { padding: 40px 0; }
@@ -158,6 +139,7 @@
         }
 
         @media (max-width: 768px) {
+            .td-hero { height: 430px; }
             .td-hero h1 { font-size: 34px; }
         }
     </style>
@@ -179,19 +161,29 @@
                 </button>
 
                 <nav class="nav-links" aria-label="Primary navigation" role="navigation">
-                    <a href="index.html" data-i18n="nav.home">Home</a>
-                    <a href="about-us.html" data-i18n="nav.about">About Us</a>
+                    <a href="index.html">Home</a>
+
+                    <div class="nav-dropdown">
+                        <a href="about-us.html" class="dropdown-trigger">
+                            About Us <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="about-us.html">About Us</a></li>
+                            <li><a href="get-quote.html">Contact Us</a></li>
+                            <li><a href="global-partnership.html">Join Us</a></li>
+                        </ul>
+                    </div>
 
                     <div class="nav-dropdown">
                         <a href="services.html" class="dropdown-trigger">
                             All Services <i class="fas fa-chevron-down" aria-hidden="true"></i>
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a href="product-design.html" data-i18n="nav.product-design">Product Design</a></li>
-                            <li><a href="raw-materials.html" data-i18n="nav.raw-materials">Plastic Raw Materials</a></li>
-                            <li><a href="mold-development.html" data-i18n="nav.mold">Mold Development</a></li>
-                            <li><a href="injection-molding.html" data-i18n="nav.injection">Injection Molding</a></li>
-                            <li><a href="quality-control.html" data-i18n="nav.quality">Quality Control</a></li>
+                            <li><a href="product-design.html">Product Design</a></li>
+                            <li><a href="raw-materials.html">Plastic Raw Materials</a></li>
+                            <li><a href="mold-development.html">Mold Development</a></li>
+                            <li><a href="injection-molding.html">Injection Molding</a></li>
+                            <li><a href="quality-control.html">Quality Control</a></li>
                             <li><a href="odm-oem.html">Assemble</a></li>
                         </ul>
                     </div>
@@ -202,16 +194,26 @@
                         </a>
                         <ul class="dropdown-menu">
                             <li><a href="rd-strength.html">R&D Strength</a></li>
-                            <li><a href="production-equipment.html" data-i18n="nav.equipment">Production Equipment</a></li>
+                            <li><a href="production-equipment.html">Production Equipment</a></li>
                         </ul>
                     </div>
 
-                    <a href="case-studies.html" data-i18n="nav.cases">Industry Cases</a>
-                    <a href="technical-docs.html" class="active">Technical Docs</a>
-                    <a href="news.html">消息动态</a>
-                    <a href="global-partnership.html">Join Us</a>
-                    <a href="get-quote.html" class="btn-header" data-i18n="nav.quote">Get a Quote</a>
+                    <a href="case-studies.html">Industry Cases</a>
+
+                    <div class="nav-dropdown active">
+                        <a href="news.html" class="dropdown-trigger">
+                            News <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="news.html">Industry News</a></li>
+                            <li><a href="technical-docs.html" class="active">Technical Docs</a></li>
+                            <li><a href="faq.html">Q&A Center</a></li>
+                        </ul>
+                    </div>
+
+                    <a href="get-quote.html" class="btn-header">Get a Quote</a>
                 </nav>
+
             </div>
         </div>
     </header>
@@ -225,18 +227,58 @@
             </div>
         </section>
 
-        <div class="td-breadcrumb">
-            <div class="container">
-                <a href="index.html">Home</a> <span>&gt;</span> <span>Technical Documents</span>
-            </div>
-        </div>
-
         <section class="td-list-section" style="background:#fff;min-height:300px;">
             <div class="container">
-                <div style="text-align:center;padding:80px 20px;">
-                    <i class="far fa-file-alt" style="font-size:64px;color:#d1d5db;margin-bottom:20px;display:block;"></i>
-                    <h3 style="font-size:20px;color:#666;font-weight:400;">No articles published yet</h3>
-                    <p style="font-size:14px;color:#999;margin-top:8px;">Technical documents will be available soon. Stay tuned!</p>
+                <div class="td-list">
+                    <div class="td-list-item">
+                        <div class="td-date"><i class="far fa-calendar-alt"></i> May 28, 2026 · <i class="far fa-file-pdf"></i> Technical Guide</div>
+                        <h3><a href="#">How Material Selection Affects Mold Design & Production Efficiency</a></h3>
+                        <div class="td-desc">A deep dive into how different plastic materials — from ABS and PC to PEEK and LCP — influence mold design decisions, cooling channel layout, gate type selection, and overall production efficiency. Includes material shrinkage data and recommended processing parameters.</div>
+                        <a href="#" class="td-detail-link">Read Full Document <i class="fas fa-arrow-right"></i></a>
+                    </div>
+
+                    <div class="td-list-item">
+                        <div class="td-date"><i class="far fa-calendar-alt"></i> Apr 28, 2026 · <i class="far fa-file-pdf"></i> Design Guide</div>
+                        <h3><a href="#">DFM Best Practices: Reducing Costs Without Compromising Quality</a></h3>
+                        <div class="td-desc">Key design for manufacturing principles that help reduce tooling costs and optimize part quality from the start. Covers draft angle recommendations, wall thickness uniformity, rib design, boss design, and gate location best practices for injection molded parts.</div>
+                        <a href="#" class="td-detail-link">Read Full Document <i class="fas fa-arrow-right"></i></a>
+                    </div>
+
+                    <div class="td-list-item">
+                        <div class="td-date"><i class="far fa-calendar-alt"></i> Apr 10, 2026 · <i class="far fa-file-pdf"></i> Process Guide</div>
+                        <h3><a href="#">Injection Molding Process Parameter Optimization Guide</a></h3>
+                        <div class="td-desc">Comprehensive guide to optimizing injection molding parameters including melt temperature, injection speed, holding pressure, cooling time, and back pressure. Includes troubleshooting charts for common defects such as weld lines, sink marks, and flash.</div>
+                        <a href="#" class="td-detail-link">Read Full Document <i class="fas fa-arrow-right"></i></a>
+                    </div>
+
+                    <div class="td-list-item">
+                        <div class="td-date"><i class="far fa-calendar-alt"></i> Mar 25, 2026 · <i class="far fa-file-pdf"></i> Material Analysis</div>
+                        <h3><a href="#">PA6 vs PA66: A Comparative Analysis for Engineering Applications</a></h3>
+                        <div class="td-desc">Detailed comparison of PA6 and PA66 nylon grades covering mechanical properties, thermal resistance, moisture absorption, dimensional stability, and chemical resistance. Includes recommendations for automotive, electrical, and industrial applications.</div>
+                        <a href="#" class="td-detail-link">Read Full Document <i class="fas fa-arrow-right"></i></a>
+                    </div>
+
+                    <div class="td-list-item">
+                        <div class="td-date"><i class="far fa-calendar-alt"></i> Mar 12, 2026 · <i class="far fa-file-pdf"></i> Technical Bulletin</div>
+                        <h3><a href="#">Understanding Shrinkage & Warpage in Plastic Part Design</a></h3>
+                        <div class="td-desc">An in-depth analysis of the causes of shrinkage and warpage in injection molded parts. Provides design strategies to minimize distortion, including uniform wall sections, proper gate placement, cooling optimization, and material selection considerations.</div>
+                        <a href="#" class="td-detail-link">Read Full Document <i class="fas fa-arrow-right"></i></a>
+                    </div>
+
+                    <div class="td-list-item">
+                        <div class="td-date"><i class="far fa-calendar-alt"></i> Feb 28, 2026 · <i class="far fa-file-pdf"></i> Quality Standard</div>
+                        <h3><a href="#">Quality Control Standards for Precision Injection Molding</a></h3>
+                        <div class="td-desc">Overview of quality control standards and inspection protocols used in precision injection molding. Covers dimensional inspection, surface finish grading, material testing, and process validation procedures aligned with ISO 9001 and IATF 16949 requirements.</div>
+                        <a href="#" class="td-detail-link">Read Full Document <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="td-pagination">
+                    <a href="#" class="prev-next disabled"><i class="fas fa-chevron-left"></i> Prev</a>
+                    <a href="#" class="active">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#" class="prev-next">Next <i class="fas fa-chevron-right"></i></a>
                 </div>
             </div>
         </section>
@@ -255,30 +297,30 @@
                 </div>
 
                 <div class="footer-col">
-                    <h4 data-i18n="footer.quick">QUICK LINKS</h4>
+                    <h4>QUICK LINKS</h4>
                     <ul>
-                        <li><a href="index.html" data-i18n="nav.home">Home</a></li>
-                        <li><a href="about-us.html" data-i18n="nav.about">About Us</a></li>
-                        <li><a href="product-design.html" data-i18n="nav.product-design">Product Design</a></li>
-                        <li><a href="rd-strength.html">Factory Strength</a></li>
-                        <li><a href="case-studies.html" data-i18n="nav.cases">Industry Cases</a></li>
-                        <li><a href="technical-docs.html">Technical Docs</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="services.html">All Services</a></li>
+                        <li><a href="case-studies.html">Industry Cases</a></li>
+                        <li><a href="news.html">News & Updates</a></li>
+                        <li><a href="faq.html">Q&A Center</a></li>
                     </ul>
                 </div>
 
                 <div class="footer-col">
-                    <h4 data-i18n="footer.services">SERVICES</h4>
+                    <h4>SERVICES</h4>
                     <ul>
-                        <li><a href="product-design.html" data-i18n="nav.product-design">Product Design</a></li>
-                        <li><a href="raw-materials.html" data-i18n="nav.raw-materials">Plastic Raw Materials</a></li>
-                        <li><a href="mold-development.html" data-i18n="nav.mold">Mold Development</a></li>
-                        <li><a href="injection-molding.html" data-i18n="nav.injection">Injection Molding</a></li>
-                        <li><a href="quality-control.html" data-i18n="nav.quality">Quality Control</a></li>
+                        <li><a href="product-design.html">Product Design</a></li>
+                        <li><a href="raw-materials.html">Plastic Raw Materials</a></li>
+                        <li><a href="mold-development.html">Mold Development</a></li>
+                        <li><a href="injection-molding.html">Injection Molding</a></li>
+                        <li><a href="quality-control.html">Quality Control</a></li>
                     </ul>
                 </div>
 
                 <div class="footer-col">
-                    <h4 data-i18n="footer.contact">CONTACT US</h4>
+                    <h4>CONTACT US</h4>
                     <ul class="contact-list">
                         <li><i class="fas fa-phone-alt" aria-hidden="true"></i> +86 123 4567 8901</li>
                         <li><i class="fas fa-envelope" aria-hidden="true"></i> info@jicheng.com</li>
@@ -287,7 +329,7 @@
                 </div>
 
                 <div class="footer-col">
-                    <h4 data-i18n="footer.follow">FOLLOW US</h4>
+                    <h4>FOLLOW US</h4>
                     <div class="social-links">
                         <a href="https://www.facebook.com/?locale=zh_CN" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
                         <a href="#" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
@@ -343,7 +385,9 @@
                     if (e.target.closest('.fa-chevron-down')) {
                         e.preventDefault();
                         var parent = this.closest('.nav-dropdown');
-                        if (parent) { parent.classList.toggle('is-open'); }
+                    }
+                    if (parent) {
+                        parent.classList.toggle('is-open');
                     }
                 });
             });
