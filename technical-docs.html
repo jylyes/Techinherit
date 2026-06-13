@@ -382,10 +382,11 @@
 
             document.querySelectorAll('.dropdown-trigger').forEach(function(trigger) {
                 trigger.addEventListener('click', function(e) {
-                    if (e.target.closest('.fa-chevron-down')) {
-                        e.preventDefault();
-                        var parent = this.closest('.nav-dropdown');
+                    if (window.innerWidth > 992 && !e.target.closest('.fa-chevron-down')) {
+                        return;
                     }
+                    e.preventDefault();
+                    var parent = this.closest('.nav-dropdown');
                     if (parent) {
                         parent.classList.toggle('is-open');
                     }
