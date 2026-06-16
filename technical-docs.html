@@ -1,4 +1,4 @@
-﻿
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -138,9 +138,47 @@
             padding: 0 12px;
         }
 
+        .td-category-nav {
+            padding: 16px 0;
+            background: #fff;
+            border-bottom: 1px solid #edf2f7;
+        }
+
+        .td-cat-btns {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .td-cat-btn {
+            display: inline-block;
+            padding: 8px 20px;
+            border: 1px solid #d1d5db;
+            border-radius: 6px;
+            color: #555;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            transition: all 0.25s;
+            background: #fff;
+        }
+
+        .td-cat-btn:hover {
+            border-color: #1a56db;
+            color: #1a56db;
+            background: #f0f4ff;
+        }
+
+        .td-cat-btn.active {
+            background: #1a56db;
+            color: #fff;
+            border-color: #1a56db;
+        }
+
         @media (max-width: 768px) {
             .td-hero { height: 430px; }
             .td-hero h1 { font-size: 34px; }
+            .td-cat-btn { padding: 6px 14px; font-size: 13px; }
         }
     </style>
 </head>
@@ -160,59 +198,63 @@
                     <span class="hamburger-bar"></span>
                 </button>
 
-                <nav class="nav-links" aria-label="Primary navigation" role="navigation">
+                                                                                                            <nav class="nav-links" aria-label="Primary navigation" role="navigation">
                     <a href="index.html">Home</a>
 
                     <div class="nav-dropdown">
-                        <a href="about-us.html" class="dropdown-trigger">
-                            About Us <i class="fas fa-chevron-down" aria-hidden="true"></i>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="about-us.html">About Us</a></li>
-                            <li><a href="get-quote.html">Contact Us</a></li>
-                            <li><a href="global-partnership.html">Join Us</a></li>
-                        </ul>
+                    <a href="services.html" class="dropdown-trigger">
+                    Services <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                    <li><a href="product-design.html">Product Design</a></li>
+                    <li><a href="raw-materials.html">Plastic Raw Materials</a></li>
+                    <li><a href="mold-development.html">Mold Development</a></li>
+                    <li><a href="injection-molding.html">Injection Molding</a></li>
+                    <li><a href="quality-control.html">Quality Control</a></li>
+                    <li><a href="odm-oem.html">Assemble</a></li>
+                    </ul>
+                    </div>
+
+                    <a href="technical-docs.html" class="active">Technical Docs</a>
+
+                    <div class="nav-dropdown">
+                    <a href="case-studies.html" class="dropdown-trigger">
+                    Industry Cases <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                    <li><a href="consumer-electronics-cases.html">Consumer Electronics</a></li>
+                    <li><a href="medical-devices-cases.html">Medical Devices</a></li>
+                    <li><a href="office-furniture-cases.html">Office Furniture</a></li>
+                    <li><a href="new-energy-cases.html">New Energy</a></li>
+                    <li><a href="ai-hardware-cases.html">AI Hardware</a></li>
+                    <li><a href="pet-supplies-cases.html">Pet Supplies</a></li>
+                    </ul>
+                    </div>
+
+                    <a href="rd-strength.html">Factory Strength</a>
+
+                    <div class="nav-dropdown">
+                    <a href="work.html" class="dropdown-trigger">
+                    Work Updates <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                    <li><a href="work.html">Work</a></li>
+                    <li><a href="news.html">Industry News</a></li>
+                    </ul>
                     </div>
 
                     <div class="nav-dropdown">
-                        <a href="services.html" class="dropdown-trigger">
-                            All Services <i class="fas fa-chevron-down" aria-hidden="true"></i>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="product-design.html">Product Design</a></li>
-                            <li><a href="raw-materials.html">Plastic Raw Materials</a></li>
-                            <li><a href="mold-development.html">Mold Development</a></li>
-                            <li><a href="injection-molding.html">Injection Molding</a></li>
-                            <li><a href="quality-control.html">Quality Control</a></li>
-                            <li><a href="odm-oem.html">Assemble</a></li>
-                        </ul>
+                    <a href="about-us.html" class="dropdown-trigger">
+                    About Us <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="get-quote.html">Contact Us</a></li>
+                    </ul>
                     </div>
 
-                    <div class="nav-dropdown">
-                        <a href="rd-strength.html" class="dropdown-trigger">
-                            Factory Strength <i class="fas fa-chevron-down" aria-hidden="true"></i>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="rd-strength.html">R&D Strength</a></li>
-                            <li><a href="production-equipment.html">Production Equipment</a></li>
-                        </ul>
-                    </div>
-
-                    <a href="case-studies.html">Industry Cases</a>
-
-                    <div class="nav-dropdown active">
-                        <a href="news.html" class="dropdown-trigger">
-                            News <i class="fas fa-chevron-down" aria-hidden="true"></i>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="news.html">Industry News</a></li>
-                            <li><a href="technical-docs.html" class="active">Technical Docs</a></li>
-                            <li><a href="faq.html">Q&A Center</a></li>
-                        </ul>
-                    </div>
-
-                    <a href="get-quote.html" class="btn-header">Get a Quote</a>
-                </nav>
+                    <a href="global-partnership.html" class="btn-header">Join Us</a>
+                    </nav>
 
             </div>
         </div>
@@ -226,6 +268,25 @@
                 <p>Material data sheets, processing guidelines, DFM standards, and quality certifications to support your product development.</p>
             </div>
         </section>
+
+                <nav class="md-breadcrumb">
+            <div class="container">
+                <a href="index.html">Home</a><span>/</span><span>Technical Docs</span>
+            </div>
+        </nav>
+
+        <div class="td-category-nav">
+            <div class="container">
+                <div class="td-cat-btns">
+                    <a href="technical-docs.html" class="td-cat-btn active">全部</a>
+                    <a href="technical-docs.html?cat=material" class="td-cat-btn">材料物性</a>
+                    <a href="technical-docs.html?cat=design" class="td-cat-btn">设计方案</a>
+                    <a href="technical-docs.html?cat=mold" class="td-cat-btn">模具问题</a>
+                    <a href="technical-docs.html?cat=injection" class="td-cat-btn">注塑工艺</a>
+                    <a href="technical-docs.html?cat=product" class="td-cat-btn">行业产品</a>
+                </div>
+            </div>
+        </div>
 
         <section class="td-list-section" style="background:#fff;min-height:300px;">
             <div class="container">
