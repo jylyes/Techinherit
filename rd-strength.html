@@ -1,4 +1,4 @@
-﻿
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -40,802 +40,8 @@
             animation: heroFadeUp 0.8s 0.2s ease both;
         }
 
-        .rd-section-title {
-            font-size: 28px;
-            font-weight: 700;
-            color: #0a1a30;
-            text-align: center;
-            margin-bottom: 30px;
-        }
-
-        .rd-team {
-            padding: 50px 0 20px;
-        }
-
-        .rd-team-flex {
-            display: flex;
-            gap: 40px;
-            align-items: flex-start;
-        }
-
-        .rd-team-txt {
-            flex: 0 0 38%;
-        }
-
-        .rd-team-txt h2 {
-            font-size: 26px;
-            font-weight: 700;
-            color: #0a1a30;
-            margin-bottom: 12px;
-        }
-
-        .rd-team-txt p {
-            font-size: 14px;
-            color: #555;
-            line-height: 1.7;
-            margin-bottom: 10px;
-        }
-
-        .rd-team-stats {
-            flex: 1;
-            display: flex;
-            justify-content: space-around;
-        }
-
-        .rd-stat-item {
-            text-align: center;
-            padding: 0 12px;
-            border-right: 1px solid #e0e0e0;
-            flex: 1;
-        }
-
-        .rd-stat-item:last-child {
-            border: none;
-        }
-
-        .rd-stat-item i {
-            font-size: 26px;
-            color: var(--color-primary);
-            display: block;
-            margin-bottom: 6px;
-        }
-
-        .rd-stat-item .rd-num {
-            font-size: 26px;
-            font-weight: 700;
-            color: var(--color-primary);
-            display: block;
-        }
-
-        .rd-stat-item .rd-label {
-            font-size: 13px;
-            color: #666;
-            display: block;
-        }
-
-        .rd-cap {
-            padding: 10px 0 40px;
-        }
-
-        .rd-cap-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 20px;
-        }
-
-        .rd-cap-card {
-            background: #fff;
-            border-radius: 12px;
-            padding: 16px;
-            border: 1px solid #e5e7eb;
-            text-align: center;
-            transition: var(--transition);
-        }
-
-        .rd-cap-card:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 20px rgba(33, 86, 169, 0.1);
-            border-color: var(--color-primary);
-        }
-
-        .rd-cap-card img {
-            width: 100%;
-            height: 140px;
-            object-fit: contain;
-            border-radius: 6px;
-            margin-bottom: 12px;
-            background: #f9fafb;
-        }
-
-        .rd-cap-card h4 {
-            font-size: 16px;
-            font-weight: 700;
-            color: #0a1a30;
-        }
-
-        .rd-cap-card p {
-            font-size: 13px;
-            color: #666;
-        }
-
-        .rd-proc {
-            padding: 20px 0;
-        }
-
-        .rd-proc-steps {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 6px;
-            margin-bottom: 10px;
-        }
-
-        .rd-pstep {
-            text-align: center;
-            flex: 1;
-            min-width: 90px;
-        }
-
-        .rd-pstep .rd-pic {
-            width: 44px;
-            height: 44px;
-            background: var(--color-primary);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 6px;
-        }
-
-        .rd-pstep .rd-pic i {
-            font-size: 18px;
-            color: #fff;
-        }
-
-        .rd-pstep h4 {
-            font-size: 13px;
-            font-weight: 700;
-            color: #0a1a30;
-        }
-
-        .rd-parrow {
-            font-size: 18px;
-            color: var(--color-primary);
-            padding-top: 12px;
-        }
-
-        .rd-proc-desc {
-            text-align: center;
-            font-size: 14px;
-            color: #555;
-        }
-
-        .rd-detail {
-            padding: 40px 0;
-            background: #f9fafb;
-        }
-
-        .rd-dgrid {
-            display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            gap: 16px;
-        }
-
-        .rd-dcol {
-            background: #fff;
-            padding: 16px;
-            border-radius: 8px;
-            border: 1px solid #e5e7eb;
-        }
-
-        .rd-dcol h4 {
-            font-size: 15px;
-            font-weight: 700;
-            color: #0a1a30;
-            margin-bottom: 8px;
-        }
-
-        .rd-dcol p {
-            font-size: 13px;
-            color: #555;
-            margin-bottom: 8px;
-            line-height: 1.5;
-        }
-
-        .rd-dcol ul {
-            list-style: none;
-        }
-
-        .rd-dcol ul li {
-            font-size: 12px;
-            color: #444;
-            margin-bottom: 3px;
-            display: flex;
-            align-items: center;
-            gap: 5px;
-        }
-
-        .rd-dcol ul li i {
-            color: var(--color-primary);
-            font-size: 9px;
-        }
-
-        .rd-dcol .rd-dimg {
-            width: 100%;
-            height: 80px;
-            object-fit: contain;
-            border-radius: 4px;
-            background: #f5f5f5;
-            margin-top: 6px;
-        }
-
-        .rd-case-item {
-            border-bottom: 1px solid #f0f0f0;
-            padding: 6px 0;
-        }
-
-        .rd-case-item:last-child {
-            border: none;
-        }
-
-        .rd-case-item .rd-ct {
-            font-weight: 700;
-            font-size: 12px;
-            color: #0a1a30;
-        }
-
-        .rd-case-item .rd-cd {
-            font-size: 11px;
-            color: #555;
-            line-height: 1.4;
-        }
-
-        .rd-why {
-            padding: 30px 0;
-        }
-
-        .rd-why-grid {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: center;
-        }
-
-        .rd-witem {
-            flex: 1;
-            min-width: 130px;
-            text-align: center;
-        }
-
-        .rd-witem i {
-            font-size: 28px;
-            color: var(--color-primary);
-            border: 2px solid var(--color-primary);
-            border-radius: 50%;
-            padding: 10px;
-            width: 54px;
-            height: 54px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 8px;
-        }
-
-        .rd-witem h4 {
-            font-size: 14px;
-            font-weight: 700;
-            color: #0a1a30;
-        }
-
-        .rd-facility {
-            padding: 50px 0;
-            background: #f8f9fa;
-        }
-        .rd-fac-grid {
-            display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            gap: 16px;
-        }
-        .rd-fac-card {
-            background: #fff;
-            border: 1px solid #e5e7eb;
-            border-radius: 8px;
-            overflow: hidden;
-            transition: 0.3s;
-        }
-        .rd-fac-card:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 20px rgba(33,86,169,0.1);
-        }
-        .rd-fac-card img {
-            width: 100%;
-            height: 130px;
-            object-fit: cover;
-            display: block;
-        }
-        .rd-fac-card .rd-fac-label {
-            padding: 10px 12px;
-            font-size: 13px;
-            font-weight: 700;
-            color: #0a1a30;
-            text-align: center;
-        }
-        @media (max-width: 1024px) {
-            .rd-fac-grid { grid-template-columns: repeat(3, 1fr); }
-        }
-        @media (max-width: 768px) {
-            .rd-fac-grid { grid-template-columns: 1fr; }
-        }
-
-        .rd-cta {
-            padding: 0 0 40px;
-        }
-
-        .rd-cta-box {
-            background: #0a1a30;
-            border-radius: 12px;
-            padding: 30px 40px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            color: #fff;
-        }
-
-        .rd-cta-txt h2 {
-            font-size: 24px;
-            font-weight: 700;
-        }
-
-        .rd-cta-txt p {
-            font-size: 14px;
-            color: #b0bed0;
-        }
-
-        @media (max-width: 1024px) {
-            .rd-cap-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-            .rd-dgrid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-            .rd-pstep {
-                flex: 0 0 22%;
-            }
-            .rd-parrow {
-                display: none;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .rd-hero {
-                height: 430px;
-            }
-            .rd-hero h1 {
-                font-size: 28px;
-            }
-            .rd-team-flex {
-                flex-direction: column;
-            }
-            .rd-team-stats {
-                flex-wrap: wrap;
-            }
-            .rd-stat-item {
-                flex: 0 0 45%;
-                border: none;
-                margin-bottom: 12px;
-            }
-            .rd-cap-grid {
-                grid-template-columns: 1fr;
-            }
-            .rd-dgrid {
-                grid-template-columns: 1fr;
-            }
-            .rd-pstep {
-                flex: 0 0 45%;
-            }
-            .rd-cta-box {
-                flex-direction: column;
-                text-align: center;
-                gap: 15px;
-            }
-        }
-    
-/* === Production Equipment Styles === */
-.pe-section-title {
-            font-size: 28px;
-            font-weight: 700;
-            color: #0a1e3c;
-            text-align: center;
-            margin-bottom: 30px;
-        }
-
-        .pe-hero {
-            height: 550px;
-            display: flex;
-            flex-direction: column;
-            padding: 100px 0 60px;
-            background: linear-gradient(rgba(10, 30, 60, 0.9), rgba(10, 30, 60, 0.5)), url('img/equipment-showcase.webp') center / cover;
-        }
-
-        .pe-hero-c {
-            color: #fff;
-            max-width: 700px;
-        }
-
-        .pe-hero-c h1 {
-            font-size: 48px;
-            font-weight: 900;
-            margin-bottom: 20px;
-            line-height: 1.2;
-            animation: heroFadeUp 0.8s ease both;
-        }
-
-        .pe-hero-c p {
-            font-size: 16px;
-            color: #d1d5db;
-            margin-bottom: 30px;
-            max-width: 600px;
-            line-height: 1.6;
-            animation: heroFadeUp 0.8s 0.2s ease both;
-        }
-
-        .pe-btns {
-            display: flex;
-            gap: 15px;
-            animation: heroFadeUp 0.8s 0.35s ease both;
-        }
-
-        .pe-ov {
-            padding: 60px 0 30px;
-        }
-
-        .pe-ov-g {
-            display: grid;
-            grid-template-columns: 1fr 1.2fr;
-            gap: 40px;
-        }
-
-        .pe-ov-t h2 {
-            font-size: 26px;
-            font-weight: 700;
-            color: #0a1e3c;
-            margin-bottom: 15px;
-        }
-
-        .pe-ov-t p {
-            font-size: 15px;
-            color: #555;
-            line-height: 1.7;
-        }
-
-        .pe-fs {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-        }
-
-        .pe-fs-item {
-            text-align: center;
-            padding: 15px 10px;
-            border: 1px solid #e5e7eb;
-            border-radius: 8px;
-            background: #fff;
-        }
-
-        .pe-fs-item i {
-            font-size: 28px;
-            color: var(--color-primary);
-            display: block;
-            margin-bottom: 8px;
-        }
-
-        .pe-fs-item .pe-n {
-            font-size: 20px;
-            font-weight: 700;
-            color: #0a1e3c;
-            display: block;
-        }
-
-        .pe-fs-item .pe-l {
-            font-size: 12px;
-            color: #666;
-        }
-
-        .pe-feat {
-            padding: 30px 0;
-        }
-
-        .pe-f-row {
-            display: flex;
-            gap: 40px;
-            align-items: center;
-            margin-bottom: 40px;
-        }
-
-        .pe-f-row.pe-r {
-            flex-direction: row-reverse;
-        }
-
-        .pe-f-img {
-            flex: 1;
-            border-radius: 12px;
-            overflow: hidden;
-        }
-
-        .pe-f-img img {
-            width: 100%;
-            height: 300px;
-            object-fit: cover;
-        }
-
-        .pe-f-txt {
-            flex: 1;
-        }
-
-        .pe-f-txt h3 {
-            font-size: 20px;
-            font-weight: 700;
-            color: #0a1e3c;
-        }
-
-        .pe-f-txt .pe-sh {
-            font-size: 15px;
-            font-weight: 600;
-            color: #333;
-            margin-bottom: 12px;
-        }
-
-        .pe-f-txt p {
-            font-size: 14px;
-            color: #555;
-            margin-bottom: 15px;
-            line-height: 1.6;
-        }
-
-        .pe-f-txt ul {
-            list-style: none;
-        }
-
-        .pe-f-txt ul li {
-            font-size: 14px;
-            color: #444;
-            margin-bottom: 5px;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .pe-f-txt ul li i {
-            color: var(--color-primary);
-            font-size: 12px;
-        }
-
-        .pe-tcol {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 15px;
-        }
-
-        .pe-tcol .c h4 {
-            font-size: 14px;
-            font-weight: 700;
-            color: #0a1e3c;
-            margin-bottom: 8px;
-        }
-
-        .pe-tcol .c ul li {
-            font-size: 13px;
-        }
-
-        .pe-ass-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-            margin-top: 20px;
-        }
-
-        .pe-ass-item {
-            text-align: center;
-        }
-
-        .pe-ass-item img {
-            width: 100%;
-            height: 160px;
-            object-fit: cover;
-            border-radius: 8px;
-            margin-bottom: 10px;
-            background-color: #e2e8f0;
-        }
-
-        .pe-ass-item h4 {
-            font-size: 16px;
-            font-weight: 700;
-            color: #0a1e3c;
-        }
-
-        .pe-ass-item p {
-            font-size: 13px;
-            color: #666;
-        }
-
-        .pe-ass-item ul {
-            list-style: none;
-            text-align: left;
-            padding: 0 10px;
-        }
-
-        .pe-ass-item ul li {
-            font-size: 13px;
-            color: #444;
-            margin-bottom: 3px;
-            display: flex;
-            align-items: center;
-            gap: 6px;
-        }
-
-        .pe-ass-item ul li i {
-            color: var(--color-primary);
-            font-size: 10px;
-        }
-
-        .pe-gal {
-            padding: 40px 0;
-            background: #f8f9fa;
-        }
-
-        .pe-g-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 15px;
-        }
-
-        .pe-g-card {
-            height: 120px;
-            border-radius: 8px;
-            overflow: hidden;
-            position: relative;
-        }
-
-        .pe-g-card img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .pe-g-card .pe-ovl {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            background: rgba(10, 30, 60, 0.8);
-            color: #fff;
-            text-align: center;
-            padding: 8px;
-            font-size: 12px;
-            font-weight: 600;
-        }
-
-        .pe-why {
-            padding: 50px 0;
-        }
-
-        .pe-w-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 30px;
-            margin-top: 20px;
-        }
-
-        .pe-w-item {
-            text-align: center;
-            padding: 20px;
-        }
-
-        .pe-w-item i {
-            font-size: 32px;
-            color: var(--color-primary);
-            border: 2px solid var(--color-primary);
-            border-radius: 50%;
-            padding: 12px;
-            width: 60px;
-            height: 60px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 12px;
-        }
-
-        .pe-w-item h4 {
-            font-size: 16px;
-            font-weight: 700;
-            color: #0a1e3c;
-        }
-
-        .pe-w-item p {
-            font-size: 13px;
-            color: #666;
-            margin-top: 5px;
-        }
-
-        .pe-cta {
-            padding: 0 0 50px;
-        }
-
-        .pe-cta-box {
-            background: #0a1e3c;
-            border-radius: 12px;
-            padding: 40px 50px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            color: #fff;
-        }
-
-        .pe-cta-txt h2 {
-            font-size: 24px;
-            font-weight: 700;
-        }
-
-        .pe-cta-txt p {
-            font-size: 14px;
-            color: #b0bed0;
-        }
-
-        .pe-cta-b {
-            display: flex;
-            gap: 15px;
-        }
-
-        @media (max-width: 1024px) {
-            .pe-ov-g {
-                grid-template-columns: 1fr;
-            }
-            .pe-g-grid {
-                grid-template-columns: repeat(3, 1fr);
-            }
-            .pe-w-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-            .pe-ass-grid {
-                grid-template-columns: 1fr 1fr;
-            }
-            .pe-f-row {
-                flex-direction: column !important;
-            }
-            .pe-tcol {
-                grid-template-columns: 1fr;
-            }
-            .pe-cta-box {
-                flex-direction: column;
-                text-align: center;
-                gap: 20px;
-            }
-            .pe-cta-b {
-                flex-direction: column;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .pe-hero {
-                height: 430px;
-            }
-            .pe-hero-c h1 {
-                font-size: 28px;
-            }
-            .pe-fs {
-                grid-template-columns: 1fr 1fr;
-            }
-            .pe-g-grid {
-                grid-template-columns: 1fr 1fr;
-            }
-            .pe-w-grid {
-                grid-template-columns: 1fr;
-            }
-            .pe-ass-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-</style>-- GEO / Hreflang -->
+</style>
+<!-- GEO / Hreflang -->
     <meta name="geo.region" content="CN-44" />
     <meta name="geo.placename" content="Dongguan, China" />
     <link rel="alternate" href="https://www.techinherit.com/" hreflang="en" />
@@ -887,56 +93,124 @@
                                                                                                             <nav class="nav-links" aria-label="Primary navigation" role="navigation">
                     <a href="index.html">Home</a>
 
-                    <div class="nav-dropdown">
+                                        <div class="nav-dropdown svc">
                     <a href="services.html" class="dropdown-trigger">
                     Services <i class="fas fa-chevron-down" aria-hidden="true"></i>
                     </a>
-                    <ul class="dropdown-menu">
-                    <li><a href="product-design.html">Product Design</a></li>
-                    <li><a href="raw-materials.html">Plastic Raw Materials</a></li>
-                    <li><a href="mold-development.html">Mold Development</a></li>
-                    <li><a href="injection-molding.html">Injection Molding</a></li>
-                    <li><a href="quality-control.html">Quality Control</a></li>
-                    <li><a href="odm-oem.html">Assemble</a></li>
-                    </ul>
+                    <div class="dropdown-menu">
+                        <div class="svc-head">Our Services</div>
+                        <div class="svc-row">
+                            <a href="product-design.html" class="svc-item">
+                                <i class="fas fa-drafting-compass"></i>
+                                <div class="si-text"><span class="si-title">Product Design</span><span class="si-desc">DFM analysis &amp; 3D design</span></div>
+                            </a>
+                            <a href="mold-development.html" class="svc-item">
+                                <i class="fas fa-cube"></i>
+                                <div class="si-text"><span class="si-title">Mold Development</span><span class="si-desc">CNC, EDM &amp; precision mold</span></div>
+                            </a>
+                        </div>
+                        <div class="svc-row">
+                            <a href="raw-materials.html" class="svc-item">
+                                <i class="fas fa-flask"></i>
+                                <div class="si-text"><span class="si-title">Raw Materials</span><span class="si-desc">ABS, PC, PA, PEEK, PPS</span></div>
+                            </a>
+                            <a href="injection-molding.html" class="svc-item">
+                                <i class="fas fa-industry"></i>
+                                <div class="si-text"><span class="si-title">Injection Molding</span><span class="si-desc">80T 鈥?1800T precision molding</span></div>
+                            </a>
+                        </div>
+                        <div class="svc-row">
+                            <a href="quality-control.html" class="svc-item">
+                                <i class="fas fa-clipboard-check"></i>
+                                <div class="si-text"><span class="si-title">Quality Control</span><span class="si-desc">CMM, testing &amp; inspection</span></div>
+                            </a>
+                            <a href="odm-oem.html" class="svc-item">
+                                <i class="fas fa-toolbox"></i>
+                                <div class="si-text"><span class="si-title">Assembly &amp; ODM</span><span class="si-desc">Assembly, packaging &amp; logistics</span></div>
+                            </a>
+                        </div>
+                    </div>
                     </div>
 
                     <a href="technical-docs.html">Technical Docs</a>
 
-                    <div class="nav-dropdown">
+                                        <div class="nav-dropdown svc">
                     <a href="case-studies.html" class="dropdown-trigger">
                     Industry Cases <i class="fas fa-chevron-down" aria-hidden="true"></i>
                     </a>
-                    <ul class="dropdown-menu">
-                    <li><a href="consumer-electronics-cases.html">Consumer Electronics</a></li>
-                    <li><a href="medical-devices-cases.html">Medical Devices</a></li>
-                    <li><a href="office-furniture-cases.html">Office Furniture</a></li>
-                    <li><a href="new-energy-cases.html">New Energy</a></li>
-                    <li><a href="ai-hardware-cases.html">AI Hardware</a></li>
-                    <li><a href="pet-supplies-cases.html">Pet Supplies</a></li>
-                    </ul>
+                    <div class="dropdown-menu">
+                        <div class="svc-head">Our Case Studies</div>
+                        <div class="svc-row">
+                            <a href="consumer-electronics-cases.html" class="svc-item">
+                                <i class="fas fa-mobile-alt"></i>
+                                <div class="si-text"><span class="si-title">Consumer Electronics</span></div>
+                            </a>
+                            <a href="medical-devices-cases.html" class="svc-item">
+                                <i class="fas fa-heartbeat"></i>
+                                <div class="si-text"><span class="si-title">Medical Devices</span></div>
+                            </a>
+                        </div>
+                        <div class="svc-row">
+                            <a href="office-furniture-cases.html" class="svc-item">
+                                <i class="fas fa-chair"></i>
+                                <div class="si-text"><span class="si-title">Office Furniture</span></div>
+                            </a>
+                            <a href="new-energy-cases.html" class="svc-item">
+                                <i class="fas fa-bolt"></i>
+                                <div class="si-text"><span class="si-title">New Energy</span></div>
+                            </a>
+                        </div>
+                        <div class="svc-row">
+                            <a href="ai-hardware-cases.html" class="svc-item">
+                                <i class="fas fa-robot"></i>
+                                <div class="si-text"><span class="si-title">AI Hardware</span></div>
+                            </a>
+                            <a href="pet-supplies-cases.html" class="svc-item">
+                                <i class="fas fa-paw"></i>
+                                <div class="si-text"><span class="si-title">Pet Supplies</span></div>
+                            </a>
+                        </div>
+                    </div>
                     </div>
 
                     <a href="rd-strength.html" class="active">Factory Strength</a>
 
-                    <div class="nav-dropdown">
+                                        <div class="nav-dropdown svc">
                     <a href="work.html" class="dropdown-trigger">
                     Work Updates <i class="fas fa-chevron-down" aria-hidden="true"></i>
                     </a>
-                    <ul class="dropdown-menu">
-                    <li><a href="work.html">Work</a></li>
-                    <li><a href="news.html">Industry News</a></li>
-                    </ul>
+                    <div class="dropdown-menu">
+                        <div class="svc-head">Work Updates</div>
+                        <div class="svc-row">
+                            <a href="work.html" class="svc-item">
+                                <i class="fas fa-images"></i>
+                                <div class="si-text"><span class="si-title">Our Work</span></div>
+                            </a>
+                            <a href="news.html" class="svc-item">
+                                <i class="fas fa-newspaper"></i>
+                                <div class="si-text"><span class="si-title">Industry News</span></div>
+                            </a>
+                        </div>
+                    </div>
                     </div>
 
-                    <div class="nav-dropdown">
+                                        <div class="nav-dropdown svc">
                     <a href="about-us.html" class="dropdown-trigger">
                     About Us <i class="fas fa-chevron-down" aria-hidden="true"></i>
                     </a>
-                    <ul class="dropdown-menu">
-                    <li><a href="about-us.html">About Us</a></li>
-                    <li><a href="get-quote.html">Contact Us</a></li>
-                    </ul>
+                    <div class="dropdown-menu">
+                        <div class="svc-head">Company</div>
+                        <div class="svc-row">
+                            <a href="about-us.html" class="svc-item">
+                                <i class="fas fa-info-circle"></i>
+                                <div class="si-text"><span class="si-title">About Us</span></div>
+                            </a>
+                            <a href="get-quote.html" class="svc-item">
+                                <i class="fas fa-envelope"></i>
+                                <div class="si-text"><span class="si-title">Contact Us</span></div>
+                            </a>
+                        </div>
+                    </div>
                     </div>
 
                     <a href="global-partnership.html" class="btn-header">Join Us</a>
@@ -946,633 +220,241 @@
         </div>
     </header>
 
-    <main>
+        <main>
 
-        <section class="rd-hero">
-            <div class="container">
-                <h1>Factory Strength<br>Equipment &amp; Capabilities</h1>
-                <p>Advanced R&amp;D team, state-of-the-art production equipment, precision testing instruments, and international certifications &mdash; delivering quality you can trust.</p>
-            </div>
-        </section>
+<style>
+.factory-section{padding:40px 0;border-bottom:1px solid #eef0f2}
+.factory-section:last-child{border-bottom:0}
+.factory-inner{display:flex;gap:40px;align-items:flex-start}
 
-                <nav class="md-breadcrumb">
-            <div class="container">
-                <a href="index.html">Home</a><span>/</span><span>Factory Strength</span>
-            </div>
-        </nav>
+.f-left{flex:0 0 240px;padding-right:20px;border-right:2px solid var(--color-primary)}
+.f-left .num{font-size:44px;font-weight:900;color:var(--color-primary);line-height:1;margin-bottom:6px}
+.f-left h2{font-size:22px;font-weight:700;color:#0a1a30;margin-bottom:6px}
+.f-left .sub{font-size:15px;font-weight:600;color:var(--color-primary)}
+.f-left .desc{font-size:14px;color:#555;margin-top:10px;line-height:1.6}
 
-        <section class="rd-team">
-            <div class="container rd-team-flex">
-                <div class="rd-team-txt">
-                    <h2>Strong Engineering Team</h2>
-                    <p>Our engineering team combines expertise in plastic product design, material selection, mold development, and injection molding optimization.</p>
-                    <p>We work closely with customers to reduce development risks, shorten project timelines, and improve product performance.</p>
-                </div>
-                <div class="rd-team-stats">
-                    <div class="rd-stat-item">
-                        <i class="fas fa-users"></i>
-                        <span class="rd-num">10+</span>
-                        <span class="rd-label">Engineers</span>
-                    </div>
-                    <div class="rd-stat-item">
-                        <i class="fas fa-file-lines"></i>
-                        <span class="rd-num">2000+</span>
-                        <span class="rd-label">Development Projects</span>
-                    </div>
-                    <div class="rd-stat-item">
-                        <i class="fas fa-medal"></i>
-                        <span class="rd-num">10+</span>
-                        <span class="rd-label">Years Experience</span>
-                    </div>
-                    <div class="rd-stat-item">
-                        <i class="fas fa-globe"></i>
-                        <span class="rd-num">500+</span>
-                        <span class="rd-label">Global Customers</span>
-                    </div>
-                </div>
-            </div>
-        </section>
+.f-mid{flex:1}
+.f-mid .tag{font-size:13px;font-weight:700;color:var(--color-primary);text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;border-bottom:2px solid var(--color-primary);padding-bottom:6px;display:inline-block}
+.f-mid .flist{list-style:none;margin-bottom:15px}
+.f-mid .flist li{font-size:14px;color:#444;margin-bottom:4px;display:flex;align-items:center;gap:8px}
+.f-mid .flist li i{color:var(--color-primary);font-size:10px}
+.f-adv{display:grid;grid-template-columns:repeat(4,1fr);gap:15px;margin-top:10px}
+.f-adv-item{background:#f0f4fa;border-radius:6px;padding:12px 8px;text-align:center;display:flex;flex-direction:column;align-items:center}
+.f-adv-item i{font-size:20px;color:var(--color-primary);margin-bottom:4px}
+.f-adv-item span{font-size:12px;color:#333;font-weight:500}
 
-        <section class="rd-cap">
-            <div class="container">
-                <div class="rd-section-title">Product Development Capability</div>
-                <div class="rd-cap-grid">
-                    <div class="rd-cap-card">
-                        <img src="img/drafting.webp" alt="Industrial Design" loading="lazy" />
-                        <h4>Industrial Design</h4>
-                        <p>Product appearance optimization</p>
-                    </div>
-                    <div class="rd-cap-card">
-                        <img src="img/product-design.webp" alt="Structural Design" loading="lazy" />
-                        <h4>Structural Design</h4>
-                        <p>Mechanical structure development</p>
-                    </div>
-                    <div class="rd-cap-card">
-                        <img src="img/dfm-analysis.webp" alt="DFM Analysis" loading="lazy" />
-                        <h4>DFM Analysis</h4>
-                        <p>Manufacturing feasibility evaluation</p>
-                    </div>
-                    <div class="rd-cap-card">
-                        <img src="img/mold-hd-1.webp" alt="Prototype Validation" loading="lazy" />
-                        <h4>Prototype Validation</h4>
-                        <p>Rapid prototyping and testing</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+.f-right{flex:0 0 380px;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.f-right .f-img{width:100%;height:140px;border-radius:8px;overflow:hidden;background:#e2e8f0}
+.f-right .f-img img{width:100%;height:100%;object-fit:cover}
+.f-right .f-img.full{grid-column:1/3;height:200px}
 
-        <section class="rd-proc">
-            <div class="container">
-                <div class="rd-section-title">Product Development Process</div>
-                <div class="rd-proc-steps">
-                    <div class="rd-pstep"><div class="rd-pic"><i class="fa-regular fa-lightbulb"></i></div><h4>Concept</h4></div>
-                    <div class="rd-parrow"><i class="fas fa-arrow-right"></i></div>
-                    <div class="rd-pstep"><div class="rd-pic"><i class="fas fa-cubes"></i></div><h4>3D Design</h4></div>
-                    <div class="rd-parrow"><i class="fas fa-arrow-right"></i></div>
-                    <div class="rd-pstep"><div class="rd-pic"><i class="fas fa-magnifying-glass-chart"></i></div><h4>DFM Analysis</h4></div>
-                    <div class="rd-parrow"><i class="fas fa-arrow-right"></i></div>
-                    <div class="rd-pstep"><div class="rd-pic"><i class="fas fa-layer-group"></i></div><h4>Material Selection</h4></div>
-                    <div class="rd-parrow"><i class="fas fa-arrow-right"></i></div>
-                    <div class="rd-pstep"><div class="rd-pic"><i class="fas fa-tag"></i></div><h4>Prototype</h4></div>
-                    <div class="rd-parrow"><i class="fas fa-arrow-right"></i></div>
-                    <div class="rd-pstep"><div class="rd-pic"><i class="fas fa-cube"></i></div><h4>Mold Design</h4></div>
-                    <div class="rd-parrow"><i class="fas fa-arrow-right"></i></div>
-                    <div class="rd-pstep"><div class="rd-pic"><i class="fas fa-wrench"></i></div><h4>Tooling</h4></div>
-                    <div class="rd-parrow"><i class="fas fa-arrow-right"></i></div>
-                    <div class="rd-pstep"><div class="rd-pic"><i class="fas fa-industry"></i></div><h4>Injection</h4></div>
-                    <div class="rd-parrow"><i class="fas fa-arrow-right"></i></div>
-                    <div class="rd-pstep"><div class="rd-pic"><i class="fas fa-box"></i></div><h4>Mass Production</h4></div>
-                </div>
-                <p class="rd-proc-desc">We support customers through every stage of product development, ensuring a smooth transition from idea to production.</p>
-            </div>
-        </section>
+.f-right.cert{grid-template-columns:1fr 1fr 1fr;gap:10px}
+.f-right.cert .f-img{height:120px}
+.f-right.cert .f-img.full{grid-column:1/4;height:140px}
 
-        <section class="rd-detail">
-            <div class="container rd-dgrid">
-                <div class="rd-dcol">
-                    <h4>DFM &amp; Cost Optimization</h4>
-                    <p>Before mold manufacturing, our engineers conduct comprehensive DFM analysis to identify potential risks and optimize product manufacturability.</p>
-                    <ul>
-                        <li><i class="fas fa-circle"></i> Reduce production cost</li>
-                        <li><i class="fas fa-circle"></i> Improve product quality</li>
-                        <li><i class="fas fa-circle"></i> Shorten development cycle</li>
-                        <li><i class="fas fa-circle"></i> Avoid mold modifications</li>
-                        <li><i class="fas fa-circle"></i> Improve assembly efficiency</li>
-                    </ul>
-                </div>
-                <div class="rd-dcol">
-                    <h4>Plastic Material Engineering</h4>
-                    <p>We work with a wide range of engineering plastics: ABS, PC, PA66, PP, POM, TPU, PC+ABS.</p>
-                    <ul>
-                        <li><i class="fas fa-circle"></i> Material recommendation</li>
-                        <li><i class="fas fa-circle"></i> Performance analysis</li>
-                        <li><i class="fas fa-circle"></i> Cost comparison</li>
-                        <li><i class="fas fa-circle"></i> Environmental compliance</li>
-                        <li><i class="fas fa-circle"></i> Durability optimization</li>
-                    </ul>
-                </div>
-                <div class="rd-dcol">
-                    <h4>Mold Flow Analysis</h4>
-                    <p>Using advanced mold flow simulation technology, we evaluate filling performance, cooling efficiency, shrinkage behavior, and potential defect risks before mold production.</p>
-                    <ul>
-                        <li><i class="fas fa-circle"></i> Reduce trial costs</li>
-                        <li><i class="fas fa-circle"></i> Improve molding stability</li>
-                        <li><i class="fas fa-circle"></i> Minimize warpage</li>
-                        <li><i class="fas fa-circle"></i> Shorten development time</li>
-                    </ul>
-                </div>
-                <div class="rd-dcol">
-                    <h4>We Solve Manufacturing Challenges</h4>
-                    <div class="rd-case-item">
-                        <div class="rd-ct">Case 01</div>
-                        <div class="rd-cd"><b>Problem:</b> Chair armrest cracking<br><b>Solution:</b> Material reinforcement<br><b>Result:</b> 40% strength improvement</div>
-                    </div>
-                    <div class="rd-case-item">
-                        <div class="rd-ct">Case 02</div>
-                        <div class="rd-cd"><b>Problem:</b> Part deformation<br><b>Solution:</b> Gate position optimization<br><b>Result:</b> Stable dimensional accuracy</div>
-                    </div>
-                    <div class="rd-case-item">
-                        <div class="rd-ct">Case 03</div>
-                        <div class="rd-cd"><b>Problem:</b> High production cost<br><b>Solution:</b> Wall thickness optimization<br><b>Result:</b> 15% material cost reduction</div>
-                    </div>
-                </div>
-                <div class="rd-dcol">
-                    <h4>Advanced Software &amp; Equipment</h4>
-                    <div style="margin-bottom:8px;font-weight:700;font-size:13px;color:#0a1a30">Software</div>
-                    <ul>
-                        <li><i class="fas fa-circle"></i> AutoCAD</li>
-                        <li><i class="fas fa-circle"></i> SolidWorks</li>
-                        <li><i class="fas fa-circle"></i> UG NX</li>
-                        <li><i class="fas fa-circle"></i> Moldflow</li>
-                    </ul>
-                    <div style="font-weight:700;font-size:13px;color:#0a1a30;margin-top:8px">Equipment</div>
-                    <ul>
-                        <li><i class="fas fa-circle"></i> CNC Machining Center</li>
-                        <li><i class="fas fa-circle"></i> EDM Machine</li>
-                        <li><i class="fas fa-circle"></i> CMM Inspection</li>
-                        <li><i class="fas fa-circle"></i> Injection Molding Machines</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+.f-process{display:flex;justify-content:space-between;gap:5px;margin:15px 0}
+.f-process .fp-item{flex:1;text-align:center}
+.f-process .fp-item .fp-icon{width:36px;height:36px;border-radius:50%;border:2px solid var(--color-primary);color:var(--color-primary);display:flex;align-items:center;justify-content:center;font-size:14px;margin:0 auto 4px}
+.f-process .fp-item .fp-icon.arrow{border:none;color:var(--color-primary);font-size:12px}
+.f-process .fp-item .fp-label{font-size:11px;color:#333;font-weight:600}
 
-        <section class="rd-facility">
-            <div class="container">
-                <div class="rd-section-title">Our Workshop &amp; Facilities</div>
-                <div class="rd-fac-grid">
-                    <div class="rd-fac-card">
-                        <img src="img/rd-workshop.webp" alt="Clean Workshop" loading="lazy" />
-                        <div class="rd-fac-label">Clean Workshop Environment</div>
-                    </div>
-                    <div class="rd-fac-card">
-                        <img src="img/rd-inspection.webp" alt="Quality Inspection" loading="lazy" />
-                        <div class="rd-fac-label">Precision Testing Equipment</div>
-                    </div>
-                    <div class="rd-fac-card">
-                        <img src="img/rd-assembly.webp" alt="Clean Assembly" loading="lazy" />
-                        <div class="rd-fac-label">Clean Assembly Workstation</div>
-                    </div>
-                    <div class="rd-fac-card">
-                        <img src="img/rd-procedure-2.webp" alt="Procedure Documentation" loading="lazy" />
-                        <div class="rd-fac-label">Quality Documentation System</div>
-                    </div>
-                    <div class="rd-fac-card">
-                        <img src="img/rd-procedure-3.webp" alt="Process Control" loading="lazy" />
-                        <div class="rd-fac-label">Process Control Standards</div>
-                    </div>
-                </div>
-            </div>
-        </section>
+@media(max-width:1024px){
+  .factory-inner{flex-direction:column}
+  .f-left{border-right:0;border-bottom:2px solid var(--color-primary);padding-bottom:15px;padding-right:0;flex:auto;width:100%}
+  .f-right{flex:auto;width:100%}
+  .f-adv{grid-template-columns:repeat(2,1fr)}
+  .f-right .f-img{height:120px}
+}
+@media(max-width:768px){
+  .f-left .num{font-size:32px}
+  .f-right{grid-template-columns:1fr}
+  .f-right .f-img.full{grid-column:1/2;height:160px}
+  .f-right.cert{grid-template-columns:1fr 1fr}
+  .f-right.cert .f-img.full{grid-column:1/3}
+  .f-adv{grid-template-columns:1fr}
+  .f-process{flex-wrap:wrap;justify-content:center}
+  .f-process .fp-item{flex:0 0 30%;margin-bottom:10px}
+}
+</style>
 
-        <section class="rd-why">
-            <div class="container">
-                <div class="rd-section-title">Why Customers Choose Our Engineering Team</div>
-                <div class="rd-why-grid">
-                    <div class="rd-witem"><i class="fa-regular fa-clock"></i><h4>Faster Development</h4></div>
-                    <div class="rd-witem"><i class="fas fa-shield-halved"></i><h4>Lower Risk</h4></div>
-                    <div class="rd-witem"><i class="fas fa-dollar-sign"></i><h4>Cost Reduction</h4></div>
-                    <div class="rd-witem"><i class="fas fa-medal"></i><h4>Better Quality</h4></div>
-                    <div class="rd-witem"><i class="fas fa-user-gear"></i><h4>Strong Technical Support</h4></div>
-                    <div class="rd-witem"><i class="fas fa-gear"></i><h4>One-Stop Solution</h4></div>
-                </div>
-            </div>
-        </section>
+<section class="rd-hero">
+    <div class="container">
+        <h1>Factory Strength<br>Equipment &amp; Capabilities</h1>
+        <p>State-of-the-art laboratory, advanced production equipment, precision testing instruments, and international certifications &mdash; delivering quality you can trust.</p>
+    </div>
+</section>
+<nav class="md-breadcrumb">
+    <div class="container">
+        <a href="index.html">Home</a><span>/</span><span>Factory Strength</span>
+    </div>
+</nav>
 
+<section class="factory-section"><div class="container factory-inner">
+  <div class="f-left">
+    <div class="num">01</div>
+    <h2>LABORATORY</h2>
+    <div class="sub">Material Research &amp; Product Validation Laboratory</div>
+    <div class="desc">We verify material performance, product structure reliability and long-term stability before mass production.</div>
+  </div>
+  <div class="f-mid">
+    <div class="tag">Testing Capabilities</div>
+    <ul class="flist">
+      <li><i class="fas fa-check"></i> Plastic Material Testing</li>
+      <li><i class="fas fa-check"></i> Mechanical Performance Testing</li>
+      <li><i class="fas fa-check"></i> Structural Verification</li>
+      <li><i class="fas fa-check"></i> Aging &amp; Durability Testing</li>
+      <li><i class="fas fa-check"></i> Product Reliability Validation</li>
+    </ul>
+    <div class="tag" style="margin-top:10px;">Our Advantages</div>
+    <div class="f-adv">
+      <div class="f-adv-item"><i class="far fa-file-lines"></i><span>Material Development Support</span></div>
+      <div class="f-adv-item"><i class="fas fa-cubes"></i><span>Product Structure Optimization</span></div>
+      <div class="f-adv-item"><i class="fas fa-exclamation-triangle"></i><span>Risk Detection in Advance</span></div>
+      <div class="f-adv-item"><i class="far fa-clock"></i><span>Shorten Development Cycle</span></div>
+    </div>
+  </div>
+  <div class="f-right">
+    <div class="f-img full"><img src="img/equipment-showcase.webp" alt="Lab" loading="lazy"></div>
+    <div class="f-img"><img src="img/使用检测仪.webp" alt="Lab" loading="lazy"></div>
+    <div class="f-img"><img src="img/实验室.webp" alt="Lab" loading="lazy"></div>
+  </div>
+</div></section>
 
-                
-<section class="pe-ov">
-            <div class="container pe-ov-g">
-                <div class="pe-ov-t">
-                    <h2>Equipment Overview</h2>
-                    <p>Our modern manufacturing facility is equipped with advanced production and inspection equipment, enabling us to provide high-quality plastic components from prototype development to mass production.</p>
-                </div>
-                <div class="pe-fs">
-                    <div class="pe-fs-item">
-                        <i class="fas fa-industry"></i>
-                        <span class="pe-n">30+</span>
-                        <span class="pe-l">Injection Molding Machines</span>
-                    </div>
-                    <div class="pe-fs-item">
-                        <i class="fas fa-cube"></i>
-                        <span class="pe-n">80T - 1000T</span>
-                        <span class="pe-l">Machine Capacity</span>
-                    </div>
-                    <div class="pe-fs-item">
-                        <i class="fas fa-gear"></i>
-                        <span class="pe-n">CNC</span>
-                        <span class="pe-l">Precision Machining Centers</span>
-                    </div>
-                    <div class="pe-fs-item">
-                        <i class="fas fa-bolt"></i>
-                        <span class="pe-n">EDM</span>
-                        <span class="pe-l">Processing Equipment</span>
-                    </div>
-                    <div class="pe-fs-item">
-                        <i class="fas fa-flask"></i>
-                        <span class="pe-n">Professional</span>
-                        <span class="pe-l">Inspection Laboratory</span>
-                    </div>
-                    <div class="pe-fs-item">
-                        <i class="fas fa-arrows-spin"></i>
-                        <span class="pe-n">Automated</span>
-                        <span class="pe-l">Assembly Lines</span>
-                    </div>
-                </div>
-            </div>
-        </section>
+<section class="factory-section"><div class="container factory-inner">
+  <div class="f-left">
+    <div class="num">02</div>
+    <h2>PRODUCTION EQUIPMENT</h2>
+    <div class="sub">Advanced Injection Molding Manufacturing</div>
+    <div class="desc">We have advanced injection molding production equipment to meet the needs of small batch trial production and large-scale mass production.</div>
+  </div>
+  <div class="f-mid">
+    <div class="tag">Equipment Capabilities</div>
+    <ul class="flist">
+      <li><i class="fas fa-check"></i> Injection Molding Machines (90T 鈥?1800T)</li>
+      <li><i class="fas fa-check"></i> Automatic Production Line</li>
+      <li><i class="fas fa-check"></i> Robotic Handling System</li>
+      <li><i class="fas fa-check"></i> Insert Molding Technology</li>
+      <li><i class="fas fa-check"></i> High Precision Manufacturing</li>
+    </ul>
+    <div class="tag" style="margin-top:10px;">Our Advantages</div>
+    <div class="f-adv">
+      <div class="f-adv-item"><i class="fas fa-industry"></i><span>Efficient Mass Production</span></div>
+      <div class="f-adv-item"><i class="far fa-clock"></i><span>Fast Delivery</span></div>
+      <div class="f-adv-item"><i class="fas fa-robot"></i><span>Automated Production</span></div>
+      <div class="f-adv-item"><i class="fas fa-dollar-sign"></i><span>Lower Production Cost</span></div>
+    </div>
+  </div>
+  <div class="f-right">
+    <div class="f-img full"><img src="img/injection-machine-1.webp" alt="Production" loading="lazy"></div>
+    <div class="f-img"><img src="img/injection-machine-2.webp" alt="Machine" loading="lazy"></div>
+    <div class="f-img"><img src="img/rd-workshop.webp" alt="Machine" loading="lazy"></div>
+  </div>
+</div></section>
 
-        <section class="pe-feat">
-            <div class="container">
+<section class="factory-section"><div class="container factory-inner">
+  <div class="f-left">
+    <div class="num">03</div>
+    <h2>INSPECTION EQUIPMENT</h2>
+    <div class="sub">Precision Measurement &amp; Inspection Equipment</div>
+    <div class="desc">We use professional inspection equipment to conduct strict inspection on product dimensions, appearance and performance.</div>
+  </div>
+  <div class="f-mid">
+    <div class="tag">Inspection Equipment</div>
+    <ul class="flist">
+      <li><i class="fas fa-check"></i> CMM Coordinate Measuring Machine</li>
+      <li><i class="fas fa-check"></i> Colorimeter</li>
+      <li><i class="fas fa-check"></i> Height Gauge</li>
+      <li><i class="fas fa-check"></i> Digital Caliper</li>
+      <li><i class="fas fa-check"></i> Tensile Testing Equipment</li>
+      <li><i class="fas fa-check"></i> Optical Measuring System</li>
+    </ul>
+    <div class="tag" style="margin-top:10px;">Our Advantages</div>
+    <div class="f-adv">
+      <div class="f-adv-item"><i class="fas fa-bullseye"></i><span>High Precision Inspection</span></div>
+      <div class="f-adv-item"><i class="fas fa-list-check"></i><span>Data Traceability</span></div>
+      <div class="f-adv-item"><i class="fas fa-display"></i><span>Process Monitoring</span></div>
+      <div class="f-adv-item"><i class="far fa-circle-check"></i><span>Consistent Quality</span></div>
+    </div>
+  </div>
+  <div class="f-right">
+    <div class="f-img full"><img src="img/检测设备.webp" alt="CMM" loading="lazy"></div>
+    <div class="f-img"><img src="img/使用检测仪.webp" alt="Inspection" loading="lazy"></div>
+    <div class="f-img"><img src="img/检测设备1.webp" alt="Inspection" loading="lazy"></div>
+  </div>
+</div></section>
 
-                <div class="pe-f-row">
-                    <div class="pe-f-txt">
-                        <h3>Injection Molding Equipment</h3>
-                        <div class="pe-sh">High-Performance Injection Molding Machines</div>
-                        <p>Our injection molding workshop is equipped with advanced machines ranging from 80 tons to 1000 tons, ensuring flexibility for both small and large plastic components.</p>
-                        <ul>
-                            <li><i class="fas fa-check"></i> Precision Injection Molding</li>
-                            <li><i class="fas fa-check"></i> Insert Molding</li>
-                            <li><i class="fas fa-check"></i> Overmolding</li>
-                            <li><i class="fas fa-check"></i> High-volume Production</li>
-                        </ul>
-                    </div>
-                    <div class="pe-f-img">
-                        <img src="img/injection-machine-1.webp" alt="Injection Molding Equipment" loading="lazy" />
-                    </div>
-                </div>
+<section class="factory-section"><div class="container factory-inner">
+  <div class="f-left">
+    <div class="num">04</div>
+    <h2>CERTIFICATIONS</h2>
+    <div class="sub">International Certifications &amp; Compliance</div>
+    <div class="desc">All production processes are in compliance with international quality management system standards.</div>
+  </div>
+  <div class="f-mid">
+    <div class="tag">Certification Systems</div>
+    <ul class="flist">
+      <li><i class="fas fa-check"></i> ISO 9001:2015</li>
+      <li><i class="fas fa-check"></i> ISO 13485:2016</li>
+      <li><i class="fas fa-check"></i> RoHS Compliance</li>
+      <li><i class="fas fa-check"></i> REACH Compliance</li>
+      <li><i class="fas fa-check"></i> CE Marking</li>
+    </ul>
+    <div class="tag" style="margin-top:10px;">Our Guarantee</div>
+    <div class="f-adv">
+      <div class="f-adv-item"><i class="far fa-file-lines"></i><span>Standardized Management</span></div>
+      <div class="f-adv-item"><i class="fas fa-globe"></i><span>International Market Access</span></div>
+      <div class="f-adv-item"><i class="fas fa-link"></i><span>Complete Traceability</span></div>
+      <div class="f-adv-item"><i class="fas fa-arrows-rotate"></i><span>Continuous Quality Improvement</span></div>
+    </div>
+  </div>
+  <div class="f-right cert">
+    <div class="f-img"><img src="img/使用检测仪.webp" alt="Cert" loading="lazy"></div>
+    <div class="f-img"><img src="img/rd-workshop.webp" alt="Cert" loading="lazy"></div>
+    <div class="f-img"><img src="img/measurement.webp" alt="Cert" loading="lazy"></div>
+    <div class="f-img full" style="height:120px;"><img src="img/equipment-showcase.webp" alt="Certs" loading="lazy"></div>
+  </div>
+</div></section>
 
-                <div class="pe-f-row pe-r">
-                    <div class="pe-f-txt">
-                        <h3>Mold Manufacturing Equipment</h3>
-                        <div class="pe-sh">Precision Mold Processing</div>
-                        <p>Advanced mold-making equipment ensures superior mold accuracy and long service life.</p>
-                        <div class="pe-tcol">
-                            <div class="c">
-                                <h4>Equipment:</h4>
-                                <ul>
-                                    <li><i class="fas fa-check"></i> CNC Machining Centers</li>
-                                    <li><i class="fas fa-check"></i> EDM Machines</li>
-                                    <li><i class="fas fa-check"></i> Wire Cutting Machines</li>
-                                    <li><i class="fas fa-check"></i> Grinding Machines</li>
-                                </ul>
-                            </div>
-                            <div class="c">
-                                <h4>Benefits:</h4>
-                                <ul>
-                                    <li><i class="fas fa-check"></i> High Mold Precision</li>
-                                    <li><i class="fas fa-check"></i> Stable Product Dimensions</li>
-                                    <li><i class="fas fa-check"></i> Faster Mold Development</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="pe-f-img">
-                        <img src="img/mold.webp" alt="Mold Manufacturing Equipment" loading="lazy" />
-                    </div>
-                </div>
+<section class="factory-section"><div class="container factory-inner">
+  <div class="f-left">
+    <div class="num">05</div>
+    <h2>100% QUALITY INSPECTION</h2>
+    <div class="sub">Strict Quality Control Before Shipment</div>
+    <div class="desc">Every batch of products undergoes strict quality inspection before shipment to ensure customers receive qualified products.</div>
+  </div>
+  <div class="f-mid">
+    <div class="tag">Quality Control Process</div>
+    <div class="f-process">
+      <div class="fp-item"><div class="fp-icon"><i class="far fa-clipboard"></i></div><div class="fp-label">IQC<br>Incoming Material</div></div>
+      <div class="fp-item"><div class="fp-icon arrow"><i class="fas fa-chevron-right"></i></div></div>
+      <div class="fp-item"><div class="fp-icon"><i class="fas fa-gear"></i></div><div class="fp-label">IPQC<br>Process Control</div></div>
+      <div class="fp-item"><div class="fp-icon arrow"><i class="fas fa-chevron-right"></i></div></div>
+      <div class="fp-item"><div class="fp-icon"><i class="far fa-circle-check"></i></div><div class="fp-label">FQC<br>Final Inspection</div></div>
+      <div class="fp-item"><div class="fp-icon arrow"><i class="fas fa-chevron-right"></i></div></div>
+      <div class="fp-item"><div class="fp-icon"><i class="fas fa-box"></i></div><div class="fp-label">OQC<br>Outgoing Quality</div></div>
+    </div>
+    <div class="tag" style="margin-top:15px;">QC Advantages</div>
+    <div class="f-adv">
+      <div class="f-adv-item"><i class="far fa-file-lines"></i><span>100% Appearance Inspection</span></div>
+      <div class="f-adv-item"><i class="fas fa-ruler"></i><span>Dimension Verification</span></div>
+      <div class="f-adv-item"><i class="fas fa-flask"></i><span>Functional Testing</span></div>
+      <div class="f-adv-item"><i class="fas fa-box-open"></i><span>Packaging Inspection</span></div>
+      <div class="f-adv-item"><i class="fas fa-file-circle-check"></i><span>Shipment Quality Report</span></div>
+      <div class="f-adv-item"><i class="fas fa-bug"></i><span>100% Full Inspection</span></div>
+      <div class="f-adv-item"><i class="fas fa-search"></i><span>Defect Detection</span></div>
+      <div class="f-adv-item"><i class="fas fa-link"></i><span>Complete Traceability</span></div>
+      <div class="f-adv-item"><i class="fas fa-shield-halved"></i><span>Quality Assurance</span></div>
+      <div class="f-adv-item"><i class="far fa-clock"></i><span>Reduce After-sales Risk</span></div>
+    </div>
+  </div>
+  <div class="f-right">
+    <div class="f-img full"><img src="img/final-inspection.webp" alt="QC" loading="lazy"></div>
+    <div class="f-img"><img src="img/measurement.webp" alt="QC" loading="lazy"></div>
+    <div class="f-img"><img src="img/使用检测仪.webp" alt="QC" loading="lazy"></div>
+  </div>
+</div></section>
 
-                <div class="pe-f-row">
-                    <div class="pe-f-txt">
-                        <h3>Engineering &amp; Design Equipment</h3>
-                        <div class="pe-sh">Product Development Support</div>
-                        <p>Our engineering team utilizes professional software and advanced workstations to support product development and mold design.</p>
-                        <div class="pe-tcol">
-                            <div class="c">
-                                <h4>Software:</h4>
-                                <ul>
-                                    <li><i class="fas fa-check"></i> SolidWorks</li>
-                                    <li><i class="fas fa-check"></i> UG NX</li>
-                                    <li><i class="fas fa-check"></i> AutoCAD</li>
-                                    <li><i class="fas fa-check"></i> Moldflow</li>
-                                </ul>
-                            </div>
-                            <div class="c">
-                                <h4>Services:</h4>
-                                <ul>
-                                    <li><i class="fas fa-check"></i> 3D Design</li>
-                                    <li><i class="fas fa-check"></i> DFM Analysis</li>
-                                    <li><i class="fas fa-check"></i> Mold Design</li>
-                                    <li><i class="fas fa-check"></i> Mold Flow Simulation</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="pe-f-img">
-                        <img src="img/drafting.webp" alt="Engineering Design" loading="lazy" />
-                    </div>
-                </div>
-
-                <div class="pe-f-row pe-r">
-                    <div class="pe-f-txt">
-                        <h3>Quality Inspection Equipment</h3>
-                        <div class="pe-sh">Strict Quality Assurance</div>
-                        <p>Professional inspection equipment ensures every product meets customer specifications.</p>
-                        <div class="pe-tcol">
-                            <div class="c">
-                                <h4>Inspection Equipment:</h4>
-                                <ul>
-                                    <li><i class="fas fa-check"></i> CMM</li>
-                                    <li><i class="fas fa-check"></i> Colorimeter</li>
-                                    <li><i class="fas fa-check"></i> Height Gauge</li>
-                                    <li><i class="fas fa-check"></i> Digital Caliper</li>
-                                    <li><i class="fas fa-check"></i> Tensile Testing Equipment</li>
-                                    <li><i class="fas fa-check"></i> Surface Inspection Equipment</li>
-                                </ul>
-                            </div>
-                            <div class="c">
-                                <h4>Benefits:</h4>
-                                <ul>
-                                    <li><i class="fas fa-check"></i> Dimensional Accuracy</li>
-                                    <li><i class="fas fa-check"></i> Material Verification</li>
-                                    <li><i class="fas fa-check"></i> Appearance Inspection</li>
-                                    <li><i class="fas fa-check"></i> Process Control</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="pe-f-img">
-                        <img src="img/measurement.webp" alt="Quality Inspection Equipment" loading="lazy" />
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <section class="pe-feat" style="padding-top:0;">
-            <div class="container">
-                <h3 style="font-size:20px;font-weight:700;color:#0a1e3c;margin-bottom:10px;">Assembly Equipment</h3>
-                <div class="pe-sh" style="font-size:15px;font-weight:600;margin-bottom:15px;">Complete Assembly Solutions</div>
-                <p style="font-size:14px;color:#555;margin-bottom:20px;">We provide assembly, packaging, and labeling services supported by efficient production lines.</p>
-                <div class="pe-ass-grid">
-                    <div class="pe-ass-item">
-                        <img src="img/assembly.webp" alt="Assembly" loading="lazy" />
-                        <ul>
-                            <li><i class="fas fa-check"></i> Product Assembly</li>
-                            <li><i class="fas fa-check"></i> Functional Testing</li>
-                        </ul>
-                    </div>
-                    <div class="pe-ass-item">
-                        <img src="img/plastic-raw-materials.webp" alt="Packaging" loading="lazy" />
-                        <ul>
-                            <li><i class="fas fa-check"></i> Packaging</li>
-                            <li><i class="fas fa-check"></i> Labeling</li>
-                        </ul>
-                    </div>
-                    <div class="pe-ass-item">
-                        <img src="img/final-inspection.webp" alt="Inspection" loading="lazy" />
-                        <ul>
-                            <li><i class="fas fa-check"></i> Final Inspection</li>
-                            <li><i class="fas fa-check"></i> Quality Assurance</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="pe-gal">
-            <div class="container">
-                <div class="pe-section-title">Equipment Gallery</div>
-                <div class="pe-g-grid">
-                    <div class="pe-g-card">
-                        <img src="img/injection-machine-2.webp" alt="Injection Workshop" loading="lazy" />
-                        <div class="pe-ovl">Injection Workshop</div>
-                    </div>
-                    <div class="pe-g-card">
-                        <img src="img/mold.webp" alt="Mold Workshop" loading="lazy" />
-                        <div class="pe-ovl">Mold Workshop</div>
-                    </div>
-                    <div class="pe-g-card">
-                        <img src="img/measurement.webp" alt="Quality Lab" loading="lazy" />
-                        <div class="pe-ovl">Quality Lab</div>
-                    </div>
-                    <div class="pe-g-card">
-                        <img src="img/assembly.webp" alt="Assembly Line" loading="lazy" />
-                        <div class="pe-ovl">Assembly Line</div>
-                    </div>
-                    <div class="pe-g-card">
-                        <img src="img/final-inspection.webp" alt="Warehouse" loading="lazy" />
-                        <div class="pe-ovl">Warehouse</div>
-                    </div>
-                    <div class="pe-g-card">
-                        <img src="img/engineering-team.webp" alt="Engineering Office" loading="lazy" />
-                        <div class="pe-ovl">Engineering Office</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="pe-why">
-            <div class="container">
-                <div class="pe-section-title">Why Our Equipment Matters</div>
-                <div class="pe-w-grid">
-                    <div class="pe-w-item">
-                        <i class="fa-regular fa-circle-check"></i>
-                        <h4>Consistent Product Quality</h4>
-                        <p>Precision equipment ensures product quality and reduces defects.</p>
-                    </div>
-                    <div class="pe-w-item">
-                        <i class="fa-regular fa-clock"></i>
-                        <h4>Faster Lead Time</h4>
-                        <p>Efficient production equipment reduces lead times and improves delivery speed.</p>
-                    </div>
-                    <div class="pe-w-item">
-                        <i class="fas fa-arrows-rotate"></i>
-                        <h4>High Production Efficiency</h4>
-                        <p>Automated systems maximize production efficiency and reduce costs.</p>
-                    </div>
-                    <div class="pe-w-item">
-                        <i class="fas fa-ruler-combined"></i>
-                        <h4>Better Dimensional Accuracy</h4>
-                        <p>Advanced inspection equipment ensures parts meet tight tolerances.</p>
-                    </div>
-                    <div class="pe-w-item">
-                        <i class="fas fa-coins"></i>
-                        <h4>Lower Manufacturing Cost</h4>
-                        <p>Optimized processes and equipment reduce manufacturing costs.</p>
-                    </div>
-                    <div class="pe-w-item">
-                        <i class="fas fa-boxes-stacked"></i>
-                        <h4>Reliable Mass Production</h4>
-                        <p>Robust equipment supports reliable and scalable mass production.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-                
-
-<section class="qc-section">
-            <div class="container">
-                <div class="section-heading-center">
-                    <small>CERTIFICATIONS</small>
-                    <h2>Our Certifications</h2>
-                    <p>We hold internationally recognized certifications that demonstrate our commitment to quality, safety, and environmental responsibility.</p>
-                </div>
-
-                <div class="qc-grid-4">
-                    <div class="qc-cert-card">
-                        <i class="fas fa-certificate"></i>
-                        <h4>ISO 9001:2015</h4>
-                        <p>Certified quality management system ensuring consistent product quality and continuous improvement across all manufacturing processes.</p>
-                    </div>
-
-                    <div class="qc-cert-card">
-                        <i class="fas fa-medal"></i>
-                        <h4>ISO 13485:2016</h4>
-                        <p>Medical device quality management certification demonstrating our capability to produce components for regulated healthcare applications.</p>
-                    </div>
-
-                    <div class="qc-cert-card">
-                        <i class="fas fa-check-circle"></i>
-                        <h4>CE Marking</h4>
-                        <p>Products conform to European health, safety, and environmental standards, enabling market access across the European Economic Area.</p>
-                    </div>
-
-                    <div class="qc-cert-card">
-                        <i class="fas fa-leaf"></i>
-                        <h4>RoHS / REACH</h4>
-                        <p>Compliance with hazardous substance restrictions and chemical safety regulations for environmentally responsible manufacturing.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="qc-section">
-            <div class="container">
-                <div class="section-heading-center">
-                    <small>EQUIPMENT</small>
-                    <h2>Production Equipment</h2>
-                    <p>Our facility is equipped with state-of-the-art machinery to deliver precision, efficiency, and consistent quality at every stage of production.</p>
-                </div>
-
-                <table class="qc-equip-table">
-                    <thead>
-                        <tr>
-                            <th>Equipment Type</th>
-                            <th>Specification / Range</th>
-                            <th>Quantity</th>
-                            <th>Application</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Injection Molding</td>
-                            <td>90T – 1800T</td>
-                            <td>28 sets</td>
-                            <td>High-volume precision plastic parts</td>
-                        </tr>
-                        <tr>
-                            <td>CNC Machining</td>
-                            <td>3-axis / 4-axis / 5-axis</td>
-                            <td>15 sets</td>
-                            <td>High-precision mold components & prototypes</td>
-                        </tr>
-                        <tr>
-                            <td>EDM</td>
-                            <td>±0.005mm accuracy</td>
-                            <td>8 sets</td>
-                            <td>Complex cavity & fine detail machining</td>
-                        </tr>
-                        <tr>
-                            <td>CMM Measurement</td>
-                            <td>0.001mm resolution</td>
-                            <td>4 sets</td>
-                            <td>3D dimensional inspection & validation</td>
-                        </tr>
-                        <tr>
-                            <td>Mold Assembly</td>
-                            <td>2T – 15T capacity</td>
-                            <td>12 stations</td>
-                            <td>Mold fitting, trial & maintenance</td>
-                        </tr>
-                        <tr>
-                            <td>Material Testing</td>
-                            <td>MFR / Tensile / Impact / Hardness</td>
-                            <td>6 sets</td>
-                            <td>Raw material property verification & QC</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
-
-        <section class="qc-section">
-            <div class="container">
-                <div class="section-heading-center">
-                    <small>CAPABILITIES</small>
-                    <h2>Our Manufacturing Capabilities</h2>
-                    <p>From product design to final delivery, we offer a complete one-stop manufacturing service backed by deep engineering expertise.</p>
-                </div>
-
-                <div class="qc-grid-3">
-                    <div class="qc-cert-card">
-                        <i class="fas fa-pencil-ruler"></i>
-                        <h4>Product Design</h4>
-                        <p>Professional DFM analysis and design optimization to improve manufacturability, reduce costs, and accelerate time to market.</p>
-                    </div>
-
-                    <div class="qc-cert-card">
-                        <i class="fas fa-flask"></i>
-                        <h4>Material Compounding</h4>
-                        <p>Custom material formulation including reinforced, flame-retardant, anti-UV, and food-grade compounds for diverse application needs.</p>
-                    </div>
-
-                    <div class="qc-cert-card">
-                        <i class="fas fa-cube"></i>
-                        <h4>Mold Development</h4>
-                        <p>In-house mold design and fabrication using advanced CAD/CAM and high-speed machining for precise, durable tooling.</p>
-                    </div>
-
-                    <div class="qc-cert-card">
-                        <i class="fas fa-industry"></i>
-                        <h4>Precision Molding</h4>
-                        <p>Injection molding across a wide tonnage range with real-time process monitoring for consistent, repeatable quality.</p>
-                    </div>
-
-                    <div class="qc-cert-card">
-                        <i class="fas fa-clipboard-check"></i>
-                        <h4>Quality Control</h4>
-                        <p>Multi-stage QC system covering incoming inspection, in-process monitoring, final inspection, and outgoing verification.</p>
-                    </div>
-
-                    <div class="qc-cert-card">
-                        <i class="fas fa-truck"></i>
-                        <h4>Assembly & Logistics</h4>
-                        <p>Full assembly, kitting, and packaging services with efficient logistics to deliver finished products worldwide.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-<section class="home-cta">
-            <div class="container" style="text-align:center;">
-                <h2 style="font-size:32px;font-weight:800;color:#fff;margin-bottom:15px;">Ready to Start Your Project?</h2>
-                <p style="font-size:16px;color:#d1d5db;max-width:600px;margin:0 auto 30px;">From concept to finished product — our engineering team is ready to discuss your requirements and provide a tailored solution.</p>
-                <a href="get-quote.html" class="btn-primary" style="background:#fff;color:#0b3d91;font-weight:700;">Request a Quote</a>
-            </div>
-        </section>
-
-    </main>
+</main>
 
     <footer class="site-footer" id="footer">
         <div class="container">
