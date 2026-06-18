@@ -2329,9 +2329,22 @@ select {
 }
 
 @media (max-width: 768px) {
+    .md-hero { padding: 90px 0 30px; }
     .md-hero .container { flex-direction: column; text-align: center; }
-    .md-hero-img { flex: none; width: 140px; }
+    .md-hero-img { flex: none; width: 120px; margin: 0 auto; }
+    .md-hero-text { flex-direction: column; gap: 16px; }
+    .md-hero-right { flex: none; width: 100%; border-left: none; padding-left: 0; padding-top: 16px; border-top: 1px solid rgba(255,255,255,0.15); }
+    .md-hero-text h1 { font-size: 26px; }
+    .md-hero-right p { font-size: 14px; }
     .md-grid-2, .md-grid-3, .md-grid-4 { grid-template-columns: 1fr; }
+    .md-quick-nav { flex-wrap: wrap; gap: 8px; }
+    .md-quick-link { padding: 6px 12px; font-size: 12px; }
+    .mat-nav-wrap .container { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+    .md-props-table { font-size: 12px; }
+    .md-props-table thead th:last-child { width: auto; }
+    .md-props-table tbody td { padding: 8px 10px; }
+    .md-section-heading { font-size: 18px; }
+    .md-app-item { padding: 16px; }
 }
 
 /* ===== BREADCRUMB ===== */
